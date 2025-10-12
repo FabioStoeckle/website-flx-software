@@ -1,193 +1,203 @@
 import Link from "next/link";
 import { Section } from "@/components/Section";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CustomerTeaser } from "@/components/CustomerTeaser";
-import {
-  Zap,
-  Code2,
-  Sparkles,
-  Server,
-  Smartphone,
-  Globe,
-  Bot,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight, Sparkles, Zap, Code } from "lucide-react";
 import customersData from "@/data/customers.json";
 
 export default function HomePage() {
-  const featuredCustomers = customersData.slice(0, 3);
+  const featuredCustomers = customersData.slice(0, 2);
 
   return (
     <>
-      {/* Hero Section */}
-      <Section className="bg-gradient-to-b from-slate-50 to-white pt-20">
-        <div className="text-center">
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
-            Software, die arbeitet.
-          </h1>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 sm:text-xl">
-            Wir bauen Apps und Tools, die Probleme lösen – schnell, stabil, wartbar.
-          </p>
-          <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Link href="/kontakt">
-              <Button size="lg">Projekt anfragen</Button>
-            </Link>
-            <Link href="/leistungen">
-              <Button size="lg" variant="outline">
-                Leistungen ansehen
-              </Button>
-            </Link>
+      {/* Hero Section - Apple Style */}
+      <section className="relative min-h-screen flex items-center justify-center pt-20">
+        <div className="mx-auto max-w-7xl px-6 text-center">
+          <div className="space-y-8">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-white">
+              <span className="block">Software</span>
+              <span className="block gradient-text font-medium">die arbeitet</span>
+            </h1>
+            
+            <p className="mx-auto max-w-2xl text-xl text-gray-400 font-light leading-relaxed">
+              Apps und Tools, die Probleme lösen.<br />
+              Schnell. Stabil. Wartbar.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+              <Link href="/kontakt">
+                <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
+                  Projekt starten
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </button>
+              </Link>
+              <Link href="/leistungen">
+                <button className="text-gray-400 hover:text-white transition-colors text-lg font-medium">
+                  Services ansehen →
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-      </Section>
+        
+        {/* Subtle gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+      </section>
 
-      {/* Benefits */}
-      <Section>
-        <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
-          Warum mit uns arbeiten?
-        </h2>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          <Card>
-            <CardHeader>
-              <Zap className="mb-2 h-10 w-10 text-sky-500" />
-              <CardTitle>Schnelle Iteration</CardTitle>
-              <CardDescription>
-                Von Discovery bis MVP in 4–6 Wochen. Keine monatelangen Projekte, sondern klare
-                Sprints.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <Code2 className="mb-2 h-10 w-10 text-sky-500" />
-              <CardTitle>Saubere Code-Basis</CardTitle>
-              <CardDescription>
-                TypeScript, Tests, CI/CD. Alles wartbar, erweiterbar, dokumentiert.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <Sparkles className="mb-2 h-10 w-10 text-sky-500" />
-              <CardTitle>Klarer Klartext</CardTitle>
-              <CardDescription>
-                Keine Buzzword-Battles. Wir sagen, was geht, was nicht geht und warum.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <Server className="mb-2 h-10 w-10 text-sky-500" />
-              <CardTitle>Hosting auf Vercel</CardTitle>
-              <CardDescription>
-                Automatisches Deployment, Edge-Performance, null Downtime. Einfach produktiv.
-              </CardDescription>
-            </CardHeader>
-          </Card>
+      {/* Services - Linear Style */}
+      <section className="py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
+              Was wir machen
+            </h2>
+            <p className="text-xl text-gray-400 font-light max-w-2xl mx-auto">
+              Drei Bereiche. Ein Ziel: Software, die funktioniert.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="glass rounded-2xl p-8 smooth-hover">
+              <div className="w-12 h-12 bg-cyan-400/20 rounded-xl flex items-center justify-center mb-6">
+                <Code className="h-6 w-6 text-cyan-400" />
+              </div>
+              <h3 className="text-2xl font-medium text-white mb-4">Apps</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Progressive Web Apps, React Native, PWAs. 
+                Installierbar, offline-fähig, native Performance.
+              </p>
+            </div>
+            
+            <div className="glass rounded-2xl p-8 smooth-hover">
+              <div className="w-12 h-12 bg-cyan-400/20 rounded-xl flex items-center justify-center mb-6">
+                <Zap className="h-6 w-6 text-cyan-400" />
+              </div>
+              <h3 className="text-2xl font-medium text-white mb-4">Automation</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Workflows automatisieren, APIs orchestrieren, 
+                AI integrieren. Von Webhooks bis LLM.
+              </p>
+            </div>
+            
+            <div className="glass rounded-2xl p-8 smooth-hover">
+              <div className="w-12 h-12 bg-cyan-400/20 rounded-xl flex items-center justify-center mb-6">
+                <Sparkles className="h-6 w-6 text-cyan-400" />
+              </div>
+              <h3 className="text-2xl font-medium text-white mb-4">Maintenance</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Updates, Bugfixes, Monitoring. 
+                Care-Pakete für dauerhaften Erfolg.
+              </p>
+            </div>
+          </div>
         </div>
-      </Section>
+      </section>
 
-      {/* Services Teaser */}
-      <Section className="bg-slate-50">
-        <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
-          Unsere Leistungen
-        </h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <Card className="transition-all hover:shadow-lg">
-            <CardHeader>
-              <Smartphone className="mb-4 h-12 w-12 text-sky-500" />
-              <CardTitle>App-Entwicklung</CardTitle>
-              <CardDescription>
-                Next.js, React, PWAs. Web-Apps, die sich wie native Apps anfühlen. Responsive,
-                schnell, offline-fähig.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li>✓ Progressive Web Apps (PWA)</li>
-                <li>✓ React Native / Expo</li>
-                <li>✓ Offline-First Strategien</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="transition-all hover:shadow-lg">
-            <CardHeader>
-              <Globe className="mb-4 h-12 w-12 text-sky-500" />
-              <CardTitle>Web-Portale</CardTitle>
-              <CardDescription>
-                Kundenbereiche, Dashboards, Admin-Panels. Mit Auth, Rollen, Datenexport – alles,
-                was Unternehmen brauchen.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li>✓ Authentifizierung & Autorisierung</li>
-                <li>✓ Dashboards & Analytics</li>
-                <li>✓ CMS-Integration</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="transition-all hover:shadow-lg">
-            <CardHeader>
-              <Bot className="mb-4 h-12 w-12 text-sky-500" />
-              <CardTitle>AI & Automation</CardTitle>
-              <CardDescription>
-                Workflows automatisieren, Daten verknüpfen, APIs orchestrieren. Von Webhooks bis
-                LLM-Integration.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li>✓ Workflow-Automation</li>
-                <li>✓ OpenAI / LLM-Integration</li>
-                <li>✓ Zapier/n8n Alternativen</li>
-              </ul>
-            </CardContent>
-          </Card>
+      {/* Process - Raycast Style */}
+      <section className="py-32 bg-black/50">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
+              Wie wir arbeiten
+            </h2>
+            <p className="text-xl text-gray-400 font-light">
+              Vier Schritte. Ein Ergebnis: Software, die arbeitet.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-white">1</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-3">Discovery</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Requirements, Wireframes, Planung. 
+                1–2 Wochen.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-white">2</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-3">MVP</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Core-Features entwickeln, testen, deployen. 
+                4–6 Wochen.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-white">3</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-3">Iteration</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Feedback einholen, Features nachschärfen. 
+                2–4 Wochen.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-white">4</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-3">Care</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Updates, Monitoring, neue Features. 
+                Dauerhaft.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="mt-12 text-center">
-          <Link href="/leistungen">
-            <Button variant="outline" size="lg">
-              Alle Leistungen ansehen
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
-        </div>
-      </Section>
+      </section>
 
-      {/* Customer References */}
-      <Section>
-        <h2 className="mb-4 text-center text-3xl font-bold text-slate-900">Referenzen</h2>
-        <p className="mx-auto mb-12 max-w-2xl text-center text-slate-600">
-          Echte Projekte, echte Ergebnisse. Von Handwerksbetrieben bis zu digitalen Services.
-        </p>
-        <div className="grid gap-6 md:grid-cols-3">
-          {featuredCustomers.map((customer) => (
-            <CustomerTeaser key={customer.slug} {...customer} />
-          ))}
+      {/* References - Superhuman Style */}
+      <section className="py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
+              Was wir gemacht haben
+            </h2>
+            <p className="text-xl text-gray-400 font-light">
+              Echte Projekte. Echte Ergebnisse.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {featuredCustomers.map((customer) => (
+              <div key={customer.slug} className="glass rounded-2xl p-8 smooth-hover">
+                <div className="mb-4">
+                  <span className="text-xs font-medium text-cyan-400 uppercase tracking-wider">
+                    {customer.industry}
+                  </span>
+                </div>
+                <h3 className="text-2xl font-medium text-white mb-3">{customer.name}</h3>
+                <p className="text-gray-400 mb-4 leading-relaxed">{customer.summary}</p>
+                <p className="text-sm text-gray-500">{customer.outcome}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </Section>
+      </section>
 
-      {/* CTA */}
-      <Section className="bg-gradient-to-r from-sky-500 to-cyan-400 text-white">
-        <div className="text-center">
-          <h2 className="mb-4 text-3xl font-bold">Bereit, loszulegen?</h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-sky-50">
-            Lass uns über dein Projekt sprechen. Kostenlos, unverbindlich, auf den Punkt.
+      {/* CTA - Linear Style */}
+      <section className="py-32 bg-gradient-to-b from-black to-gray-900">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="text-5xl md:text-6xl font-light text-white mb-8">
+            Bereit?
+          </h2>
+          <p className="text-xl text-gray-400 mb-12 font-light">
+            Lass uns reden. Kostenlos, unverbindlich, auf den Punkt.
           </p>
           <Link href="/kontakt">
-            <Button size="lg" variant="secondary">
-              Jetzt Projekt anfragen
-            </Button>
+            <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
+              Projekt starten
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </button>
           </Link>
         </div>
-      </Section>
+      </section>
     </>
   );
 }

@@ -3,15 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
-import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "/leistungen", label: "Leistungen" },
-  { href: "/ueber-uns", label: "Über uns" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/leistungen", label: "Services" },
+  { href: "/ueber-uns", label: "About" },
+  { href: "/kontakt", label: "Contact" },
 ];
 
 export function Navigation() {
@@ -19,11 +18,11 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
-      <div className="mx-auto max-w-screen-xl px-4">
+    <nav className="fixed top-0 z-50 w-full glass border-b border-white/10">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex-shrink-0" aria-label="Zur Startseite">
-            <Logo />
+          <Link href="/" className="flex-shrink-0" aria-label="FLX Software">
+            <Logo variant="dark" size="sm" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,23 +32,25 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-sky-500",
-                  pathname === item.href ? "text-sky-500" : "text-slate-700"
+                  "text-sm font-medium transition-colors hover:text-cyan-400",
+                  pathname === item.href ? "text-cyan-400" : "text-gray-300"
                 )}
               >
                 {item.label}
               </Link>
             ))}
             <Link href="/kontakt">
-              <Button size="sm">Projekt anfragen</Button>
+              <button className="raycast-button px-4 py-2 text-sm font-medium text-white">
+                Get Started
+              </button>
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-gray-300 hover:text-white transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Menü öffnen"
+            aria-label="Menu"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -57,15 +58,15 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="border-t border-slate-200 py-4 md:hidden">
+          <div className="border-t border-white/10 py-4 md:hidden">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-sky-500",
-                    pathname === item.href ? "text-sky-500" : "text-slate-700"
+                    "text-sm font-medium transition-colors hover:text-cyan-400",
+                    pathname === item.href ? "text-cyan-400" : "text-gray-300"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -73,9 +74,9 @@ export function Navigation() {
                 </Link>
               ))}
               <Link href="/kontakt" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full" size="sm">
-                  Projekt anfragen
-                </Button>
+                <button className="raycast-button w-full px-4 py-2 text-sm font-medium text-white">
+                  Get Started
+                </button>
               </Link>
             </div>
           </div>
