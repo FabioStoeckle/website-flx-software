@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Zap, MessageSquare } from "lucide-react";
+import { Target, Zap, MessageSquare, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Über uns",
