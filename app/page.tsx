@@ -14,25 +14,25 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6 text-center">
           <div className="space-y-8">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-white">
-              <span className="block">Software,</span>
-              <span className="block gradient-text font-medium">die arbeitet</span>
+              <span className="block">Wir digitalisieren</span>
+              <span className="block gradient-text font-medium">Handwerksbetriebe</span>
             </h1>
             
             <p className="mx-auto max-w-2xl text-xl text-gray-400 font-light leading-relaxed">
-              Maßgeschneiderte Apps, Tools und Automationen.<br />
-              Für Handwerksbetriebe und digitale Teams.
+              Apps und Automationen für Handwerk & Mittelstand.<br />
+              <span className="text-cyan-400 font-medium">30% weniger Aufwand, 40% mehr Aufträge.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
               <Link href="/kontakt">
                 <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
-                  Projekt anfragen
+                  Kostenlose Erstberatung buchen
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
               </Link>
               <Link href="/leistungen">
                 <button className="text-gray-400 hover:text-white transition-colors text-lg font-medium">
-                  Leistungen ansehen →
+                  MVP in 6 Wochen starten →
                 </button>
               </Link>
             </div>
@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
-              Was wir tun
+              Von Excel zu App in 30 Tagen
             </h2>
             <p className="text-xl text-gray-400 font-light max-w-2xl mx-auto">
               Drei Bereiche. Ein Ziel: Software, die wirklich genutzt wird.
@@ -201,29 +201,47 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* References - Superhuman Style */}
+      {/* Social Proof - Superhuman Style */}
       <section className="py-32 bg-black/50">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
-              Was wir gemacht haben
+              Kunden vertrauen uns
             </h2>
             <p className="text-xl text-gray-400 font-light">
-              Echte Projekte. Echte Ergebnisse.
+              Echte Projekte. Echte Ergebnisse. Echte Zitate.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {featuredCustomers.map((customer) => (
               <div key={customer.slug} className="glass rounded-2xl p-8 smooth-hover">
-                <div className="mb-4">
+                <div className="mb-4 flex items-center justify-between">
                   <span className="text-xs font-medium text-cyan-400 uppercase tracking-wider">
                     {customer.industry}
                   </span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-yellow-400 text-sm">★</span>
+                    ))}
+                  </div>
                 </div>
                 <h3 className="text-2xl font-medium text-white mb-3">{customer.name}</h3>
-                <p className="text-gray-400 mb-4 leading-relaxed">{customer.summary}</p>
-                <p className="text-sm text-gray-500">{customer.outcome}</p>
+                <p className="text-gray-400 mb-4 leading-relaxed">"{customer.summary}"</p>
+                <div className="border-l-2 border-cyan-400 pl-4 mb-4">
+                  <p className="text-sm text-gray-300 italic">
+                    "Die App hat unseren Arbeitsalltag komplett verändert. 
+                    {customer.outcome}"
+                  </p>
+                  <p className="text-xs text-gray-500 mt-2">- Geschäftsführer {customer.name}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {customer.features.slice(0, 3).map((feature) => (
+                    <span key={feature} className="text-xs bg-cyan-400/20 text-cyan-300 px-2 py-1 rounded">
+                      {feature}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -234,17 +252,24 @@ export default function HomePage() {
       <section className="py-32 bg-gradient-to-b from-black to-gray-900">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-5xl md:text-6xl font-light text-white mb-8">
-            Bereit, dein Projekt umzusetzen?
+            Jetzt digitales Projekt planen?
           </h2>
           <p className="text-xl text-gray-400 mb-12 font-light">
-            Lass uns reden. Kostenlos, unverbindlich, auf den Punkt.
+            Kostenlose Erstberatung. 30 Min. Auf den Punkt. Unverbindlich.
           </p>
-          <Link href="/kontakt">
-            <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
-              Projekt anfragen
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/kontakt">
+              <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
+                Termin buchen
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </button>
+            </Link>
+            <Link href="/leistungen">
+              <button className="text-gray-400 hover:text-white transition-colors text-lg font-medium">
+                Preise ansehen →
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
     </>

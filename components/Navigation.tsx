@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/leistungen", label: "Services" },
+  { href: "/preise", label: "Preise" },
   { href: "/ueber-uns", label: "About" },
   { href: "/kontakt", label: "Contact" },
 ];

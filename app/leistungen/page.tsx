@@ -50,53 +50,69 @@ export default function LeistungenPage() {
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2">
-              <div className="glass rounded-2xl p-8">
-                <h3 className="text-2xl font-medium text-white mb-4">Progressive Web Apps</h3>
-                <p className="text-gray-400 mb-6 leading-relaxed">
-                  Web-Apps, die auf dem Homescreen leben und offline funktionieren.
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
-                    <span className="text-gray-300">Installierbar auf iOS & Android</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
-                    <span className="text-gray-300">Offline-Sync mit Service Workers</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
-                    <span className="text-gray-300">Push-Notifications</span>
-                  </li>
-                </ul>
-                <div className="mt-6 pt-6 border-t border-white/10">
-                  <p className="text-sm text-gray-500">Was das bringt: Native App-Feeling ohne App-Store.</p>
+                <div className="glass rounded-2xl p-8">
+                  <div className="mb-6">
+                    <div className="w-full h-32 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <div className="w-12 h-12 bg-white/20 rounded-lg mx-auto mb-2"></div>
+                        <p className="text-xs text-gray-300">Geräteverwaltung PWA</p>
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-medium text-white mb-4">Progressive Web Apps</h3>
+                    <p className="text-gray-400 mb-6 leading-relaxed">
+                      Web-Apps, die auf dem Homescreen leben und offline funktionieren.
+                    </p>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                      <span className="text-gray-300">Installierbar auf iOS & Android</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                      <span className="text-gray-300">Offline-Sync mit Service Workers</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                      <span className="text-gray-300">Push-Notifications</span>
+                    </li>
+                  </ul>
+                  <div className="mt-6 pt-6 border-t border-white/10">
+                    <p className="text-sm text-gray-500">Was das bringt: Native App-Feeling ohne App-Store.</p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="glass rounded-2xl p-8">
-                <h3 className="text-2xl font-medium text-white mb-4">Webapps & Mobile Tools</h3>
-                <p className="text-gray-400 mb-6 leading-relaxed">
-                  Modern, performant, SEO-optimiert. Server- und Client-Komponenten.
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
-                    <span className="text-gray-300">Next.js App Router & Server Components</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
-                    <span className="text-gray-300">TypeScript strict mode</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
-                    <span className="text-gray-300">Tailwind + Component Libraries</span>
-                  </li>
-                </ul>
-                <div className="mt-6 pt-6 border-t border-white/10">
-                  <p className="text-sm text-gray-500">Was das bringt: Schnelle, wartbare Anwendungen.</p>
+                <div className="glass rounded-2xl p-8">
+                  <div className="mb-6">
+                    <div className="w-full h-32 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <div className="w-16 h-10 bg-white/20 rounded mx-auto mb-2"></div>
+                        <p className="text-xs text-gray-300">Angebotsgenerator Dashboard</p>
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-medium text-white mb-4">Webapps & Mobile Tools</h3>
+                    <p className="text-gray-400 mb-6 leading-relaxed">
+                      Modern, performant, SEO-optimiert. Server- und Client-Komponenten.
+                    </p>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                      <span className="text-gray-300">Next.js App Router & Server Components</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                      <span className="text-gray-300">TypeScript strict mode</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                      <span className="text-gray-300">Tailwind + Component Libraries</span>
+                    </li>
+                  </ul>
+                  <div className="mt-6 pt-6 border-t border-white/10">
+                    <p className="text-sm text-gray-500">Was das bringt: Schnelle, wartbare Anwendungen.</p>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>
 
@@ -366,15 +382,83 @@ export default function LeistungenPage() {
           <p className="mb-12 text-xl text-gray-400 font-light">
             Kostenlos, unverbindlich, auf den Punkt. Wir machen dir einen Plan.
           </p>
-          <Link href="/kontakt">
-            <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
-              Jetzt Kontakt aufnehmen
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
-          </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link href="/kontakt">
+                <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
+                  Kostenlose Erstberatung
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </button>
+              </Link>
+              <Link href="/preise">
+                <button className="text-gray-400 hover:text-white transition-colors text-lg font-medium">
+                  Preise ansehen →
+                </button>
+              </Link>
+            </div>
         </div>
-      </Section>
-    </>
-  );
-}
+        </Section>
+
+        {/* Sicherheit & Datenschutz */}
+        <Section className="py-32 bg-black/50">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
+                Sicherheit & Datenschutz
+              </h2>
+              <p className="text-xl text-gray-400 font-light">
+                Ihre Daten sind sicher. Transparente Compliance, höchste Standards.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="glass rounded-2xl p-8 text-center">
+                <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🔒</span>
+                </div>
+                <h3 className="text-xl font-medium text-white mb-4">DSGVO-konform</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Vollständige DSGVO-Compliance. Datenverarbeitung, 
+                  Speicherung und Löschung nach europäischen Standards.
+                </p>
+              </div>
+              
+              <div className="glass rounded-2xl p-8 text-center">
+                <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🛡️</span>
+                </div>
+                <h3 className="text-xl font-medium text-white mb-4">Verschlüsselung</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  End-to-End-Verschlüsselung. HTTPS, TLS 1.3, 
+                  sichere API-Kommunikation und Datenbankverschlüsselung.
+                </p>
+              </div>
+              
+              <div className="glass rounded-2xl p-8 text-center">
+                <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">✅</span>
+                </div>
+                <h3 className="text-xl font-medium text-white mb-4">Monitoring</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  24/7-System-Monitoring. Automatische Backups, 
+                  Security-Scans und Incident-Response.
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-16 text-center">
+              <div className="glass rounded-2xl p-8 max-w-2xl mx-auto">
+                <h3 className="text-xl font-medium text-white mb-4">
+                  Hosting & Infrastructure
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Vercel Edge Network. ISO 27001-zertifizierte Rechenzentren. 
+                  EU-Server. Automatische Skalierung und 99.9% Uptime.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Section>
+      </>
+    );
+  }
 
