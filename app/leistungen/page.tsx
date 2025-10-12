@@ -25,146 +25,136 @@ export default function LeistungenPage() {
   return (
     <>
       {/* Hero */}
-      <Section className="bg-gradient-to-b from-slate-50 to-white pt-16">
-        <div className="text-center">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
-            Leistungen
+      <Section className="pt-32">
+        <div className="mx-auto max-w-7xl px-6 text-center">
+          <h1 className="mb-6 text-5xl md:text-6xl font-light text-white">
+            Wir bauen Software, die wirklich genutzt wird.
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-slate-600">
-            Von Discovery bis Deployment. Wir decken den kompletten Lifecycle ab – schnell, stabil,
-            wartbar.
+          <p className="mx-auto max-w-3xl text-xl text-gray-400 font-light">
+            Drei Hauptbereiche mit klaren Deliverables. Kein Marketing-Sprech, 
+            sondern praxisnahe Lösungen, die funktionieren.
           </p>
         </div>
       </Section>
 
       {/* Services */}
       <Section>
-        <div className="space-y-16">
+        <div className="space-y-20">
           {/* App Development */}
-          <div>
-            <div className="mb-8 flex items-center gap-4">
-              <Smartphone className="h-10 w-10 text-sky-500" />
-              <div>
-                <h2 className="text-3xl font-bold text-slate-900">App-Entwicklung</h2>
-                <p className="text-slate-600">
-                  Native Feel, Web-Technologie. Schnell, responsiv, offline-fähig.
-                </p>
-              </div>
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="mb-12 text-center">
+              <h2 className="text-4xl md:text-5xl font-light text-white mb-6">App-Entwicklung</h2>
+              <p className="text-xl text-gray-400 font-light">
+                PWA, Webapps, mobile Tools. Installierbar, offline-fähig, native Performance.
+              </p>
             </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Progressive Web Apps (PWA)</CardTitle>
-                  <CardDescription>
-                    Web-Apps, die auf dem Homescreen leben und offline funktionieren.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Installierbar auf iOS & Android</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Offline-Sync mit Service Workers</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Push-Notifications</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+            <div className="grid gap-8 md:grid-cols-2">
+              <div className="glass rounded-2xl p-8">
+                <h3 className="text-2xl font-medium text-white mb-4">Progressive Web Apps</h3>
+                <p className="text-gray-400 mb-6 leading-relaxed">
+                  Web-Apps, die auf dem Homescreen leben und offline funktionieren.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Installierbar auf iOS & Android</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Offline-Sync mit Service Workers</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Push-Notifications</span>
+                  </li>
+                </ul>
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <p className="text-sm text-gray-500">Was das bringt: Native App-Feeling ohne App-Store.</p>
+                </div>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle>React & Next.js Apps</CardTitle>
-                  <CardDescription>
-                    Modern, performant, SEO-optimiert. Server- und Client-Komponenten.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>App Router & Server Components</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>TypeScript strict mode</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Tailwind + Component Libraries</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+              <div className="glass rounded-2xl p-8">
+                <h3 className="text-2xl font-medium text-white mb-4">Webapps & Mobile Tools</h3>
+                <p className="text-gray-400 mb-6 leading-relaxed">
+                  Modern, performant, SEO-optimiert. Server- und Client-Komponenten.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Next.js App Router & Server Components</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">TypeScript strict mode</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Tailwind + Component Libraries</span>
+                  </li>
+                </ul>
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <p className="text-sm text-gray-500">Was das bringt: Schnelle, wartbare Anwendungen.</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Web Portals */}
-          <div>
-            <div className="mb-8 flex items-center gap-4">
-              <Globe className="h-10 w-10 text-sky-500" />
-              <div>
-                <h2 className="text-3xl font-bold text-slate-900">Web-Portale</h2>
-                <p className="text-slate-600">
-                  Kundenbereiche, Dashboards, Admin-Panels. Secure, skalierbar, wartbar.
-                </p>
-              </div>
+          {/* Automation */}
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="mb-12 text-center">
+              <h2 className="text-4xl md:text-5xl font-light text-white mb-6">Automationen</h2>
+              <p className="text-xl text-gray-400 font-light">
+                KI-gestützte Abläufe, Webhooks, Workflows. Manuelle Prozesse eliminieren, Zeit sparen.
+              </p>
             </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Kundenbereiche & Dashboards</CardTitle>
-                  <CardDescription>
-                    Self-Service-Portale mit Login, Profilverwaltung, Dokumenten-Download.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>SSO & Multi-Factor Auth</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Rollenbasierte Zugriffe</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Analytics & Reporting</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+            <div className="grid gap-8 md:grid-cols-2">
+              <div className="glass rounded-2xl p-8">
+                <h3 className="text-2xl font-medium text-white mb-4">KI-gestützte Abläufe</h3>
+                <p className="text-gray-400 mb-6 leading-relaxed">
+                  OpenAI, Claude, Custom Models. Von Chatbots bis Content-Generierung.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">GPT-4, Claude Integration</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">RAG (Retrieval Augmented Generation)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Fine-Tuning & Prompt Engineering</span>
+                  </li>
+                </ul>
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <p className="text-sm text-gray-500">Was das bringt: Intelligente Automatisierung statt manueller Arbeit.</p>
+                </div>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle>Admin-Panels & CMS</CardTitle>
-                  <CardDescription>
-                    Backend-Interfaces für Content-Verwaltung, Nutzer-Management, Konfiguration.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Headless CMS (Sanity, Contentful)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Bulk-Operations & Exports</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
-                      <span>Audit-Logs & Versionierung</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+              <div className="glass rounded-2xl p-8">
+                <h3 className="text-2xl font-medium text-white mb-4">Webhooks & Workflows</h3>
+                <p className="text-gray-400 mb-6 leading-relaxed">
+                  APIs orchestrieren, Daten verknüpfen, Prozesse automatisieren.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Webhook-basierte Trigger</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">API-Orchestrierung (REST, GraphQL)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-400" />
+                    <span className="text-gray-300">Scheduled Tasks & Batch-Jobs</span>
+                  </li>
+                </ul>
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <p className="text-sm text-gray-500">Was das bringt: Manuelle Prozesse eliminieren, Zeit sparen.</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -368,15 +358,18 @@ export default function LeistungenPage() {
 
       {/* CTA */}
       <Section>
-        <div className="rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-400 p-12 text-center text-white">
-          <h2 className="mb-4 text-3xl font-bold">Lass uns über dein Projekt sprechen</h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-sky-50">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="mb-6 text-5xl md:text-6xl font-light text-white">
+            Sag uns, was dich aufhält – wir lösen es.
+          </h2>
+          <p className="mb-12 text-xl text-gray-400 font-light">
             Kostenlos, unverbindlich, auf den Punkt. Wir machen dir einen Plan.
           </p>
           <Link href="/kontakt">
-            <Button size="lg" variant="secondary">
+            <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
               Jetzt Kontakt aufnehmen
-            </Button>
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </button>
           </Link>
         </div>
       </Section>

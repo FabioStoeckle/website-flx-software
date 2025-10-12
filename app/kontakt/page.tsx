@@ -52,43 +52,39 @@ export default function KontaktPage() {
         <div className="grid gap-12 lg:grid-cols-5">
           {/* Contact Info */}
           <div className="lg:col-span-2">
-            <h2 className="mb-6 text-2xl font-bold text-slate-900">Direkt erreichen</h2>
+            <h2 className="mb-8 text-2xl font-medium text-white">Direkt erreichen</h2>
             <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <Mail className="mb-2 h-8 w-8 text-sky-500" />
-                  <CardTitle className="text-lg">E-Mail</CardTitle>
-                  <CardDescription>
-                    <a
-                      href="mailto:info@flx-software.de"
-                      className="text-sky-500 hover:underline"
-                    >
-                      info@flx-software.de
-                    </a>
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+              <div className="glass rounded-2xl p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <Mail className="h-8 w-8 text-cyan-400" />
+                  <h3 className="text-xl font-medium text-white">E-Mail</h3>
+                </div>
+                <a
+                  href="mailto:info@flx-software.de"
+                  className="text-cyan-400 hover:text-cyan-300 transition-colors text-lg"
+                >
+                  info@flx-software.de
+                </a>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <MapPin className="mb-2 h-8 w-8 text-sky-500" />
-                  <CardTitle className="text-lg">Standort</CardTitle>
-                  <CardDescription>Deutschland (Remote & vor Ort)</CardDescription>
-                </CardHeader>
-              </Card>
+              <div className="glass rounded-2xl p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <MapPin className="h-8 w-8 text-cyan-400" />
+                  <h3 className="text-xl font-medium text-white">Standort</h3>
+                </div>
+                <p className="text-gray-400">Deutschland (Remote & vor Ort)</p>
+              </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="lg:col-span-3">
-            <Card>
-              <CardHeader>
-                <CardTitle>Nachricht senden</CardTitle>
-                <CardDescription>
-                  Fülle das Formular aus und wir melden uns schnellstmöglich bei dir.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+            <div className="glass rounded-2xl p-8">
+              <h2 className="mb-2 text-2xl font-medium text-white">Nachricht senden</h2>
+              <p className="mb-8 text-gray-400">
+                Fülle das Formular aus und wir melden uns schnellstmöglich bei dir.
+              </p>
+              <div>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700">
@@ -183,8 +179,8 @@ export default function KontaktPage() {
                     (Formspree/Resend).
                   </p>
                 </form>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </Section>

@@ -15,12 +15,12 @@ export default function UeberUnsPage() {
   return (
     <>
       {/* Hero */}
-      <Section className="bg-gradient-to-b from-slate-50 to-white pt-16">
-        <div className="text-center">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+      <Section className="pt-32">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h1 className="mb-6 text-5xl md:text-6xl font-light text-white">
             Über uns
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-slate-600">
+          <p className="text-xl text-gray-400 font-light">
             Software-Entwicklung ohne Buzzwords. Pragmatisch, stabil, klar.
           </p>
         </div>
@@ -28,22 +28,24 @@ export default function UeberUnsPage() {
 
       {/* Mission */}
       <Section>
-        <div className="mx-auto max-w-3xl">
-          <h2 className="mb-6 text-3xl font-bold text-slate-900">Unsere Mission</h2>
-          <div className="space-y-4 text-lg text-slate-700">
-            <p>
-              Wir bauen Software, die tatsächlich benutzt wird. Keine monatelangen
-              Planungsphasen, keine aufgeblähten Frameworks, keine unnötigen Meetings.
-            </p>
-            <p>
-              Stattdessen: Schnelle MVPs, klare Kommunikation, saubere Code-Basen. Wir glauben an
-              kurze Iterationszyklen, echtes Feedback und pragmatische Lösungen.
-            </p>
-            <p>
-              Unsere Kunden sind Handwerksbetriebe, die ihre Prozesse digitalisieren wollen,
-              Startups, die schnell einen Prototypen brauchen, und etablierte Unternehmen, die
-              interne Tools modernisieren möchten.
-            </p>
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="glass rounded-3xl p-12">
+            <h2 className="mb-8 text-3xl font-light text-white">Warum wir Software anders denken</h2>
+            <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+              <p>
+                Wir bauen Software, die tatsächlich benutzt wird. Keine monatelangen
+                Planungsphasen, keine aufgeblähten Frameworks, keine unnötigen Meetings.
+              </p>
+              <p>
+                Stattdessen: Schnelle MVPs, klare Kommunikation, saubere Code-Basen. Wir glauben an
+                kurze Iterationszyklen, echtes Feedback und pragmatische Lösungen.
+              </p>
+              <p>
+                Unsere Kunden sind Handwerksbetriebe, die ihre Prozesse digitalisieren wollen,
+                Startups, die schnell einen Prototypen brauchen, und etablierte Unternehmen, die
+                interne Tools modernisieren möchten.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
@@ -89,34 +91,42 @@ export default function UeberUnsPage() {
 
       {/* Team */}
       <Section>
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-6 text-3xl font-bold text-slate-900">by Fabio Stöckle</h2>
-          <div className="mb-8 space-y-4 text-lg text-slate-700">
-            <p>
-              FLX Software ist ein Ein-Mann-Studio mit Fokus auf moderne Web-Technologien und
-              pragmatische Lösungen.
-            </p>
-            <p>
-              Fabio Stöckle entwickelt seit über 10 Jahren Software – von Startups bis
-              Mittelstand, von PWAs bis AI-Automation. Sein Fokus: Schnelle MVPs, sauberer Code,
-              klare Kommunikation.
-            </p>
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="glass rounded-3xl p-12 text-center">
+            <h2 className="mb-8 text-3xl font-light text-white">by Fabio Stöckle</h2>
+            <div className="space-y-6 text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+              <p>
+                FLX Software ist ein Ein-Mann-Studio mit Fokus auf moderne Web-Technologien und
+                pragmatische Lösungen.
+              </p>
+              <p>
+                Fabio Stöckle entwickelt seit über 10 Jahren Software – von Startups bis
+                Mittelstand, von PWAs bis AI-Automation. Sein Fokus: Schnelle MVPs, sauberer Code,
+                klare Kommunikation.
+              </p>
+              <p>
+                Kein Buzzword, kein Lebenslauf – mehr Persönlichkeit. Pragmatismus, Klartext, 
+                Verantwortung, Erfahrung aus IT & Handwerk.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
 
       {/* CTA */}
-      <Section className="bg-gradient-to-r from-sky-500 to-cyan-400 text-white">
-        <div className="text-center">
-          <h2 className="mb-4 text-3xl font-bold">Lass uns zusammenarbeiten</h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-sky-50">
-            Ob Discovery Sprint, MVP oder Maintenance – wir finden die richtige Lösung für dein
-            Projekt.
+      <Section>
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="mb-6 text-5xl md:text-6xl font-light text-white">
+            Lass uns zusammenarbeiten
+          </h2>
+          <p className="mb-12 text-xl text-gray-400 font-light">
+            Ob Discovery Sprint, MVP oder Maintenance – wir finden die richtige Lösung für dein Projekt.
           </p>
           <Link href="/kontakt">
-            <Button size="lg" variant="secondary">
+            <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
               Jetzt Kontakt aufnehmen
-            </Button>
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </button>
           </Link>
         </div>
       </Section>

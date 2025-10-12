@@ -3,31 +3,31 @@
     "slug": "holzbau-xy",
     "name": "Holzbau XY",
     "industry": "Bau/Handwerk",
-    "summary": "Digitale Auftragsübersicht & QR-gestützte Geräteverwaltung.",
-    "problem": "Zettelwirtschaft, fehlende Transparenz bei Geräten.",
-    "solution": "PWA mit QR-Codes, Check-in/out, TÜV-Reminder.",
-    "outcome": "30% weniger Geräteverluste, schnellere Übergaben.",
-    "features": ["PWA", "QR-Codes", "Supabase-ready", "Export"]
+    "summary": "PWA für Geräteverwaltung mit QR-Codes und TÜV-Reminder.",
+    "problem": "Zettelwirtschaft, fehlende Transparenz bei Geräten, vergessene TÜV-Termine.",
+    "solution": "Progressive Web App mit QR-Code-System, automatische Erinnerungen, mobile Check-in/out.",
+    "outcome": "30% weniger Geräteverluste, keine vergessenen TÜV-Termine, schnellere Baustellen-Übergaben.",
+    "features": ["PWA", "QR-Codes", "Push-Notifications", "Offline-Sync", "TÜV-Reminder"]
   },
   {
     "slug": "maler-meier",
     "name": "Maler Meier",
     "industry": "Handwerk",
-    "summary": "Angebotsgenerator & Kundenportal.",
-    "problem": "Langsame Angebotserstellung, Medienbrüche.",
-    "solution": "Web-Portal mit Vorlagen, PDF-Export.",
-    "outcome": "Angebote in 5 Min statt 30 Min.",
-    "features": ["Next.js", "PDF-Export", "Auth-ready"]
+    "summary": "Angebotsgenerator & Kundenportal mit KI-Unterstützung.",
+    "problem": "Langsame Angebotserstellung, Medienbrüche, unprofessionelle Kommunikation.",
+    "solution": "Web-Portal mit KI-generierten Angeboten, automatische PDFs, Kundenbereich.",
+    "outcome": "Angebote in 5 Min statt 30 Min, 40% mehr Aufträge durch professionelle Präsentation.",
+    "features": ["KI-Integration", "PDF-Export", "Kundenportal", "Template-System", "Auth"]
   },
   {
     "slug": "fitness-pro",
     "name": "Fitness Pro",
     "industry": "Sport & Gesundheit",
-    "summary": "Mitgliederverwaltung & Trainingsplan-Generator.",
-    "problem": "Dezentrale Mitgliederdaten, manuelle Trainingsplanung.",
-    "solution": "Zentrale Web-App mit Automatisierung für Trainingsplanungen und Erinnerungen.",
-    "outcome": "50% Zeitersparnis bei Verwaltung, höhere Mitgliederzufriedenheit.",
-    "features": ["Next.js", "AI-Automation", "Webhooks", "Export"]
+    "summary": "Mitgliederverwaltung & Trainingsplan-Generator mit AI.",
+    "problem": "Dezentrale Mitgliederdaten, manuelle Trainingsplanung, fehlende Kommunikation.",
+    "solution": "Zentrale Web-App mit KI-generierten Trainingsplänen, automatische Erinnerungen, Mitgliederbereich.",
+    "outcome": "50% Zeitersparnis bei Verwaltung, höhere Mitgliederzufriedenheit, personalisierte Trainingspläne.",
+    "features": ["AI-Trainingspläne", "Mitgliederportal", "Automation", "Push-Notifications", "Analytics"]
   }
 ]
 
