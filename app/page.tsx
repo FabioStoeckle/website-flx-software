@@ -227,11 +227,11 @@ export default function HomePage() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-medium text-white mb-3">{customer.name}</h3>
-                <p className="text-gray-400 mb-4 leading-relaxed">"{customer.summary}"</p>
+                <p className="text-gray-400 mb-4 leading-relaxed">&ldquo;{customer.summary}&rdquo;</p>
                 <div className="border-l-2 border-cyan-400 pl-4 mb-4">
                   <p className="text-sm text-gray-300 italic">
-                    "Die App hat unseren Arbeitsalltag komplett verändert. 
-                    {customer.outcome}"
+                    &ldquo;Die App hat unseren Arbeitsalltag komplett verändert. 
+                    {customer.outcome}&rdquo;
                   </p>
                   <p className="text-xs text-gray-500 mt-2">- Geschäftsführer {customer.name}</p>
                 </div>
