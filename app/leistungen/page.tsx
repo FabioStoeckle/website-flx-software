@@ -13,6 +13,7 @@ import {
   Clock,
   Users,
   Rocket,
+  ArrowRight,
 } from "lucide-react";
 
 export const metadata: Metadata = {
