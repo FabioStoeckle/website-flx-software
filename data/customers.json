@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "holzbau-xy",
+    "name": "Holzbau XY",
+    "industry": "Bau/Handwerk",
+    "summary": "Digitale Auftragsübersicht & QR-gestützte Geräteverwaltung.",
+    "problem": "Zettelwirtschaft, fehlende Transparenz bei Geräten.",
+    "solution": "PWA mit QR-Codes, Check-in/out, TÜV-Reminder.",
+    "outcome": "30% weniger Geräteverluste, schnellere Übergaben.",
+    "features": ["PWA", "QR-Codes", "Supabase-ready", "Export"]
+  },
+  {
+    "slug": "maler-meier",
+    "name": "Maler Meier",
+    "industry": "Handwerk",
+    "summary": "Angebotsgenerator & Kundenportal.",
+    "problem": "Langsame Angebotserstellung, Medienbrüche.",
+    "solution": "Web-Portal mit Vorlagen, PDF-Export.",
+    "outcome": "Angebote in 5 Min statt 30 Min.",
+    "features": ["Next.js", "PDF-Export", "Auth-ready"]
+  },
+  {
+    "slug": "fitness-pro",
+    "name": "Fitness Pro",
+    "industry": "Sport & Gesundheit",
+    "summary": "Mitgliederverwaltung & Trainingsplan-Generator.",
+    "problem": "Dezentrale Mitgliederdaten, manuelle Trainingsplanung.",
+    "solution": "Zentrale Web-App mit Automatisierung für Trainingsplanungen und Erinnerungen.",
+    "outcome": "50% Zeitersparnis bei Verwaltung, höhere Mitgliederzufriedenheit.",
+    "features": ["Next.js", "AI-Automation", "Webhooks", "Export"]
+  }
+]
+
