@@ -40,11 +40,11 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Link href="/kontakt">
-              <button className="raycast-button px-4 py-2 text-sm font-medium text-white">
-                Get Started
-              </button>
-            </Link>
+              <Link href="/kontakt">
+                <button className="raycast-button px-4 py-2 text-sm font-medium text-white">
+                  Live-Demo
+                </button>
+              </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,11 +74,11 @@ export function Navigation() {
                   {item.label}
                 </Link>
               ))}
-              <Link href="/kontakt" onClick={() => setMobileMenuOpen(false)}>
-                <button className="raycast-button w-full px-4 py-2 text-sm font-medium text-white">
-                  Get Started
-                </button>
-              </Link>
+                <Link href="/kontakt" onClick={() => setMobileMenuOpen(false)}>
+                  <button className="raycast-button w-full px-4 py-2 text-sm font-medium text-white">
+                    Live-Demo
+                  </button>
+                </Link>
             </div>
           </div>
         )}

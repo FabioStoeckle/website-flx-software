@@ -77,37 +77,45 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Legal & Contact */}
-          <div>
-            <h3 className="mb-6 text-sm font-medium text-white uppercase tracking-wider">Legal</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link
-                  href="/impressum"
-                  className="text-gray-400 transition-colors hover:text-cyan-400"
-                >
-                  Impressum
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/datenschutz"
-                  className="text-gray-400 transition-colors hover:text-cyan-400"
-                >
-                  Datenschutz
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="mailto:info@flx-software.de"
-                  className="flex items-center gap-2 text-gray-400 transition-colors hover:text-cyan-400"
-                >
-                  <Mail size={16} />
-                  info@flx-software.de
-                </a>
-              </li>
-            </ul>
-          </div>
+            {/* Legal & Contact */}
+            <div>
+              <h3 className="mb-6 text-sm font-medium text-white uppercase tracking-wider">Legal</h3>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <Link
+                    href="/sicherheit"
+                    className="text-gray-400 transition-colors hover:text-cyan-400"
+                  >
+                    Sicherheit & DSGVO
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/impressum"
+                    className="text-gray-400 transition-colors hover:text-cyan-400"
+                  >
+                    Impressum
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/datenschutz"
+                    className="text-gray-400 transition-colors hover:text-cyan-400"
+                  >
+                    Datenschutz
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@flx-software.de"
+                    className="flex items-center gap-2 text-gray-400 transition-colors hover:text-cyan-400"
+                  >
+                    <Mail size={16} />
+                    info@flx-software.de
+                  </a>
+                </li>
+              </ul>
+            </div>
         </div>
 
         {/* Bottom Bar */}
