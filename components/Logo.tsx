@@ -11,13 +11,21 @@ export function Logo({ className = "", size = "md", variant = "light" }: LogoPro
   // Navigation uses `sm`, so we make that explicitly larger for top-left.
   const src = "/brand/flx-logo-top-left.png";
   const heightPx = size === "sm" ? 34 : size === "md" ? 42 : 56;
+  const imgStyle: React.CSSProperties = {
+    height: heightPx,
+    width: "auto",
+    display: "block",
+    // In dunklen Header-Kontexten kann ein weißes Logo-Backing (falls im PNG vorhanden)
+    // sonst als "weißer Kasten" wirken.
+    ...(variant === "dark" ? { mixBlendMode: "multiply" } : {}),
+  };
 
   return (
     <div className={`flex items-center ${className}`}>
       <img
         src={src}
         alt="FLX-Software"
-        style={{ height: heightPx, width: "auto", display: "block" }}
+        style={imgStyle}
         loading="eager"
       />
     </div>

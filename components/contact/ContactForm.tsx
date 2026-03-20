@@ -26,7 +26,7 @@ export function ContactForm() {
 
     const subject = encodeURIComponent("Projektanfrage von " + formData.name);
     const body = encodeURIComponent(
-      `Name: ${formData.name}\nE-Mail: ${formData.email}\nFirma: ${formData.company || "—"}\n\nNachricht:\n${formData.message}`
+      `Name: ${formData.name}\nE-Mail: ${formData.email}\nFirma: ${formData.company || "—"}\n\nProjektidee:\n${formData.message}`
     );
 
     // Client-side mailto submit.
@@ -78,7 +78,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="message" className="mb-2 block text-sm font-medium text-gray-300">
-          Nachricht *
+          Projektidee *
         </label>
         <textarea
           id="message"

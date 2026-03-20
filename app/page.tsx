@@ -5,6 +5,7 @@ import { products } from "@/data/products";
 import { services } from "@/data/services";
 import { ProductCard } from "@/components/brand/ProductCard";
 import { ServiceCard } from "@/components/brand/ServiceCard";
+import { ContactForm } from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
   title: "FLX-Software.de | Digitale Produkte & Weblösungen",
@@ -77,20 +78,20 @@ export default function HomePage() {
       {/* Brand overview */}
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-3 gap-6">
-            <div className="glass rounded-2xl border border-white/10 p-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
               <h2 className="text-2xl font-medium text-white">Was FLX baut</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
                 Digitale Produkte für Teams und Kunden: Apps, PWAs und Websites, die im Alltag funktionieren.
               </p>
             </div>
-            <div className="glass rounded-2xl border border-white/10 p-8">
+            <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
               <h2 className="text-2xl font-medium text-white">Wie wir arbeiten</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
                 Pragmatismus zuerst: schnelle MVPs, saubere Architektur, klare Roadmaps und echte Iteration.
               </p>
             </div>
-            <div className="glass rounded-2xl border border-white/10 p-8">
+            <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
               <h2 className="text-2xl font-medium text-white">Warum es wirkt</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
                 Verständliche UI, stabile Umsetzung und echte Deliverables – damit Software genutzt wird.
@@ -117,7 +118,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {featuredProducts.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
@@ -135,7 +136,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {featuredServices.map((service) => (
               <ServiceCard key={service.key} service={service} />
             ))}
@@ -173,6 +174,38 @@ export default function HomePage() {
                 Erst Produkte ansehen
               </button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Projektanfrage (Ziel für Sticky-CTA) */}
+      <section id="kontakt-anfrage" className="py-20 sm:py-28 bg-black/30">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-10 lg:grid-cols-5 lg:items-start">
+            <div className="lg:col-span-2">
+              <h2 className="text-4xl sm:text-5xl font-light text-white">Projekt anfragen</h2>
+              <p className="mt-3 text-lg text-gray-400 leading-relaxed">
+                Kurz beschreiben, was du brauchst. Wir antworten pragmatisch: Vorgehen, Aufwand und nächste Schritte.
+              </p>
+              <div className="mt-8 glass rounded-2xl border border-white/10 p-6 h-full flex flex-col">
+                <div className="text-sm text-gray-400 leading-relaxed">
+                  Keine Agentur-Floskeln. Nur klarer Scope, saubere Umsetzung und wartbare Ergebnisse.
+                </div>
+                <div className="mt-auto pt-4 text-xs text-gray-500">
+                  Tipp: Je konkreter das Ziel, desto schneller die Rückmeldung.
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-3">
+              <div className="glass rounded-2xl border border-white/10 p-8">
+                <h3 className="mb-2 text-2xl font-medium text-white">Kurzformular</h3>
+                <p className="mb-6 text-gray-400 leading-relaxed">
+                  Name, E-Mail und Projektidee – fertig.
+                </p>
+                <ContactForm />
+              </div>
+            </div>
           </div>
         </div>
       </section>

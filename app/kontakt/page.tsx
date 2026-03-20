@@ -76,8 +76,70 @@ export default function KontaktPage() {
                   Fülle das Formular aus. Wir antworten schnell und mit klaren nächsten Schritten.
                 </p>
 
-                <ContactForm />
+                <div id="kontakt-anfrage">
+                  <ContactForm />
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="pb-16 sm:pb-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-12">
+            <h2 className="text-4xl sm:text-5xl font-light text-white">FAQ zu Projekten</h2>
+            <p className="mt-3 text-lg text-gray-400 leading-relaxed max-w-3xl">
+              Kurze Antworten auf typische Fragen, damit du schnell einschätzen kannst, ob es passt.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="glass rounded-2xl border border-white/10 p-6">
+              <details>
+                <summary className="cursor-pointer text-white font-medium">
+                  Wie läuft eine Zusammenarbeit konkret ab?
+                </summary>
+                <p className="mt-3 text-gray-400 leading-relaxed">
+                  Wir starten mit Kickoff & Scope, setzen danach Design & Setup auf, bauen in klaren Sprints und
+                  bringen am Ende stabilen Betrieb. Du weißt jederzeit, was als Nächstes passiert.
+                </p>
+              </details>
+            </div>
+
+            <div className="glass rounded-2xl border border-white/10 p-6">
+              <details>
+                <summary className="cursor-pointer text-white font-medium">Wie wird der Preis geplant?</summary>
+                <p className="mt-3 text-gray-400 leading-relaxed">
+                  Wir schlagen ein passendes Leistungsmodell vor (Festpreis, Sprints oder Support) – abhängig von
+                  Umfang, Ziel und Planbarkeit.
+                </p>
+              </details>
+            </div>
+
+            <div className="glass rounded-2xl border border-white/10 p-6">
+              <details>
+                <summary className="cursor-pointer text-white font-medium">
+                  Arbeitet ihr auch mit bestehenden Lösungen?
+                </summary>
+                <p className="mt-3 text-gray-400 leading-relaxed">
+                  Ja. Wir übernehmen Weiterentwicklung, stabilisieren Code und bauen gezielt neue Funktionen ein –
+                  ohne das System unnötig zu verkomplizieren.
+                </p>
+              </details>
+            </div>
+
+            <div className="glass rounded-2xl border border-white/10 p-6">
+              <details>
+                <summary className="cursor-pointer text-white font-medium">
+                  Wie schnell bekommt man eine Rückmeldung?
+                </summary>
+                <p className="mt-3 text-gray-400 leading-relaxed">
+                  Üblicherweise melden wir uns zeitnah. In der Antwort bekommst du einen konkreten Vorschlag für
+                  nächste Schritte.
+                </p>
+              </details>
             </div>
           </div>
         </div>

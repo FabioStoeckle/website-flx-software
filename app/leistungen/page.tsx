@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { services } from "@/data/services";
 import { ServiceCard } from "@/components/brand/ServiceCard";
+import { ContactForm } from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
   title: "Leistungen | FLX-Software",
@@ -11,6 +12,17 @@ export const metadata: Metadata = {
 };
 
 export default function LeistungenPage() {
+  const serviceSchema = services.map((s) => ({
+    "@type": "Service",
+    name: s.title,
+    description: s.description,
+    provider: {
+      "@type": "Organization",
+      name: "FLX-Software",
+      url: "https://flx-software.de",
+    },
+  }));
+
   return (
     <>
       <section className="relative pt-32 pb-16">
@@ -50,7 +62,7 @@ export default function LeistungenPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {services.map((service) => (
               <ServiceCard key={service.key} service={service} />
             ))}
@@ -67,29 +79,29 @@ export default function LeistungenPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="glass rounded-2xl border border-white/10 p-7">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+            <div className="glass rounded-2xl border border-white/10 p-7 h-full flex flex-col">
               <div className="text-flx-cyan font-mono text-3xl font-semibold">01</div>
               <h3 className="mt-3 text-xl font-medium text-white">Kickoff & Scope</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
                 Ziele, Constraints und Deliverables – damit das Projekt von Anfang an klar ist.
               </p>
             </div>
-            <div className="glass rounded-2xl border border-white/10 p-7">
+            <div className="glass rounded-2xl border border-white/10 p-7 h-full flex flex-col">
               <div className="text-flx-cyan font-mono text-3xl font-semibold">02</div>
               <h3 className="mt-3 text-xl font-medium text-white">Design & Setup</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
                 UI-Grundlagen, Daten-Setup und technische Basis, die später nicht bremst.
               </p>
             </div>
-            <div className="glass rounded-2xl border border-white/10 p-7">
+            <div className="glass rounded-2xl border border-white/10 p-7 h-full flex flex-col">
               <div className="text-flx-cyan font-mono text-3xl font-semibold">03</div>
               <h3 className="mt-3 text-xl font-medium text-white">Umsetzung in Sprints</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
                 Kurze Iterationen mit funktionierenden Zwischenständen statt monatelanger Wartezeit.
               </p>
             </div>
-            <div className="glass rounded-2xl border border-white/10 p-7">
+            <div className="glass rounded-2xl border border-white/10 p-7 h-full flex flex-col">
               <div className="text-flx-cyan font-mono text-3xl font-semibold">04</div>
               <h3 className="mt-3 text-xl font-medium text-white">Launch & Weiterbau</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
@@ -117,6 +129,47 @@ export default function LeistungenPage() {
           </div>
         </div>
       </section>
+
+      {/* Projektanfrage (Ziel für Sticky-CTA) */}
+      <section id="kontakt-anfrage" className="py-20 sm:py-28 bg-black/30">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-10 lg:grid-cols-5 lg:items-start">
+            <div className="lg:col-span-2">
+              <h2 className="text-4xl sm:text-5xl font-light text-white">Projekt anfragen</h2>
+              <p className="mt-3 text-lg text-gray-400 leading-relaxed">
+                Kurz den Scope nennen. Wir melden uns mit einem pragmatischen Vorschlag für nächste Schritte.
+              </p>
+              <div className="mt-8 glass rounded-2xl border border-white/10 p-6 h-full flex flex-col">
+                <div className="text-sm text-gray-400 leading-relaxed">
+                  Du bekommst von uns: klaren Ablauf, realistische Einschätzung und ein umsetzbares Konzept.
+                </div>
+                <div className="mt-auto pt-4 text-xs text-gray-500">
+                  Tipp: Zeitrahmen + “Fertig heißt…” hilft.
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-3">
+              <div className="glass rounded-2xl border border-white/10 p-8">
+                <h3 className="mb-2 text-2xl font-medium text-white">Kurzformular</h3>
+                <p className="mb-6 text-gray-400 leading-relaxed">
+                  Name, E-Mail und Projektidee – fertig.
+                </p>
+                <ContactForm />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": serviceSchema,
+          }),
+        }}
+      />
     </>
   );
 }

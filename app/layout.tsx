@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { StickyProjectCTA } from "@/components/contact/StickyProjectCTA";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon-32x32.png",
   },
 };
 
@@ -76,10 +77,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "FLX-Software",
+    url: "https://flx-software.de",
+    logo: "https://flx-software.de/brand/flx-logo-top-left.png",
+    email: "info@flx-software.de",
+  };
+
   return (
     <html lang="de" className={`${inter.variable} ${jetbrainsMono.variable} ${rajdhani.variable}`}>
+      <head>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body className="flex min-h-screen flex-col antialiased">
         <Navigation />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+        <StickyProjectCTA />
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
