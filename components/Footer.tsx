@@ -13,7 +13,8 @@ export function Footer() {
           <div className="md:col-span-2">
             <Logo variant="dark" size="sm" className="mb-6" />
             <p className="mb-6 text-gray-400 leading-relaxed max-w-md">
-              Software, die arbeitet. Apps und Tools, die Probleme lösen – schnell, stabil, wartbar.
+              FLX-Software entwickelt digitale Produkte, Web-Apps und Websites für Unternehmen und Teams.
+              Sauber gebaut. Schnell live. Wartbar weiterentwickelt.
             </p>
             <div className="flex gap-4">
               <a
@@ -52,10 +53,26 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
+                  href="/produkte"
+                  className="text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  Produkte
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/leistungen"
                   className="text-gray-400 transition-colors hover:text-cyan-400"
                 >
-                  Services
+                  Leistungen
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/referenzen"
+                  className="text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  Referenzen
                 </Link>
               </li>
               <li>
@@ -63,7 +80,7 @@ export function Footer() {
                   href="/ueber-uns"
                   className="text-gray-400 transition-colors hover:text-cyan-400"
                 >
-                  About
+                  Über FLX-Software
                 </Link>
               </li>
               <li>
@@ -71,7 +88,7 @@ export function Footer() {
                   href="/kontakt"
                   className="text-gray-400 transition-colors hover:text-cyan-400"
                 >
-                  Contact
+                  Kontakt
                 </Link>
               </li>
             </ul>

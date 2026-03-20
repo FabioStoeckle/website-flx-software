@@ -4,9 +4,9 @@ import { Section } from "@/components/Section";
 import { ArrowRight, Shield, Lock, FileCheck, Server, Eye, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Sicherheit & Datenschutz | DSGVO-konforme Handwerk App",
+  title: "Sicherheit & Datenschutz | FLX-Software",
   description:
-    "DSGVO, EU-Datenhaltung, Verschlüsselung at-rest & in-transit. Audit-Trail, Backups, Penetration-Tests. Rechtssicher für Handwerksbetriebe.",
+    "DSGVO, EU-Datenhaltung, Verschlüsselung at-rest & in-transit. Audit-Trail, Backups, Penetration-Tests. Rechtssicher für Unternehmen und Projekte.",
 };
 
 export default function SicherheitPage() {

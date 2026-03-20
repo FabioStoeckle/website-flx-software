@@ -18,6 +18,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/produkte`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/referenzen`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    },
+    {
       url: `${baseUrl}/ueber-uns`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
@@ -28,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/sicherheit`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.35,
     },
     {
       url: `${baseUrl}/impressum`,
@@ -43,13 +61,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const customerPages = customersData.map((customer) => ({
-    url: `${baseUrl}/kunden/${customer.slug}`,
+  const referencePages = customersData.map((customer) => ({
+    url: `${baseUrl}/referenzen/${customer.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
-  return [...staticPages, ...customerPages];
+  return [...staticPages, ...referencePages];
 }
 

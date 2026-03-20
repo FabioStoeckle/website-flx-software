@@ -8,10 +8,11 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "/leistungen", label: "Services" },
-  { href: "/preise", label: "Preise" },
-  { href: "/ueber-uns", label: "About" },
-  { href: "/kontakt", label: "Contact" },
+  { href: "/", label: "Start" },
+  { href: "/produkte", label: "Produkte" },
+  { href: "/leistungen", label: "Leistungen" },
+  { href: "/referenzen", label: "Referenzen" },
+  { href: "/ueber-uns", label: "Über FLX-Software" },
 ];
 
 export function Navigation() {
@@ -34,17 +35,17 @@ export function Navigation() {
                 href={item.href}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-cyan-400",
-                  pathname === item.href ? "text-cyan-400" : "text-gray-300"
+                  (pathname === item.href || (item.href === "/" && pathname === "/")) ? "text-cyan-400" : "text-gray-300"
                 )}
               >
                 {item.label}
               </Link>
             ))}
-              <Link href="/kontakt">
-                <button className="raycast-button px-4 py-2 text-sm font-medium text-white">
-                  Live-Demo
-                </button>
-              </Link>
+            <Link href="/kontakt">
+              <button className="raycast-button px-4 py-2 text-sm font-medium text-white">
+                Projekt anfragen
+              </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -67,18 +68,18 @@ export function Navigation() {
                   href={item.href}
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-cyan-400",
-                    pathname === item.href ? "text-cyan-400" : "text-gray-300"
+                    (pathname === item.href || (item.href === "/" && pathname === "/")) ? "text-cyan-400" : "text-gray-300"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-                <Link href="/kontakt" onClick={() => setMobileMenuOpen(false)}>
-                  <button className="raycast-button w-full px-4 py-2 text-sm font-medium text-white">
-                    Live-Demo
-                  </button>
-                </Link>
+              <Link href="/kontakt" onClick={() => setMobileMenuOpen(false)}>
+                <button className="raycast-button w-full px-4 py-2 text-sm font-medium text-white">
+                  Projekt anfragen
+                </button>
+              </Link>
             </div>
           </div>
         )}

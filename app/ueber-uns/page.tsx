@@ -1,133 +1,110 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight, MessageSquare, Target, Zap } from "lucide-react";
 import { Section } from "@/components/Section";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Zap, MessageSquare, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Über uns",
+  title: "Über FLX-Software | FLX-Software",
   description:
-    "FLX Software – Software-Entwicklung mit Pragmatismus, Stabilität und Klartext. By Fabio Stöckle.",
+    "FLX-Software steht für pragmatische Entwicklung: digitale Produkte, PWAs und Websites, die im Alltag funktionieren.",
 };
 
 export default function UeberUnsPage() {
   return (
     <>
-      {/* Hero */}
-      <Section className="pt-32">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h1 className="mb-6 text-5xl md:text-6xl font-light text-white">
-            Über uns
-          </h1>
-          <p className="text-xl text-gray-400 font-light">
-            Software-Entwicklung ohne Buzzwords. Pragmatisch, stabil, klar.
+      <section className="relative pt-32 pb-16">
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-slate-950" />
+        <div className="absolute inset-0 bg-[url('/brand/flx-handy-wallpaper.png')] bg-cover bg-center opacity-8" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+
+        <div className="relative mx-auto max-w-7xl px-6">
+          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Über FLX-Software</h1>
+          <p className="mt-4 max-w-3xl text-lg text-gray-400 leading-relaxed">
+            FLX-Software ist eine Dachmarke für digitale Produkte und Weblösungen. Wir bauen Software, die klar strukturiert ist
+            und im Alltag genutzt wird.
           </p>
         </div>
-      </Section>
+      </section>
 
-      {/* Mission */}
       <Section>
-        <div className="mx-auto max-w-4xl px-6">
-          <div className="glass rounded-3xl p-12">
-            <h2 className="mb-8 text-3xl font-light text-white">Warum wir Software anders denken</h2>
-            <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
-              <p>
-                Wir bauen Software, die tatsächlich benutzt wird. Keine monatelangen
-                Planungsphasen, keine aufgeblähten Frameworks, keine unnötigen Meetings.
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid lg:grid-cols-2 gap-6 items-start">
+            <div className="glass rounded-2xl border border-white/10 p-8">
+              <h2 className="text-3xl font-light text-white">Unsere Haltung</h2>
+              <p className="mt-3 text-gray-400 leading-relaxed">
+                Keine Buzzword-Show. Wir entscheiden pragmatisch: was bringt dem Projekt echten Nutzen, was ist technisch
+                sinnvoll, was macht die Zusammenarbeit leichter.
               </p>
-              <p>
-                Stattdessen: Schnelle MVPs, klare Kommunikation, saubere Code-Basen. Wir glauben an
-                kurze Iterationszyklen, echtes Feedback und pragmatische Lösungen.
+
+              <div className="mt-7 space-y-5">
+                <div className="flex gap-4">
+                  <Target className="h-7 w-7 text-cyan-400" />
+                  <div>
+                    <h3 className="text-xl font-medium text-white">Pragmatismus</h3>
+                    <p className="mt-1 text-gray-400 leading-relaxed">
+                      Die beste Lösung ist die, die funktioniert – nicht die, die am schicksten klingt.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Zap className="h-7 w-7 text-cyan-400" />
+                  <div>
+                    <h3 className="text-xl font-medium text-white">Stabil & wartbar</h3>
+                    <p className="mt-1 text-gray-400 leading-relaxed">
+                      Saubere Architektur, klare Zuständigkeiten und Updates, die planbar bleiben.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <MessageSquare className="h-7 w-7 text-cyan-400" />
+                  <div>
+                    <h3 className="text-xl font-medium text-white">Klarer Austausch</h3>
+                    <p className="mt-1 text-gray-400 leading-relaxed">
+                      Kurze Wege, verständliche Status-Updates und Entscheidungen mit nachvollziehbarem Warum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass rounded-2xl border border-white/10 p-8">
+              <h2 className="text-3xl font-light text-white">Was du bekommst</h2>
+              <p className="mt-3 text-gray-400 leading-relaxed">
+                Eine Zusammenarbeit, die nicht aus dem Takt gerät – und ein Ergebnis, das Teams wirklich nutzen.
               </p>
-              <p>
-                Unsere Kunden sind Handwerksbetriebe, die ihre Prozesse digitalisieren wollen,
-                Startups, die schnell einen Prototypen brauchen, und etablierte Unternehmen, die
-                interne Tools modernisieren möchten.
-              </p>
+
+              <ul className="mt-6 space-y-3 text-gray-300">
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                  <span>Strukturiertes Produkt-/Projekt-Setup und klare Deliverables</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                  <span>Design, Entwicklung und Qualitätssicherung aus einem Ablauf</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                  <span>Weiterentwicklung nach Launch – wenn du mehr willst</span>
+                </li>
+              </ul>
+
+              <div className="mt-8 rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
+                <p className="text-gray-400 leading-relaxed">
+                  Du suchst eine Dachmarke, die Produkte und Projekte sauber bündelt? Dann passt FLX-Software.
+                </p>
+                <div className="mt-6">
+                  <Link href="/kontakt">
+                    <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
+                      Projekt anfragen
+                      <ArrowRight className="ml-2 inline-block h-5 w-5" />
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </Section>
-
-      {/* Values */}
-      <Section className="bg-slate-50">
-        <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">Unsere Werte</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <Card>
-            <CardHeader>
-              <Target className="mb-4 h-10 w-10 text-sky-500" />
-              <CardTitle>Pragmatismus</CardTitle>
-              <CardDescription>
-                Die beste Lösung ist die, die funktioniert. Nicht die eleganteste, nicht die
-                trendigste – die, die das Problem löst.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <Zap className="mb-4 h-10 w-10 text-sky-500" />
-              <CardTitle>Stabilität</CardTitle>
-              <CardDescription>
-                Code, der heute funktioniert und morgen noch wartet werden kann. Tests, Types,
-                Dokumentation – keine Verhandlungssache.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <MessageSquare className="mb-4 h-10 w-10 text-sky-500" />
-              <CardTitle>Klartext</CardTitle>
-              <CardDescription>
-                Keine Buzzwords, keine leeren Versprechen. Wir sagen, was geht, was nicht geht und
-                warum. Transparent, direkt, ehrlich.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-        </div>
-      </Section>
-
-      {/* Team */}
-      <Section>
-        <div className="mx-auto max-w-4xl px-6">
-          <div className="glass rounded-3xl p-12 text-center">
-            <h2 className="mb-8 text-3xl font-light text-white">by Fabio Stöckle</h2>
-            <div className="space-y-6 text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              <p>
-                FLX Software ist ein Ein-Mann-Studio mit Fokus auf moderne Web-Technologien und
-                pragmatische Lösungen.
-              </p>
-              <p>
-                Fabio Stöckle entwickelt seit über 10 Jahren Software – von Startups bis
-                Mittelstand, von PWAs bis AI-Automation. Sein Fokus: Schnelle MVPs, sauberer Code,
-                klare Kommunikation.
-              </p>
-              <p>
-                Kein Buzzword, kein Lebenslauf – mehr Persönlichkeit. Pragmatismus, Klartext, 
-                Verantwortung, Erfahrung aus IT & Handwerk.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* CTA */}
-      <Section>
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="mb-6 text-5xl md:text-6xl font-light text-white">
-            Lass uns zusammenarbeiten
-          </h2>
-          <p className="mb-12 text-xl text-gray-400 font-light">
-            Ob Discovery Sprint, MVP oder Maintenance – wir finden die richtige Lösung für dein Projekt.
-          </p>
-          <Link href="/kontakt">
-            <button className="raycast-button px-8 py-4 text-lg font-medium text-white">
-              Jetzt Kontakt aufnehmen
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
-          </Link>
         </div>
       </Section>
     </>
