@@ -69,28 +69,28 @@ export default function LeistungenPage() {
 
           <div className="grid md:grid-cols-4 gap-6">
             <div className="glass rounded-2xl border border-white/10 p-7">
-              <div className="text-cyan-300 font-mono text-3xl font-semibold">01</div>
+              <div className="text-flx-cyan font-mono text-3xl font-semibold">01</div>
               <h3 className="mt-3 text-xl font-medium text-white">Kickoff & Scope</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
                 Ziele, Constraints und Deliverables – damit das Projekt von Anfang an klar ist.
               </p>
             </div>
             <div className="glass rounded-2xl border border-white/10 p-7">
-              <div className="text-cyan-300 font-mono text-3xl font-semibold">02</div>
+              <div className="text-flx-cyan font-mono text-3xl font-semibold">02</div>
               <h3 className="mt-3 text-xl font-medium text-white">Design & Setup</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
                 UI-Grundlagen, Daten-Setup und technische Basis, die später nicht bremst.
               </p>
             </div>
             <div className="glass rounded-2xl border border-white/10 p-7">
-              <div className="text-cyan-300 font-mono text-3xl font-semibold">03</div>
+              <div className="text-flx-cyan font-mono text-3xl font-semibold">03</div>
               <h3 className="mt-3 text-xl font-medium text-white">Umsetzung in Sprints</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
                 Kurze Iterationen mit funktionierenden Zwischenständen statt monatelanger Wartezeit.
               </p>
             </div>
             <div className="glass rounded-2xl border border-white/10 p-7">
-              <div className="text-cyan-300 font-mono text-3xl font-semibold">04</div>
+              <div className="text-flx-cyan font-mono text-3xl font-semibold">04</div>
               <h3 className="mt-3 text-xl font-medium text-white">Launch & Weiterbau</h3>
               <p className="mt-2 text-gray-400 leading-relaxed">
                 Go-live, Stabilität und gezielte Verbesserungen – ohne Überraschungen.

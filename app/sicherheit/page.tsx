@@ -56,25 +56,25 @@ export default function SicherheitPage() {
 
             {/* Verschlüsselung */}
             <div className="glass rounded-2xl p-8">
-              <div className="w-12 h-12 bg-cyan-400/20 rounded-xl flex items-center justify-center mb-6">
-                <Lock className="h-6 w-6 text-cyan-400" />
+              <div className="w-12 h-12 bg-flx-cyan/20 rounded-xl flex items-center justify-center mb-6">
+                <Lock className="h-6 w-6 text-flx-cyan" />
               </div>
               <h3 className="text-xl font-medium text-white mb-4">Verschlüsselung</h3>
               <ul className="space-y-3 text-sm text-gray-400">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-cyan-400" />
+                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-flx-cyan" />
                   <span>HTTPS, TLS 1.3 (in-transit)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-cyan-400" />
+                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-flx-cyan" />
                   <span>AES-256 Datenbankverschlüsselung (at-rest)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-cyan-400" />
+                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-flx-cyan" />
                   <span>Passwort-Hashing (bcrypt, Argon2)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-cyan-400" />
+                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-flx-cyan" />
                   <span>Sichere API-Kommunikation (JWT, OAuth)</span>
                 </li>
               </ul>

@@ -41,7 +41,7 @@ export default function UeberUnsPage() {
 
               <div className="mt-7 space-y-5">
                 <div className="flex gap-4">
-                  <Target className="h-7 w-7 text-cyan-400" />
+                  <Target className="h-7 w-7 text-flx-cyan" />
                   <div>
                     <h3 className="text-xl font-medium text-white">Pragmatismus</h3>
                     <p className="mt-1 text-gray-400 leading-relaxed">
@@ -51,7 +51,7 @@ export default function UeberUnsPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <Zap className="h-7 w-7 text-cyan-400" />
+                  <Zap className="h-7 w-7 text-flx-cyan" />
                   <div>
                     <h3 className="text-xl font-medium text-white">Stabil & wartbar</h3>
                     <p className="mt-1 text-gray-400 leading-relaxed">
@@ -61,7 +61,7 @@ export default function UeberUnsPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <MessageSquare className="h-7 w-7 text-cyan-400" />
+                  <MessageSquare className="h-7 w-7 text-flx-cyan" />
                   <div>
                     <h3 className="text-xl font-medium text-white">Klarer Austausch</h3>
                     <p className="mt-1 text-gray-400 leading-relaxed">
@@ -80,15 +80,15 @@ export default function UeberUnsPage() {
 
               <ul className="mt-6 space-y-3 text-gray-300">
                 <li className="flex items-start gap-3">
-                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
                   <span>Strukturiertes Produkt-/Projekt-Setup und klare Deliverables</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
                   <span>Design, Entwicklung und Qualitätssicherung aus einem Ablauf</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
                   <span>Weiterentwicklung nach Launch – wenn du mehr willst</span>
                 </li>
               </ul>
@@ -121,9 +121,9 @@ export default function UeberUnsPage() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-12 md:auto-rows-fr items-stretch">
-            {/* Featured: Google-Zertifikat */}
-            <div className="md:col-span-6 md:row-span-2">
+          <div className="grid gap-6 md:grid-cols-12 md:grid-rows-2 items-stretch">
+            {/* Featured: Google-Zertifikat (left, 2 rows) */}
+            <div className="md:col-span-6 md:row-span-2 h-full">
               {qualifications
                 .filter((q) => q.kind === "document")
                 .map((q) => (
@@ -139,37 +139,64 @@ export default function UeberUnsPage() {
                 ))}
             </div>
 
-            {/* Compact cards: Ausbildung + Weiterbildung */}
-            {qualifications
-              .filter((q) => q.kind === "text")
-              .slice(0, 2)
-              .map((q) => (
-                <div key={q.id} className="md:col-span-3">
-                  <QualificationTextCard
-                    status={q.status}
-                    title={q.title}
-                    hint={q.hint}
-                    description={q.description}
-                    relevance={q.relevance}
-                  />
-                </div>
-              ))}
+            {/* Ausbildung (top, right) */}
+            <div className="md:col-span-3 md:row-span-1 h-full">
+              {qualifications
+                .filter((q) => q.kind === "text")
+                .slice(0, 2)
+                .map((q) => {
+                  if (q.id !== "fiadevelop-ihk") return null;
+                  return (
+                    <QualificationTextCard
+                      key={q.id}
+                      status={q.status}
+                      title={q.title}
+                      hint={q.hint}
+                      description={q.description}
+                      relevance={q.relevance}
+                    />
+                  );
+                })}
+            </div>
 
-            {/* Experience: larger proof on the right (still text-based) */}
-            {qualifications
-              .filter((q) => q.kind === "text")
-              .slice(2)
-              .map((q) => (
-                <div key={q.id} className="md:col-span-6">
-                  <QualificationTextCard
-                    status={q.status}
-                    title={q.title}
-                    hint={q.hint}
-                    description={q.description}
-                    relevance={q.relevance}
-                  />
-                </div>
-              ))}
+            {/* Weiterbildung (top, right) */}
+            <div className="md:col-span-3 md:row-span-1 h-full">
+              {qualifications
+                .filter((q) => q.kind === "text")
+                .slice(0, 2)
+                .map((q) => {
+                  if (q.id !== "bachelorpro-infosec") return null;
+                  return (
+                    <QualificationTextCard
+                      key={q.id}
+                      status={q.status}
+                      title={q.title}
+                      hint={q.hint}
+                      description={q.description}
+                      relevance={q.relevance}
+                    />
+                  );
+                })}
+            </div>
+
+            {/* Experience (bottom, right - spans both top columns) */}
+            <div className="md:col-span-6 md:row-span-1 h-full">
+              {qualifications
+                .filter((q) => q.kind === "text")
+                .map((q) => {
+                  if (q.id !== "experience-since-2019") return null;
+                  return (
+                    <QualificationTextCard
+                      key={q.id}
+                      status={q.status}
+                      title={q.title}
+                      hint={q.hint}
+                      description={q.description}
+                      relevance={q.relevance}
+                    />
+                  );
+                })}
+            </div>
           </div>
         </div>
       </Section>

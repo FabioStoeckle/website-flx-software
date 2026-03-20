@@ -4,7 +4,7 @@ import type { Product } from "@/data/products";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <div className="glass rounded-2xl border border-white/10 p-7 transition-transform duration-200 hover:-translate-y-1 hover:border-cyan-400/40">
+    <div className="glass rounded-2xl border border-white/10 p-7 transition-transform duration-200 hover:-translate-y-1 hover:border-flx-cyan/40">
       <div className="flex items-start justify-between gap-4">
         <Badge variant="accent">{product.category}</Badge>
         <div className="text-right text-sm text-gray-400">Produkt</div>
@@ -16,7 +16,7 @@ export function ProductCard({ product }: { product: Product }) {
       <ul className="mt-5 space-y-2 text-sm text-gray-300">
         {product.benefits.slice(0, 3).map((b) => (
           <li key={b} className="flex items-start gap-2">
-            <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+            <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
             <span>{b}</span>
           </li>
         ))}

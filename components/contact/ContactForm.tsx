@@ -45,7 +45,7 @@ export function ContactForm() {
           required
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-cyan-400/60 focus:outline-none focus:ring-2 focus:ring-cyan-400/30"
+          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-flx-cyan/60 focus:outline-none focus:ring-2 focus:ring-flx-cyan/30"
         />
       </div>
 
@@ -59,7 +59,7 @@ export function ContactForm() {
           required
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-cyan-400/60 focus:outline-none focus:ring-2 focus:ring-cyan-400/30"
+          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-flx-cyan/60 focus:outline-none focus:ring-2 focus:ring-flx-cyan/30"
         />
       </div>
 
@@ -72,7 +72,7 @@ export function ContactForm() {
           id="company"
           value={formData.company}
           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-cyan-400/60 focus:outline-none focus:ring-2 focus:ring-cyan-400/30"
+          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-flx-cyan/60 focus:outline-none focus:ring-2 focus:ring-flx-cyan/30"
         />
       </div>
 
@@ -86,7 +86,7 @@ export function ContactForm() {
           rows={6}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-cyan-400/60 focus:outline-none focus:ring-2 focus:ring-cyan-400/30"
+          className="w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:border-flx-cyan/60 focus:outline-none focus:ring-2 focus:ring-flx-cyan/30"
         />
       </div>
 
@@ -97,11 +97,11 @@ export function ContactForm() {
           required
           checked={formData.privacy}
           onChange={(e) => setFormData({ ...formData, privacy: e.target.checked })}
-          className="mt-1 h-4 w-4 rounded border-white/20 bg-white/5 text-cyan-400 focus:ring-cyan-400/30"
+          className="mt-1 h-4 w-4 rounded border-white/20 bg-white/5 text-flx-cyan focus:ring-flx-cyan/30"
         />
         <label htmlFor="privacy" className="text-sm text-gray-400 leading-relaxed">
           Ich habe die{" "}
-          <Link href="/datenschutz" className="text-cyan-400 hover:underline">
+        <Link href="/datenschutz" className="text-flx-cyan hover:underline">
             Datenschutzerklärung
           </Link>{" "}
           gelesen und stimme der Verarbeitung meiner Daten zu. *

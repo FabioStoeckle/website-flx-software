@@ -34,7 +34,7 @@ export default function KontaktPage() {
                 <h2 className="text-2xl font-medium text-white">Direkt erreichen</h2>
                 <div className="mt-6 space-y-5">
                   <div className="flex items-start gap-4">
-                    <Mail className="h-6 w-6 text-cyan-400 mt-0.5" />
+                    <Mail className="h-6 w-6 text-flx-cyan mt-0.5" />
                     <div>
                       <div className="text-white font-medium">E-Mail</div>
                       <a
@@ -46,7 +46,7 @@ export default function KontaktPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <MapPin className="h-6 w-6 text-cyan-400 mt-0.5" />
+                    <MapPin className="h-6 w-6 text-flx-cyan mt-0.5" />
                     <div>
                       <div className="text-white font-medium">Standort</div>
                       <div className="mt-1 text-gray-400">Deutschland (Remote & vor Ort)</div>

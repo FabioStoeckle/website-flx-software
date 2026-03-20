@@ -21,7 +21,7 @@ export function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-cyan-400"
+                className="text-gray-500 transition-colors hover:text-flx-cyan"
                 aria-label="GitHub"
               >
                 <Github size={20} />
@@ -30,7 +30,7 @@ export function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-cyan-400"
+                className="text-gray-500 transition-colors hover:text-flx-cyan"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -39,7 +39,7 @@ export function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-cyan-400"
+                className="text-gray-500 transition-colors hover:text-flx-cyan"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
@@ -54,7 +54,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/produkte"
-                  className="text-gray-400 transition-colors hover:text-cyan-400"
+                  className="text-gray-400 transition-colors hover:text-flx-cyan"
                 >
                   Produkte
                 </Link>
@@ -62,7 +62,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/leistungen"
-                  className="text-gray-400 transition-colors hover:text-cyan-400"
+                  className="text-gray-400 transition-colors hover:text-flx-cyan"
                 >
                   Leistungen
                 </Link>
@@ -70,7 +70,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/ueber-uns"
-                  className="text-gray-400 transition-colors hover:text-cyan-400"
+                  className="text-gray-400 transition-colors hover:text-flx-cyan"
                 >
                   Über FLX-Software
                 </Link>
@@ -78,7 +78,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/kontakt"
-                  className="text-gray-400 transition-colors hover:text-cyan-400"
+                  className="text-gray-400 transition-colors hover:text-flx-cyan"
                 >
                   Kontakt
                 </Link>
@@ -93,7 +93,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/sicherheit"
-                    className="text-gray-400 transition-colors hover:text-cyan-400"
+                    className="text-gray-400 transition-colors hover:text-flx-cyan"
                   >
                     Sicherheit & DSGVO
                   </Link>
@@ -101,7 +101,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/impressum"
-                    className="text-gray-400 transition-colors hover:text-cyan-400"
+                    className="text-gray-400 transition-colors hover:text-flx-cyan"
                   >
                     Impressum
                   </Link>
@@ -109,7 +109,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/datenschutz"
-                    className="text-gray-400 transition-colors hover:text-cyan-400"
+                    className="text-gray-400 transition-colors hover:text-flx-cyan"
                   >
                     Datenschutz
                   </Link>
@@ -117,7 +117,7 @@ export function Footer() {
                 <li>
                   <a
                     href="mailto:info@flx-software.de"
-                    className="flex items-center gap-2 text-gray-400 transition-colors hover:text-cyan-400"
+                  className="flex items-center gap-2 text-gray-400 transition-colors hover:text-flx-cyan"
                   >
                     <Mail size={16} />
                     info@flx-software.de

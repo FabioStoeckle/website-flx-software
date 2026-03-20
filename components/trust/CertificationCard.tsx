@@ -20,16 +20,16 @@ export function CertificationCard({
   documentHref,
 }: CertificationCardProps) {
   return (
-    <div className="glass rounded-2xl border border-white/10 p-7">
+    <div className="glass rounded-2xl border border-white/10 p-7 h-full flex flex-col">
       <div className="flex items-start justify-between gap-6">
         <div className="flex items-start gap-4">
-          <div className="w-12 h-12 rounded-2xl bg-cyan-400/15 ring-1 ring-cyan-400/20 flex items-center justify-center">
-            <FileCheck className="h-6 w-6 text-cyan-300" />
+          <div className="w-12 h-12 rounded-2xl bg-flx-cyan/15 ring-1 ring-flx-cyan/20 flex items-center justify-center">
+            <FileCheck className="h-6 w-6 text-flx-cyan" />
           </div>
           <div>
             <div className="text-sm text-gray-400">{subtitle}</div>
             <h3 className="mt-1 text-2xl font-medium text-white">{title}</h3>
-            <div className="mt-2 text-sm text-cyan-300">{issuer}</div>
+            <div className="mt-2 text-sm text-flx-cyan">{issuer}</div>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ export function CertificationCard({
 
       <p className="mt-5 text-gray-400 leading-relaxed">{description}</p>
 
-      <div className="mt-6 grid md:grid-cols-5 gap-6 items-center">
+      <div className="mt-auto grid md:grid-cols-5 gap-6 items-stretch">
         <div className="md:col-span-2 relative overflow-hidden rounded-xl border border-white/10 bg-white/5">
           <div className="relative aspect-[4/3] w-full">
             <Image
@@ -75,7 +75,7 @@ export function CertificationCard({
                 href={documentHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cyan-300 hover:text-cyan-200 transition-colors text-sm font-medium inline-flex items-center gap-2"
+                className="text-flx-cyan hover:text-flx-cyan/90 transition-colors text-sm font-medium inline-flex items-center gap-2"
               >
                 PDF öffnen
                 <ArrowRight size={16} />

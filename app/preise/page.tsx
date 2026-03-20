@@ -42,7 +42,7 @@ export default function PreisePage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid lg:grid-cols-3 gap-6">
             <div className="glass rounded-2xl border border-white/10 p-8">
-              <div className="text-cyan-300 font-mono text-3xl font-semibold">Festpreis</div>
+              <div className="text-flx-cyan font-mono text-3xl font-semibold">Festpreis</div>
               <h2 className="mt-3 text-2xl font-medium text-white">Wenn der Scope klar ist</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
                 Ideal für Websites und Landingpages mit definiertem Umfang – du bekommst einen planbaren Preis und einen
@@ -50,47 +50,47 @@ export default function PreisePage() {
               </p>
               <ul className="mt-6 space-y-2 text-sm text-gray-300">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-400" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-flx-cyan" />
                   <span>Sauberer Funktionsumfang & Deliverables</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-400" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-flx-cyan" />
                   <span>Klarer Launch-Plan</span>
                 </li>
               </ul>
             </div>
 
             <div className="glass rounded-2xl border border-white/10 p-8">
-              <div className="text-cyan-300 font-mono text-3xl font-semibold">Sprints</div>
+              <div className="text-flx-cyan font-mono text-3xl font-semibold">Sprints</div>
               <h2 className="mt-3 text-2xl font-medium text-white">Wenn es iterativ wird</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
                 Für Web-Apps, PWAs und Tools: kurze Iterationen, echte Zwischenstände, Feedback und gezielter Weiterbau.
               </p>
               <ul className="mt-6 space-y-2 text-sm text-gray-300">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-400" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-flx-cyan" />
                   <span>Planbarkeit über Roadmap & Sprint-Ziele</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-400" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-flx-cyan" />
                   <span>Transparente Ergebnisse statt Status-Theater</span>
                 </li>
               </ul>
             </div>
 
             <div className="glass rounded-2xl border border-white/10 p-8">
-              <div className="text-cyan-300 font-mono text-3xl font-semibold">Support</div>
+              <div className="text-flx-cyan font-mono text-3xl font-semibold">Support</div>
               <h2 className="mt-3 text-2xl font-medium text-white">Nach dem Launch</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
                 Updates, Bugfixes, Performance und Security. Für Teams, die nicht “fertig” spielen, sondern langfristig arbeiten.
               </p>
               <ul className="mt-6 space-y-2 text-sm text-gray-300">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-400" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-flx-cyan" />
                   <span>Wartung & gezielte Feature-Sprints</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-cyan-400" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-flx-cyan" />
                   <span>Stabilität & saubere Deployments</span>
                 </li>
               </ul>

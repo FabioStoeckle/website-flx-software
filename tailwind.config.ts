@@ -44,7 +44,8 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
         // FLX Brand Colors
-        "flx-cyan": "#22D3EE",
+        // Secondary brand color
+        "flx-cyan": "#006de7",
         "flx-blue": "#0EA5E9",
         "flx-gray": "#111827",
         "flx-slate": "#F8FAFC",

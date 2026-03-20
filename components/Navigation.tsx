@@ -33,8 +33,8 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-cyan-400",
-                  (pathname === item.href || (item.href === "/" && pathname === "/")) ? "text-cyan-400" : "text-gray-300"
+                  "text-sm font-medium transition-colors hover:text-flx-cyan",
+                  (pathname === item.href || (item.href === "/" && pathname === "/")) ? "text-flx-cyan" : "text-gray-300"
                 )}
               >
                 {item.label}
@@ -66,8 +66,8 @@ export function Navigation() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-cyan-400",
-                    (pathname === item.href || (item.href === "/" && pathname === "/")) ? "text-cyan-400" : "text-gray-300"
+                    "text-sm font-medium transition-colors hover:text-flx-cyan",
+                    (pathname === item.href || (item.href === "/" && pathname === "/")) ? "text-flx-cyan" : "text-gray-300"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >

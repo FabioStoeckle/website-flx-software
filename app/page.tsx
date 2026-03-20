@@ -52,20 +52,20 @@ export default function HomePage() {
 
             <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-gray-400">
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 bg-cyan-400/20 rounded-full flex items-center justify-center">
-                  <span className="inline-block w-2.5 h-2.5 bg-cyan-400 rounded-full" />
+                <div className="w-6 h-6 bg-flx-cyan/20 rounded-full flex items-center justify-center">
+                  <span className="inline-block w-2.5 h-2.5 bg-flx-cyan rounded-full" />
                 </div>
                 <span>Produkte & Individualentwicklung aus einer Hand</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 bg-cyan-400/20 rounded-full flex items-center justify-center">
-                  <span className="inline-block w-2.5 h-2.5 bg-cyan-400 rounded-full" />
+                <div className="w-6 h-6 bg-flx-cyan/20 rounded-full flex items-center justify-center">
+                  <span className="inline-block w-2.5 h-2.5 bg-flx-cyan rounded-full" />
                 </div>
                 <span>Technisch sauber, schnell live, wartbar</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 bg-cyan-400/20 rounded-full flex items-center justify-center">
-                  <span className="inline-block w-2.5 h-2.5 bg-cyan-400 rounded-full" />
+                <div className="w-6 h-6 bg-flx-cyan/20 rounded-full flex items-center justify-center">
+                  <span className="inline-block w-2.5 h-2.5 bg-flx-cyan rounded-full" />
                 </div>
                 <span>Klare Kommunikation statt Buzzwords</span>
               </div>
