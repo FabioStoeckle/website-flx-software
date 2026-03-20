@@ -11,6 +11,7 @@ function ProductIcon({ product }: { product: Product }) {
   const Icon = (() => {
     switch (key) {
       case "angebot-fix":
+      case "rechnung-fix":
         return FileSpreadsheet;
       case "rivals11":
         return Gamepad2;
