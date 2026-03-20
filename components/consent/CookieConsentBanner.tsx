@@ -8,7 +8,16 @@ import { buildConsentAccept, buildConsentReject, getConsentFromStorage, saveCons
 function focusFirstFocusable(panel: HTMLElement | null) {
   if (!panel) return;
   const focusable = panel.querySelector<HTMLElement>("button, a[href], [tabindex]:not([tabindex='-1'])");
-  focusable?.focus?.();
+  if (!focusable) return;
+  // Wichtig: Wir wollen den Seiten-Scroll nicht verändern (sonst landet man beim Laden "mitten drin").
+  // Modernes DOM unterstützt `preventScroll`.
+  try {
+    (focusable as unknown as { focus: (opts: { preventScroll: boolean }) => void }).focus?.({
+      preventScroll: true,
+    });
+  } catch {
+    focusable.focus?.();
+  }
 }
 
 export function CookieConsentBanner() {
