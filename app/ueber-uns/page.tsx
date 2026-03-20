@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ArrowRight, MessageSquare, Target, Zap } from "lucide-react";
 import { Section } from "@/components/Section";
 import { CertificationCard } from "@/components/trust/CertificationCard";
+import { qualifications } from "@/data/qualifications";
+import { QualificationTextCard } from "@/components/trust/QualificationTextCard";
 
 export const metadata: Metadata = {
   title: "Über FLX-Software | FLX-Software",
@@ -119,15 +121,29 @@ export default function UeberUnsPage() {
             </p>
           </div>
 
-          <div className="max-w-3xl">
-            <CertificationCard
-              title="Grundlagen des Onlinemarketings"
-              subtitle="Abgeschlossenes Google-Zertifikat"
-              issuer="Bestätigte Kenntnisse durch Google"
-              description="Fundierte Grundlagen im digitalen Marketing: verstanden werden, messbar gemacht werden und im Projektkontext sinnvoll eingesetzt."
-              thumbnailSrc="/certificates/google-grundlagen-onlinemarketing-thumb.png"
-              documentHref="/certificates/google-grundlagen-onlinemarketing.pdf"
-            />
+          <div className="grid gap-6 md:grid-cols-3 items-stretch">
+            {qualifications.map((q) => {
+              if (q.kind === "document") {
+                return (
+                  <div key={q.id} className="md:col-span-2">
+                    <CertificationCard
+                      title={q.title}
+                      subtitle={q.status}
+                      issuer={q.issuer}
+                      description={q.description}
+                      thumbnailSrc={q.thumbnailSrc}
+                      documentHref={q.documentHref}
+                    />
+                  </div>
+                );
+              }
+
+              return (
+                <div key={q.id}>
+                  <QualificationTextCard status={q.status} title={q.title} hint={q.hint} description={q.description} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </Section>
