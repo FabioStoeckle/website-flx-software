@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, MessageSquare, Target, Zap } from "lucide-react";
 import { Section } from "@/components/Section";
+import { CertificationCard } from "@/components/trust/CertificationCard";
 
 export const metadata: Metadata = {
   title: "Über FLX-Software | FLX-Software",
@@ -104,6 +105,29 @@ export default function UeberUnsPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section className="bg-black/30">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-8">
+            <h2 className="text-4xl font-light text-white">Qualifikation & Know-how</h2>
+            <p className="mt-3 text-gray-400 text-lg leading-relaxed max-w-2xl">
+              Neben Design und Entwicklung fließt auch nachgewiesenes Marketing-Know-how in unsere Projekte ein.
+              So werden Inhalte nicht nur gebaut, sondern gezielt wirksam gemacht.
+            </p>
+          </div>
+
+          <div className="max-w-3xl">
+            <CertificationCard
+              title="Grundlagen des Onlinemarketings"
+              subtitle="Abgeschlossenes Google-Zertifikat"
+              issuer="Bestätigte Kenntnisse durch Google"
+              description="Fundierte Grundlagen im digitalen Marketing: verstanden werden, messbar gemacht werden und im Projektkontext sinnvoll eingesetzt."
+              thumbnailSrc="/certificates/google-grundlagen-onlinemarketing-thumb.png"
+              documentHref="/certificates/google-grundlagen-onlinemarketing.pdf"
+            />
           </div>
         </div>
       </Section>

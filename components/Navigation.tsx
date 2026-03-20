@@ -11,7 +11,6 @@ const navItems = [
   { href: "/", label: "Start" },
   { href: "/produkte", label: "Produkte" },
   { href: "/leistungen", label: "Leistungen" },
-  { href: "/referenzen", label: "Referenzen" },
   { href: "/ueber-uns", label: "Über FLX-Software" },
 ];
 

@@ -3,10 +3,8 @@ import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { services } from "@/data/services";
-import customersData from "@/data/customers.json";
 import { ProductCard } from "@/components/brand/ProductCard";
 import { ServiceCard } from "@/components/brand/ServiceCard";
-import { ProjectCard } from "@/components/brand/ProjectCard";
 
 export const metadata: Metadata = {
   title: "FLX-Software.de | Digitale Produkte & Weblösungen",
@@ -17,7 +15,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const featuredProducts = products;
   const featuredServices = services;
-  const featuredProjects = customersData.slice(0, 3);
 
   return (
     <>
@@ -151,31 +148,6 @@ export default function HomePage() {
                 <ArrowRight className="ml-2 inline-block h-5 w-5" />
               </button>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Referenzen */}
-      <section className="py-16 sm:py-24 bg-black/30">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex items-end justify-between gap-6 mb-10">
-            <div>
-              <h2 className="text-4xl sm:text-5xl font-light text-white">Referenzen</h2>
-              <p className="mt-3 text-gray-400 max-w-2xl leading-relaxed">
-                Ausgewählte Projekte als Beleg: Problem → Umsetzung → Ergebnis. So wirkt Software in der Praxis.
-              </p>
-            </div>
-            <Link href="/referenzen" className="hidden sm:inline-block">
-              <button className="text-gray-400 hover:text-white transition-colors text-lg font-medium">
-                Projekte ansehen →
-              </button>
-            </Link>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
           </div>
         </div>
       </section>

@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import customersData from "@/data/customers.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://flx-software.de";
@@ -22,12 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/referenzen`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.75,
     },
     {
       url: `${baseUrl}/ueber-uns`,
@@ -61,13 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const referencePages = customersData.map((customer) => ({
-    url: `${baseUrl}/referenzen/${customer.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  return [...staticPages, ...referencePages];
+  return staticPages;
 }
 
