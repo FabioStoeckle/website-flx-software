@@ -114,36 +114,62 @@ export default function UeberUnsPage() {
       <Section className="bg-black/30">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-8">
-            <h2 className="text-4xl font-light text-white">Qualifikation & Know-how</h2>
+            <h2 className="text-4xl font-light text-white">Qualifikation, Know-how & Praxiserfahrung</h2>
             <p className="mt-3 text-gray-400 text-lg leading-relaxed max-w-2xl">
-              Neben Design und Entwicklung fließt auch nachgewiesenes Marketing-Know-how in unsere Projekte ein.
-              So werden Inhalte nicht nur gebaut, sondern gezielt wirksam gemacht.
+              Bei FLX-Software verbinden wir nachgewiesenes Know-how mit soliden Grundlagen und echter Engineering-Praxis.
+              Das Ergebnis: Entscheidungen, Umsetzung und Ergebnisse, die im Projektalltag funktionieren.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3 items-stretch">
-            {qualifications.map((q) => {
-              if (q.kind === "document") {
-                return (
-                  <div key={q.id} className="md:col-span-2">
-                    <CertificationCard
-                      title={q.title}
-                      subtitle={q.status}
-                      issuer={q.issuer}
-                      description={q.description}
-                      thumbnailSrc={q.thumbnailSrc}
-                      documentHref={q.documentHref}
-                    />
-                  </div>
-                );
-              }
+          <div className="grid gap-6 md:grid-cols-12 md:auto-rows-fr items-stretch">
+            {/* Featured: Google-Zertifikat */}
+            <div className="md:col-span-6 md:row-span-2">
+              {qualifications
+                .filter((q) => q.kind === "document")
+                .map((q) => (
+                  <CertificationCard
+                    key={q.id}
+                    title={q.title}
+                    subtitle={q.status}
+                    issuer={q.issuer}
+                    description={q.description}
+                    thumbnailSrc={q.thumbnailSrc}
+                    documentHref={q.documentHref}
+                  />
+                ))}
+            </div>
 
-              return (
-                <div key={q.id}>
-                  <QualificationTextCard status={q.status} title={q.title} hint={q.hint} description={q.description} />
+            {/* Compact cards: Ausbildung + Weiterbildung */}
+            {qualifications
+              .filter((q) => q.kind === "text")
+              .slice(0, 2)
+              .map((q) => (
+                <div key={q.id} className="md:col-span-3">
+                  <QualificationTextCard
+                    status={q.status}
+                    title={q.title}
+                    hint={q.hint}
+                    description={q.description}
+                    relevance={q.relevance}
+                  />
                 </div>
-              );
-            })}
+              ))}
+
+            {/* Experience: larger proof on the right (still text-based) */}
+            {qualifications
+              .filter((q) => q.kind === "text")
+              .slice(2)
+              .map((q) => (
+                <div key={q.id} className="md:col-span-6">
+                  <QualificationTextCard
+                    status={q.status}
+                    title={q.title}
+                    hint={q.hint}
+                    description={q.description}
+                    relevance={q.relevance}
+                  />
+                </div>
+              ))}
           </div>
         </div>
       </Section>

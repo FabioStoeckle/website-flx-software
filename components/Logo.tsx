@@ -8,8 +8,9 @@ interface LogoProps {
 
 export function Logo({ className = "", size = "md", variant = "light" }: LogoProps) {
   // We ship brand assets via `public/brand/*` so this works with the static export.
-  const src = variant === "dark" ? "/brand/flx-logo-white-darkmode.png" : "/brand/flx-logo-white-darkmode.png";
-  const heightPx = size === "sm" ? 26 : size === "md" ? 34 : 46;
+  // Navigation uses `sm`, so we make that explicitly larger for top-left.
+  const src = "/brand/flx-logo-top-left.png";
+  const heightPx = size === "sm" ? 34 : size === "md" ? 42 : 56;
 
   return (
     <div className={`flex items-center ${className}`}>

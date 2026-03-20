@@ -5,9 +5,10 @@ type QualificationTextCardProps = {
   title: string;
   hint?: string;
   description: string;
+  relevance?: string;
 };
 
-export function QualificationTextCard({ status, title, hint, description }: QualificationTextCardProps) {
+export function QualificationTextCard({ status, title, hint, description, relevance }: QualificationTextCardProps) {
   return (
     <div className="glass rounded-2xl border border-white/10 p-7 h-full">
       <div className="flex items-start justify-between gap-6">
@@ -26,8 +27,8 @@ export function QualificationTextCard({ status, title, hint, description }: Qual
       <p className="mt-5 text-gray-400 leading-relaxed">{description}</p>
 
       <div className="mt-6 rounded-xl bg-white/5 border border-white/10 p-4 text-sm text-gray-400 leading-relaxed">
-        Relevanz für FLX-Software: Dieses Know-how fließt direkt in unsere Projekte ein – als solide Grundlage
-        für Qualität, Umsetzung und bewusste Entscheidungen.
+        {relevance ??
+          "Relevanz für FLX-Software: Dieses Know-how fließt direkt in unsere Projekte ein – als solide Grundlage für Qualität, Umsetzung und bewusste Entscheidungen."}
       </div>
     </div>
   );
