@@ -24,9 +24,9 @@ export function QualificationTextCard({ status, title, hint, description, releva
         </div>
       </div>
 
-      <p className="mt-5 text-gray-400 leading-relaxed">{description}</p>
+      <p className="mt-5 text-gray-400 leading-relaxed break-words">{description}</p>
 
-      <div className="mt-auto rounded-xl bg-white/5 border border-white/10 p-4 text-sm text-gray-400 leading-relaxed">
+      <div className="mt-auto rounded-xl bg-white/5 border border-white/10 p-4 text-sm text-gray-400 leading-relaxed break-words">
         {relevance ??
           "Relevanz für FLX-Software: Dieses Know-how fließt direkt in unsere Projekte ein – als solide Grundlage für Qualität, Umsetzung und bewusste Entscheidungen."}
       </div>

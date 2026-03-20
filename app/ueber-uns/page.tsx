@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, MessageSquare, Target, Zap } from "lucide-react";
 import { Section } from "@/components/Section";
 import { CertificationCard } from "@/components/trust/CertificationCard";
-import { qualifications } from "@/data/qualifications";
+import { qualifications, type Qualification } from "@/data/qualifications";
 import { QualificationTextCard } from "@/components/trust/QualificationTextCard";
 
 export const metadata: Metadata = {
@@ -13,6 +13,24 @@ export const metadata: Metadata = {
 };
 
 export default function UeberUnsPage() {
+  const googleCertificate = qualifications.find(
+    (q): q is Extract<Qualification, { kind: "document" }> => q.kind === "document"
+  );
+
+  const ihkQualification = qualifications.find(
+    (q): q is Extract<Qualification, { kind: "text" }> => q.kind === "text" && q.id === "fiadevelop-ihk"
+  );
+
+  const bachelorProQualification = qualifications.find(
+    (q): q is Extract<Qualification, { kind: "text" }> =>
+      q.kind === "text" && q.id === "bachelorpro-infosec"
+  );
+
+  const experienceQualification = qualifications.find(
+    (q): q is Extract<Qualification, { kind: "text" }> =>
+      q.kind === "text" && q.id === "experience-since-2019"
+  );
+
   return (
     <>
       <section className="relative pt-32 pb-16">
@@ -121,81 +139,62 @@ export default function UeberUnsPage() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-12 md:grid-rows-2 items-stretch">
-            {/* Featured: Google-Zertifikat (left, 2 rows) */}
-            <div className="md:col-span-6 md:row-span-2 h-full">
-              {qualifications
-                .filter((q) => q.kind === "document")
-                .map((q) => (
-                  <CertificationCard
-                    key={q.id}
-                    title={q.title}
-                    subtitle={q.status}
-                    issuer={q.issuer}
-                    description={q.description}
-                    thumbnailSrc={q.thumbnailSrc}
-                    documentHref={q.documentHref}
-                  />
-                ))}
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 items-stretch">
+            {/* 1) Google-Zertifikat */}
+            <div className="min-w-0 h-full">
+              {googleCertificate ? (
+                <CertificationCard
+                  key={googleCertificate.id}
+                  title={googleCertificate.title}
+                  subtitle={googleCertificate.status}
+                  issuer={googleCertificate.issuer}
+                  description={googleCertificate.description}
+                  thumbnailSrc={googleCertificate.thumbnailSrc}
+                  documentHref={googleCertificate.documentHref}
+                />
+              ) : null}
             </div>
 
-            {/* Ausbildung (top, right) */}
-            <div className="md:col-span-3 md:row-span-1 h-full">
-              {qualifications
-                .filter((q) => q.kind === "text")
-                .slice(0, 2)
-                .map((q) => {
-                  if (q.id !== "fiadevelop-ihk") return null;
-                  return (
-                    <QualificationTextCard
-                      key={q.id}
-                      status={q.status}
-                      title={q.title}
-                      hint={q.hint}
-                      description={q.description}
-                      relevance={q.relevance}
-                    />
-                  );
-                })}
+            {/* 2) Fachinformatiker für Anwendungsentwicklung (IHK) */}
+            <div className="min-w-0 h-full">
+              {ihkQualification ? (
+                <QualificationTextCard
+                  key={ihkQualification.id}
+                  status={ihkQualification.status}
+                  title={ihkQualification.title}
+                  hint={ihkQualification.hint}
+                  description={ihkQualification.description}
+                  relevance={ihkQualification.relevance}
+                />
+              ) : null}
             </div>
 
-            {/* Weiterbildung (top, right) */}
-            <div className="md:col-span-3 md:row-span-1 h-full">
-              {qualifications
-                .filter((q) => q.kind === "text")
-                .slice(0, 2)
-                .map((q) => {
-                  if (q.id !== "bachelorpro-infosec") return null;
-                  return (
-                    <QualificationTextCard
-                      key={q.id}
-                      status={q.status}
-                      title={q.title}
-                      hint={q.hint}
-                      description={q.description}
-                      relevance={q.relevance}
-                    />
-                  );
-                })}
+            {/* 3) Bachelor Professional in IT – Informationssicherheit (in Arbeit) */}
+            <div className="min-w-0 h-full">
+              {bachelorProQualification ? (
+                <QualificationTextCard
+                  key={bachelorProQualification.id}
+                  status={bachelorProQualification.status}
+                  title={bachelorProQualification.title}
+                  hint={bachelorProQualification.hint}
+                  description={bachelorProQualification.description}
+                  relevance={bachelorProQualification.relevance}
+                />
+              ) : null}
             </div>
 
-            {/* Experience (bottom, right - spans both top columns) */}
-            <div className="md:col-span-6 md:row-span-1 h-full">
-              {qualifications
-                .filter((q) => q.kind === "text")
-                .map((q) => {
-                  if (q.id !== "experience-since-2019") return null;
-                  return (
-                    <QualificationTextCard
-                      key={q.id}
-                      status={q.status}
-                      title={q.title}
-                      hint={q.hint}
-                      description={q.description}
-                      relevance={q.relevance}
-                    />
-                  );
-                })}
+            {/* 4) Berufserfahrung / Praxiserfahrung */}
+            <div className="min-w-0 h-full">
+              {experienceQualification ? (
+                <QualificationTextCard
+                  key={experienceQualification.id}
+                  status={experienceQualification.status}
+                  title={experienceQualification.title}
+                  hint={experienceQualification.hint}
+                  description={experienceQualification.description}
+                  relevance={experienceQualification.relevance}
+                />
+              ) : null}
             </div>
           </div>
         </div>

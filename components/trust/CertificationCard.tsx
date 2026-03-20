@@ -46,7 +46,7 @@ export function CertificationCard({
         </div>
       </div>
 
-      <p className="mt-5 text-gray-400 leading-relaxed">{description}</p>
+      <p className="mt-5 text-gray-400 leading-relaxed break-words">{description}</p>
 
       <div className="mt-auto grid md:grid-cols-5 gap-6 items-stretch">
         <div className="md:col-span-2 relative overflow-hidden rounded-xl border border-white/10 bg-white/5">
