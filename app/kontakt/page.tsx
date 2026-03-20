@@ -59,7 +59,7 @@ export default function KontaktPage() {
                     Wenn du magst: nenn kurz Ziel, Zeitrahmen und was du mit Fertig meinst.
                   </p>
                   <div className="mt-6">
-                    <Link href="/produkte">
+                    <Link href="/#produkte">
                       <button className="text-gray-400 hover:text-white transition-colors font-medium">
                         Oder erst Produkte ansehen →
                       </button>

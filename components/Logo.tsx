@@ -10,14 +10,12 @@ export function Logo({ className = "", size = "md", variant = "light" }: LogoPro
   // We ship brand assets via `public/brand/*` so this works with the static export.
   // Navigation uses `sm`, so we make that explicitly larger for top-left.
   const src = "/brand/flx-logo-top-left.png";
-  const heightPx = size === "sm" ? 34 : size === "md" ? 42 : 56;
+  const heightPx = size === "sm" ? 40 : size === "md" ? 42 : 56;
   const imgStyle: React.CSSProperties = {
     height: heightPx,
     width: "auto",
     display: "block",
-    // In dunklen Header-Kontexten kann ein weißes Logo-Backing (falls im PNG vorhanden)
-    // sonst als "weißer Kasten" wirken.
-    ...(variant === "dark" ? { mixBlendMode: "multiply" } : {}),
+    // Das von dir gelieferte Logo ist transparent; kein Blend-Mode nötig.
   };
 
   return (

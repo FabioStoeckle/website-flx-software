@@ -29,7 +29,7 @@ export default function PreisePage() {
                 <ArrowRight className="ml-2 inline-block h-5 w-5" />
               </button>
             </Link>
-            <Link href="/leistungen">
+            <Link href="/#leistungen">
               <button className="text-gray-400 hover:text-white transition-colors px-2 py-2 text-lg font-medium">
                 Leistungen ansehen
               </button>

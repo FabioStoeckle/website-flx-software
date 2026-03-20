@@ -9,9 +9,8 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Start" },
-  { href: "/produkte", label: "Produkte" },
-  { href: "/leistungen", label: "Leistungen" },
   { href: "/ueber-uns", label: "Über FLX-Software" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 export function Navigation() {
@@ -40,11 +39,6 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Link href="/kontakt">
-              <button className="raycast-button px-4 py-2 text-sm font-medium text-white">
-                Projekt anfragen
-              </button>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,11 +68,6 @@ export function Navigation() {
                   {item.label}
                 </Link>
               ))}
-              <Link href="/kontakt" onClick={() => setMobileMenuOpen(false)}>
-                <button className="raycast-button w-full px-4 py-2 text-sm font-medium text-white">
-                  Projekt anfragen
-                </button>
-              </Link>
             </div>
           </div>
         )}

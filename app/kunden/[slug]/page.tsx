@@ -19,6 +19,6 @@ export async function generateMetadata({ params }: CustomerPageProps): Promise<M
 export default function CustomerPage({ params }: CustomerPageProps) {
   // Backwards-compatible route: "kunden" previously pointed to the showcase.
   // We removed the "Referenzen" section, so funnel to the consolidated product area.
-  redirect("/produkte");
+  redirect("/#produkte");
 }
 

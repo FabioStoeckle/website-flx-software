@@ -38,7 +38,7 @@ export default function HomePage() {
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Link href="/produkte">
+              <Link href="/#produkte">
                 <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
                   Produkte ansehen
                   <ArrowRight className="ml-2 inline-block h-5 w-5" />
@@ -102,7 +102,7 @@ export default function HomePage() {
       </section>
 
       {/* Produkte */}
-      <section className="py-16 sm:py-24 bg-black/30">
+      <section id="produkte" className="py-16 sm:py-24 bg-black/30">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-end justify-between gap-6 mb-10">
             <div>
@@ -111,7 +111,7 @@ export default function HomePage() {
                 Eigenständige Lösungen unter der Dachmarke FLX-Software. Schnell auffindbar – und sofort nutzbar.
               </p>
             </div>
-            <Link href="/produkte" className="hidden sm:inline-block">
+            <Link href="/#produkte" className="hidden sm:inline-block">
               <button className="text-gray-400 hover:text-white transition-colors text-lg font-medium">
                 Alle Produkte →
               </button>
@@ -127,7 +127,7 @@ export default function HomePage() {
       </section>
 
       {/* Leistungen */}
-      <section className="py-16 sm:py-24">
+      <section id="leistungen" className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-light text-white">Leistungen</h2>
@@ -143,7 +143,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-10 flex justify-center">
-            <Link href="/leistungen">
+            <Link href="/#leistungen">
               <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
                 Leistungen im Detail
                 <ArrowRight className="ml-2 inline-block h-5 w-5" />
@@ -169,7 +169,7 @@ export default function HomePage() {
                 <ArrowRight className="ml-2 inline-block h-5 w-5" />
               </button>
             </Link>
-            <Link href="/produkte">
+            <Link href="/#produkte">
               <button className="text-gray-400 hover:text-white transition-colors px-2 py-2 text-lg font-medium">
                 Erst Produkte ansehen
               </button>

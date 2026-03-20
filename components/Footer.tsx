@@ -53,22 +53,6 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="/produkte"
-                  className="text-gray-400 transition-colors hover:text-flx-cyan"
-                >
-                  Produkte
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/leistungen"
-                  className="text-gray-400 transition-colors hover:text-flx-cyan"
-                >
-                  Leistungen
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/ueber-uns"
                   className="text-gray-400 transition-colors hover:text-flx-cyan"
                 >

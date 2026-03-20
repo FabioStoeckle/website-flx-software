@@ -9,6 +9,6 @@ export const metadata: Metadata = {
 
 export default function ZielgruppenPage() {
   // Compatibility: previously used for niche messaging. Now we funnel users to the consolidated product area.
-  redirect("/produkte");
+  redirect("/#produkte");
 }
 

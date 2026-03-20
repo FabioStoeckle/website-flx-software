@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import { products } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://flx-software.de";
@@ -10,18 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 1,
-    },
-    {
-      url: `${baseUrl}/leistungen`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/produkte`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
     },
     {
       url: `${baseUrl}/ueber-uns`,
@@ -54,14 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
   ];
-
-  const productPages = products.map((p) => ({
-    url: `${baseUrl}/produkte/${p.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  return [...staticPages, ...productPages];
+  return staticPages;
 }
 
