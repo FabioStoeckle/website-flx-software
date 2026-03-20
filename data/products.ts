@@ -62,5 +62,26 @@ export const products: Product[] = [
       { key: "dashboard", title: "Übersicht & Auswertungen", description: "Weniger Gefühl, mehr Klarheit: Daten sind sichtbar und nutzbar." },
     ],
   },
+  {
+    slug: "rechnung-fix",
+    name: "Rechnung-Fix.de",
+    category: "Digitale Tools",
+    description:
+      "Rechnungen in Sekunden erstellen – strukturiert, rechtssicher und sofort versandfertig.",
+    benefits: ["Fertige Rechnungs-Templates", "PDF-Export für Kunden", "Klare Übersicht über Rechnungsstatus"],
+    href: "https://www.Rechnung-Fix.de",
+    features: [
+      "Template-basierte Rechnungserstellung mit klarer Struktur",
+      "PDF-Export für Kunden in einem zuverlässigen Format",
+      "Übersichtlicher Status über alle Rechnungen und Schritte hinweg",
+    ],
+    vorteile: ["Schneller im Alltag", "Weniger Fehler durch feste Vorlage-Struktur", "Transparenter Status für alle Beteiligten"],
+    zielgruppen: ["Selbstständige & Freiberufler", "Kleinunternehmen", "Teams mit wiederkehrender Rechnungsstellung"],
+    views: [
+      { key: "workflow", title: "Rechnung in Sekunden", description: "Vorlagen wählen, Daten eintragen, fertig – ohne Umwege." },
+      { key: "export", title: "PDF-Export für Kunden", description: "Export, der bei Kunden sauber ankommt – ohne Format-Stress." },
+      { key: "dashboard", title: "Status & Übersicht", description: "Klarer Überblick über den Stand und die nächsten Schritte." },
+    ],
+  },
 ];
 
