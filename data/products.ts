@@ -45,8 +45,9 @@ export const products: Product[] = [
     slug: "rivals11",
     name: "Rivals11.de",
     category: "Apps",
-    description: "Digitale Plattform-Lösung für Community, Spielbetrieb und wiederkehrende Workflows – ohne Medienbrüche.",
-    benefits: ["Web-App mit schneller Bedienung", "Automatisierte Abläufe", "Strukturierte Daten & Auswertungen"],
+    description:
+      "Wettbewerbs-Game für deine Community – Spiele gegeneinander, sammle Punkte und werde zur Legende.",
+    benefits: [],
     href: "https://rivals11.de",
     features: [
       "Wiederkehrende Abläufe automatisiert – ohne manuelle Tabellenpflege",
