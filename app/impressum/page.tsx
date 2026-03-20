@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 
 export default function ImpressumPage() {
   return (
-    <Section className="pt-16">
+    <Section className="pt-16 bg-black/30">
       <div className="mx-auto max-w-3xl">
-        <h1 className="mb-8 text-4xl font-bold text-slate-900">Impressum</h1>
+        <h1 className="mb-8 text-4xl font-bold text-white">Impressum</h1>
 
-        <div className="space-y-8 text-slate-700">
+        <div className="space-y-8 text-gray-300">
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">
+            <h2 className="mb-4 text-2xl font-semibold text-white">
               Angaben gemäß § 5 TMG
             </h2>
             <p>
@@ -31,7 +31,7 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">Kontakt</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-white">Kontakt</h2>
             <p>
               E-Mail:{" "}
               <a href="mailto:info@flx-software.de" className="text-sky-500 hover:underline">
@@ -41,7 +41,7 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">Umsatzsteuer-ID</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-white">Umsatzsteuer-ID</h2>
             <p>
               Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:
               <br />
@@ -50,7 +50,7 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">
+            <h2 className="mb-4 text-2xl font-semibold text-white">
               Verantwortlich für den Inhalt
             </h2>
             <p>
@@ -63,11 +63,11 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">
+            <h2 className="mb-4 text-2xl font-semibold text-white">
               Haftungsausschluss (Disclaimer)
             </h2>
 
-            <h3 className="mb-2 mt-4 text-lg font-semibold text-slate-900">Haftung für Inhalte</h3>
+            <h3 className="mb-2 mt-4 text-lg font-semibold text-white">Haftung für Inhalte</h3>
             <p className="mb-4">
               Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
               nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
@@ -83,7 +83,7 @@ export default function ImpressumPage() {
               umgehend entfernen.
             </p>
 
-            <h3 className="mb-2 mt-4 text-lg font-semibold text-slate-900">Haftung für Links</h3>
+            <h3 className="mb-2 mt-4 text-lg font-semibold text-white">Haftung für Links</h3>
             <p className="mb-4">
               Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir
               keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr
@@ -98,7 +98,7 @@ export default function ImpressumPage() {
               Rechtsverletzungen werden wir derartige Links umgehend entfernen.
             </p>
 
-            <h3 className="mb-2 mt-4 text-lg font-semibold text-slate-900">Urheberrecht</h3>
+            <h3 className="mb-2 mt-4 text-lg font-semibold text-white">Urheberrecht</h3>
             <p className="mb-4">
               Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
               unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
@@ -116,7 +116,7 @@ export default function ImpressumPage() {
             </p>
           </div>
 
-          <div className="border-t border-slate-200 pt-8 text-sm text-slate-500">
+          <div className="border-t border-white/10 pt-8 text-sm text-gray-400">
             <p>
               Hinweis: Dieses Impressum ist ein Platzhalter. Bitte fülle die eckigen Klammern mit
               deinen tatsächlichen Angaben aus, bevor du die Website veröffentlichst.

@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 
 export default function DatenschutzPage() {
   return (
-    <Section className="pt-16">
+    <Section className="pt-16 bg-black/30">
       <div className="mx-auto max-w-3xl">
-        <h1 className="mb-8 text-4xl font-bold text-slate-900">Datenschutzerklärung</h1>
+        <h1 className="mb-8 text-4xl font-bold text-white">Datenschutzerklärung</h1>
 
-        <div className="space-y-8 text-slate-700">
+        <div className="space-y-8 text-gray-300">
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">1. Datenschutz auf einen Blick</h2>
-            <h3 className="mb-2 text-lg font-semibold text-slate-900">Allgemeine Hinweise</h3>
+            <h2 className="mb-4 text-2xl font-semibold text-white">1. Datenschutz auf einen Blick</h2>
+            <h3 className="mb-2 text-lg font-semibold text-white">Allgemeine Hinweise</h3>
             <p className="mb-4">
               Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren
               personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene
@@ -26,10 +26,10 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">
+            <h2 className="mb-4 text-2xl font-semibold text-white">
               2. Datenerfassung auf dieser Website
             </h2>
-            <h3 className="mb-2 text-lg font-semibold text-slate-900">
+            <h3 className="mb-2 text-lg font-semibold text-white">
               Wer ist verantwortlich für die Datenerfassung auf dieser Website?
             </h3>
             <p className="mb-4">
@@ -37,7 +37,7 @@ export default function DatenschutzPage() {
               Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
             </p>
 
-            <h3 className="mb-2 text-lg font-semibold text-slate-900">Wie erfassen wir Ihre Daten?</h3>
+            <h3 className="mb-2 text-lg font-semibold text-white">Wie erfassen wir Ihre Daten?</h3>
             <p className="mb-4">
               Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei
               kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
@@ -49,13 +49,13 @@ export default function DatenschutzPage() {
               Daten erfolgt automatisch, sobald Sie diese Website betreten.
             </p>
 
-            <h3 className="mb-2 text-lg font-semibold text-slate-900">Wofür nutzen wir Ihre Daten?</h3>
+            <h3 className="mb-2 text-lg font-semibold text-white">Wofür nutzen wir Ihre Daten?</h3>
             <p className="mb-4">
               Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu
               gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
             </p>
 
-            <h3 className="mb-2 text-lg font-semibold text-slate-900">
+            <h3 className="mb-2 text-lg font-semibold text-white">
               Welche Rechte haben Sie bezüglich Ihrer Daten?
             </h3>
             <p className="mb-4">
@@ -75,7 +75,7 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">3. Hosting</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-white">3. Hosting</h2>
             <p className="mb-4">
               Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser
               Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert.
@@ -97,8 +97,8 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">4. Allgemeine Hinweise und Pflichtinformationen</h2>
-            <h3 className="mb-2 text-lg font-semibold text-slate-900">Datenschutz</h3>
+            <h2 className="mb-4 text-2xl font-semibold text-white">4. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h3 className="mb-2 text-lg font-semibold text-white">Datenschutz</h3>
             <p className="mb-4">
               Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir
               behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen
@@ -118,7 +118,7 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">5. Server-Log-Dateien</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-white">5. Server-Log-Dateien</h2>
             <p className="mb-4">
               Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
               Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
@@ -143,7 +143,7 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">6. Kontaktformular</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-white">6. Kontaktformular</h2>
             <p className="mb-4">
               Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem
               Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks
@@ -161,14 +161,14 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-slate-900">7. Cookies</h2>
+            <h2 className="mb-4 text-2xl font-semibold text-white">7. Cookies</h2>
             <p className="mb-4">
               Diese Website verwendet derzeit keine Tracking-Cookies. Sollten in Zukunft Cookies
               eingesetzt werden, werden Sie hierüber entsprechend informiert.
             </p>
           </div>
 
-          <div className="border-t border-slate-200 pt-8 text-sm text-slate-500">
+          <div className="border-t border-white/10 pt-8 text-sm text-gray-400">
             <p>
               Hinweis: Diese Datenschutzerklärung ist ein Platzhalter und muss vor
               Veröffentlichung an die tatsächlichen Gegebenheiten der Website angepasst werden.
