@@ -27,7 +27,13 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-6 pb-16">
           <div className="max-w-3xl">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight text-white">
-              <span className="gradient-text font-medium block">FLX-Software</span>
+                {/* Schriftzug exakt wie im Logo-Asset */}
+                <img
+                  src="/brand/flx-schriftzug.png"
+                  alt="FLX-Software"
+                  className="block h-10 sm:h-12 lg:h-14 w-auto"
+                  loading="eager"
+                />
               <span className="block">Digitale Produkte. Weblösungen. Klartext.</span>
             </h1>
 
