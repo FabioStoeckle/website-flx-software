@@ -49,6 +49,21 @@
 }
 
 @layer components {
+  @keyframes flxConsentIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .flx-consent-in {
+    animation: flxConsentIn 240ms ease-out both;
+  }
+
   /* Apple-style smooth animations */
   .smooth-transition {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

@@ -3,8 +3,9 @@ import { Inter, JetBrains_Mono, Rajdhani } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Analytics } from "@vercel/analytics/next";
 import { StickyProjectCTA } from "@/components/contact/StickyProjectCTA";
+import { CookieConsentBanner } from "@/components/consent/CookieConsentBanner";
+import { VercelAnalyticsGate } from "@/components/consent/VercelAnalyticsGate";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -101,9 +102,10 @@ export default function RootLayout({
         <Navigation />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <StickyProjectCTA />
+        <CookieConsentBanner />
         <main className="flex-1">{children}</main>
         <Footer />
-        <Analytics />
+        <VercelAnalyticsGate />
       </body>
     </html>
   );
