@@ -5,7 +5,6 @@ import { products } from "@/data/products";
 import { services } from "@/data/services";
 import { ProductCard } from "@/components/brand/ProductCard";
 import { ServiceCard } from "@/components/brand/ServiceCard";
-import { ContactForm } from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
   title: "FLX-Software.de | Digitale Produkte & Weblösungen",
@@ -178,37 +177,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Projektanfrage (Ziel für Sticky-CTA) */}
-      <section id="kontakt-anfrage" className="py-20 sm:py-28 bg-black/30">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-10 lg:grid-cols-5 lg:items-start">
-            <div className="lg:col-span-2">
-              <h2 className="text-4xl sm:text-5xl font-light text-white">Projekt anfragen</h2>
-              <p className="mt-3 text-lg text-gray-400 leading-relaxed">
-                Kurz beschreiben, was du brauchst. Wir antworten pragmatisch: Vorgehen, Aufwand und nächste Schritte.
-              </p>
-              <div className="mt-8 glass rounded-2xl border border-white/10 p-6 h-full flex flex-col">
-                <div className="text-sm text-gray-400 leading-relaxed">
-                  Keine Agentur-Floskeln. Nur klarer Scope, saubere Umsetzung und wartbare Ergebnisse.
-                </div>
-                <div className="mt-auto pt-4 text-xs text-gray-500">
-                  Tipp: Je konkreter das Ziel, desto schneller die Rückmeldung.
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-3">
-              <div className="glass rounded-2xl border border-white/10 p-8">
-                <h3 className="mb-2 text-2xl font-medium text-white">Kurzformular</h3>
-                <p className="mb-6 text-gray-400 leading-relaxed">
-                  Name, E-Mail und Projektidee – fertig.
-                </p>
-                <ContactForm />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
