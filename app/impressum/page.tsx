@@ -18,13 +18,11 @@ export default function ImpressumPage() {
               Angaben gemäß § 5 TMG
             </h2>
             <p>
-              FLX Software
+              FLX-Software - Inh. Fabio Stöckle
               <br />
-              Fabio Stöckle
+              Winklerstr. 5
               <br />
-              [Straße und Hausnummer]
-              <br />
-              [PLZ] [Ort]
+              78176 Blumberg
               <br />
               Deutschland
             </p>
@@ -58,7 +56,11 @@ export default function ImpressumPage() {
               <br />
               Fabio Stöckle
               <br />
-              [Adresse wie oben]
+              Winklerstr. 5
+              <br />
+              78176 Blumberg
+              <br />
+              Deutschland
             </p>
           </div>
 
