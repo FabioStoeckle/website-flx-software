@@ -1,4 +1,4 @@
-import { Code2, Laptop, Network, Sparkles, Wrench } from "lucide-react";
+import { Code2, Laptop, Network, Sparkles, Target, Wrench } from "lucide-react";
 import type { Service } from "@/data/services";
 
 function ServiceIcon({ service }: { service: Service }) {
@@ -14,6 +14,8 @@ function ServiceIcon({ service }: { service: Service }) {
         return Wrench;
       case "maintenance":
         return Code2;
+      case "growth":
+        return Target;
       default:
         return Laptop;
     }

@@ -1,4 +1,10 @@
-export type ServiceKey = "websites" | "webapps" | "pwaps" | "tools" | "maintenance";
+export type ServiceKey =
+  | "websites"
+  | "webapps"
+  | "pwaps"
+  | "tools"
+  | "maintenance"
+  | "growth";
 
 export type Service = {
   key: ServiceKey;
@@ -37,6 +43,17 @@ export const services: Service[] = [
     title: "Weiterentwicklung & Support",
     description: "Nach dem Launch: Updates, Bugfixes und gezielte Feature-Sprints – nachvollziehbar und planbar.",
     bullets: ["Monitoring & Stabilität", "Performance-Optimierung", "Security- und Dependency-Updates"],
+  },
+  {
+    key: "growth",
+    title: "Conversion-Optimierung & Growth",
+    description:
+      "Nicht nur bauen – sondern dafür sorgen, dass aus Besuchern auch Kunden werden.",
+    bullets: [
+      "Funnel-Optimierung & User-Flows",
+      "Tracking, Analytics & A/B-Tests",
+      "Conversion-Fokus (Leads, Sales, Signups)",
+    ],
   },
 ];
 
