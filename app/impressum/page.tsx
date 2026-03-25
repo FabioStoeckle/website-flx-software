@@ -39,15 +39,6 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-2xl font-semibold text-white">Umsatzsteuer-ID</h2>
-            <p>
-              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:
-              <br />
-              [USt-IdNr. Platzhalter]
-            </p>
-          </div>
-
-          <div>
             <h2 className="mb-4 text-2xl font-semibold text-white">
               Verantwortlich für den Inhalt
             </h2>

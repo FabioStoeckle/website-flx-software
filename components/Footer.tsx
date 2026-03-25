@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,35 +16,6 @@ export function Footer() {
               FLX-Software entwickelt digitale Produkte, Web-Apps und Websites für Unternehmen und Teams.
               Sauber gebaut. Schnell live. Wartbar weiterentwickelt.
             </p>
-            <div className="flex gap-4">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-flx-cyan"
-                aria-label="GitHub"
-              >
-                <Github size={20} />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-flx-cyan"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-flx-cyan"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
-              </a>
-            </div>
           </div>
 
             {/* Legal & Contact */}
