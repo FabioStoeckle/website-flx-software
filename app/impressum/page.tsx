@@ -108,13 +108,6 @@ export default function ImpressumPage() {
               Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
             </p>
           </div>
-
-          <div className="border-t border-white/10 pt-8 text-sm text-gray-400">
-            <p>
-              Hinweis: Dieses Impressum ist ein Platzhalter. Bitte fülle die eckigen Klammern mit
-              deinen tatsächlichen Angaben aus, bevor du die Website veröffentlichst.
-            </p>
-          </div>
         </div>
       </div>
     </Section>

@@ -167,16 +167,6 @@ export default function DatenschutzPage() {
               eingesetzt werden, werden Sie hierüber entsprechend informiert.
             </p>
           </div>
-
-          <div className="border-t border-white/10 pt-8 text-sm text-gray-400">
-            <p>
-              Hinweis: Diese Datenschutzerklärung ist ein Platzhalter und muss vor
-              Veröffentlichung an die tatsächlichen Gegebenheiten der Website angepasst werden.
-              Insbesondere sind konkrete Angaben zum Hosting-Anbieter (Vercel), zur
-              Datenverarbeitung und zu den Betroffenenrechten zu ergänzen. Wir empfehlen, einen
-              Datenschutzexperten oder Anwalt zu konsultieren.
-            </p>
-          </div>
         </div>
       </div>
     </Section>
