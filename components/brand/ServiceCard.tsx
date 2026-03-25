@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ArrowRight, Code2, Laptop, Network, Sparkles, Wrench } from "lucide-react";
+import { Code2, Laptop, Network, Sparkles, Wrench } from "lucide-react";
 import type { Service } from "@/data/services";
 
 function ServiceIcon({ service }: { service: Service }) {
@@ -45,13 +44,6 @@ export function ServiceCard({ service }: { service: Service }) {
           </li>
         ))}
       </ul>
-
-      <div className="mt-auto pt-6">
-        <Link href="/kontakt#kontakt-anfrage" className="raycast-button inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white smooth-transition focus-visible:outline-none">
-          Projekt anfragen
-          <ArrowRight size={16} />
-        </Link>
-      </div>
     </div>
   );
 }
