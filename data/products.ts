@@ -22,44 +22,32 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    slug: "angebot-fix",
-    name: "Angebot-Fix.de",
-    category: "Digitale Tools",
-    description: "Schnelle Angebots-Erstellung für Teams, die Projekte zuverlässig planen und sauber präsentieren.",
-    benefits: ["Preis-/Leistungs-Templates", "PDF-Export für Kunden", "Klarer Status für Aufträge"],
-    href: "https://angebot-fix.de",
-    features: [
-      "Template-basierte Angebotserstellung für konsistente Ergebnisse",
-      "Strukturierte Inhalte, die Kunden schnell verstehen",
-      "PDF-Export und nachvollziehbare Status-Schritte",
-    ],
-    vorteile: ["Schneller im Alltag", "Sauberer Output ohne Nacharbeit", "Transparenter Prozess bis zum Auftrag"],
-    zielgruppen: ["Projektteams", "Service- & Beratungsunternehmen", "Agenturen mit wiederkehrenden Angeboten"],
-    views: [
-      { key: "workflow", title: "Angebot in Minuten", description: "Vorlagen, klare Eingaben und ein sauberer Ablauf vom Entwurf bis zur Version." },
-      { key: "export", title: "PDF bereit für Kunden", description: "Export, der bei Kunden ankommt – ohne Medienbrüche oder Format-Stress." },
-      { key: "dashboard", title: "Status im Überblick", description: "Klarer Fortschritt statt “irgendwo ist die Datei”." },
-    ],
-  },
-  {
-    slug: "rechnung-fix",
-    name: "Rechnung-Fix.de",
+    slug: "flx-suite",
+    name: "FLX-Suite.de",
     category: "Digitale Tools",
     description:
-      "Rechnungen in Sekunden erstellen – strukturiert, rechtssicher und sofort versandfertig.",
-    benefits: ["Fertige Rechnungs-Templates", "PDF-Export für Kunden", "Klare Übersicht über Rechnungsstatus"],
-    href: "https://www.Rechnung-Fix.de",
-    features: [
-      "Template-basierte Rechnungserstellung mit klarer Struktur",
-      "PDF-Export für Kunden in einem zuverlässigen Format",
-      "Übersichtlicher Status über alle Rechnungen und Schritte hinweg",
+      "Angebot, Rechnung und Mahnungen online erstellen und exportieren – zentral, strukturiert und sofort versandfertig.",
+    benefits: [
+      "Templates für Angebote, Rechnungen und Mahnungen",
+      "PDF-Export für Kunden und Archiv",
+      "Klarer Status über alle Belege",
     ],
-    vorteile: ["Schneller im Alltag", "Weniger Fehler durch feste Vorlage-Struktur", "Transparenter Status für alle Beteiligten"],
-    zielgruppen: ["Selbstständige & Freiberufler", "Kleinunternehmen", "Teams mit wiederkehrender Rechnungsstellung"],
+    href: "https://flx-suite.de",
+    features: [
+      "Angebote, Rechnungen und Mahnungen in einem durchgängigen Ablauf",
+      "Klar strukturierte Vorlagen mit konsistentem Ergebnis",
+      "PDF-Export und nachvollziehbare Schritte vom Entwurf bis zum Versand",
+    ],
+    vorteile: ["Schneller im Alltag", "Weniger Fehler durch einheitliche Vorlagen", "Transparenter Prozess für Teams und Selbstständige"],
+    zielgruppen: ["Selbstständige & Freiberufler", "Kleinunternehmen und Projektteams", "Service- & Beratungsunternehmen"],
     views: [
-      { key: "workflow", title: "Rechnung in Sekunden", description: "Vorlagen wählen, Daten eintragen, fertig – ohne Umwege." },
-      { key: "export", title: "PDF-Export für Kunden", description: "Export, der bei Kunden sauber ankommt – ohne Format-Stress." },
-      { key: "dashboard", title: "Status & Übersicht", description: "Klarer Überblick über den Stand und die nächsten Schritte." },
+      {
+        key: "workflow",
+        title: "Dokumente in Minuten",
+        description: "Vorlagen wählen, Daten eintragen – von Angebot über Rechnung bis Mahnung.",
+      },
+      { key: "export", title: "Export bereit zum Versand", description: "PDFs, die sauber ankommen – ohne Format-Stress." },
+      { key: "dashboard", title: "Alles im Überblick", description: "Klarer Fortschritt und Status über alle Belege." },
     ],
   },
   {
