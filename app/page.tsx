@@ -140,15 +140,6 @@ export default function HomePage() {
               <ServiceCard key={service.key} service={service} />
             ))}
           </div>
-
-          <div className="mt-10 flex justify-center">
-            <Link href="/#leistungen">
-              <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
-                Leistungen im Detail
-                <ArrowRight className="ml-2 inline-block h-5 w-5" />
-              </button>
-            </Link>
-          </div>
         </div>
       </section>
 
