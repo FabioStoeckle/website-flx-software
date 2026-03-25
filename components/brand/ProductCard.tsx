@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { Product } from "@/data/products";
-import { FileSpreadsheet, Gamepad2, LayoutGrid } from "lucide-react";
+import { FileSpreadsheet, Gamepad2, LayoutGrid, Waypoints } from "lucide-react";
 
 function ProductIcon({ product }: { product: Product }) {
   // Ohne echte Screenshots nutzen wir kleine, präzise UI-Icons als “Thumbnail” im Card-Kontext.
@@ -14,6 +14,8 @@ function ProductIcon({ product }: { product: Product }) {
         return FileSpreadsheet;
       case "rivals11":
         return Gamepad2;
+      case "taktikfeld":
+        return Waypoints;
       default:
         return LayoutGrid;
     }

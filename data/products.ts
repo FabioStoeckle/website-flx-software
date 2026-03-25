@@ -91,5 +91,46 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    slug: "taktikfeld",
+    name: "Taktikfeld.de",
+    category: "Apps",
+    description:
+      "Taktiktafel für Trainer – Spieler positionieren, Laufwege einzeichnen und Formationen speichern. Offline & kostenlos.",
+    benefits: [
+      "Drag & Drop Spieler mit Name und Nummer",
+      "Pfeile & Laufwege einzeichnen",
+      "Formationen speichern & als PDF exportieren",
+    ],
+    href: "https://taktikfeld.de",
+    features: [
+      "Spieler per Drag & Drop auf die Tafel – inklusive Name und Rückennummer",
+      "Pfeile und Laufwege frei einzeichnen für taktische Erklärungen",
+      "Formationen sichern und als PDF exportieren – nutzbar ohne Internet",
+    ],
+    vorteile: [
+      "Schnell erklärt statt nur besprochen",
+      "Immer griffbereit, auch ohne Verbindung",
+      "Keine Kostenbarriere für Vereine und Nachwuchs",
+    ],
+    zielgruppen: ["Trainer & Co-Trainer", "Jugend- und Amateurvereine", "Jede Mannschaft mit Taktik im Wettkampf"],
+    views: [
+      {
+        key: "workflow",
+        title: "Aufstellung in Sekunden",
+        description: "Spieler platzieren, Wege markieren – der Fokus bleibt beim Spiel, nicht bei der Software.",
+      },
+      {
+        key: "export",
+        title: "PDF fürs Training",
+        description: "Formation und Zeichnungen exportieren – mitnehmen, abheften, weitergeben.",
+      },
+      {
+        key: "dashboard",
+        title: "Bibliothek & Überblick",
+        description: "Gespeicherte Formationen griffbereit – weniger Suchen, mehr Zeit auf dem Platz.",
+      },
+    ],
+  },
 ];
 
