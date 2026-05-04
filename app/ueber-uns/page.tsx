@@ -9,7 +9,7 @@ import { QualificationTextCard } from "@/components/trust/QualificationTextCard"
 export const metadata: Metadata = {
   title: "Über uns | FLX-Software",
   description:
-    "Fabio Stöckle und Fabian Pfeiffer entwickeln Websites, Web-Apps und digitale Tools. Kein Agentur-Overhead, direkte Ansprechpartner, schnelle Umsetzung.",
+    "Wir entwickeln Websites, Web-Apps und digitale Tools. Kein Agentur-Overhead, direkte Ansprechpartner, schnelle Umsetzung.",
 };
 
 export default function UeberUnsPage() {
@@ -41,7 +41,7 @@ export default function UeberUnsPage() {
         <div className="relative mx-auto max-w-7xl px-6">
           <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Wer wir sind</h1>
           <p className="mt-4 max-w-3xl text-lg text-gray-400 leading-relaxed">
-            Fabio Stöckle und Fabian Pfeiffer. Zwei Entwickler aus Deutschland die eigene Produkte bauen und Webprojekte ohne das ganze Agentur-Drumherum umsetzen.
+            Zwei Entwickler aus Deutschland die eigene Produkte bauen und Webprojekte ohne das ganze Agentur-Drumherum umsetzen.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function UeberUnsPage() {
                   <div>
                     <h3 className="text-xl font-medium text-white">Du redest direkt mit uns</h3>
                     <p className="mt-1 text-gray-400 leading-relaxed">
-                      Keine Account Manager, keine Weiterleitungen. Du schreibst Fabio oder Fabian und bekommst eine Antwort.
+                      Keine Account Manager, keine Weiterleitungen. Du schreibst uns und bekommst eine Antwort.
                     </p>
                   </div>
                 </div>

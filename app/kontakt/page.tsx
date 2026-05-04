@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Kontakt | FLX-Software",
   description:
-    "Schreib Fabio oder Fabian direkt an. Kein Ticket-System, keine Warteschleife. Wir antworten persönlich und in der Regel noch am selben Tag.",
+    "Schreib uns direkt an. Kein Ticket-System, keine Warteschleife. Wir antworten persönlich und in der Regel noch am selben Tag.",
 };
 
 export default function KontaktPage() {
@@ -20,7 +20,7 @@ export default function KontaktPage() {
         <div className="relative mx-auto max-w-7xl px-6">
           <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Schreib uns</h1>
           <p className="mt-4 max-w-3xl text-lg text-gray-400 leading-relaxed">
-            Fabio oder Fabian lesen deine Nachricht und antworten persönlich. Kein Support-Ticket, keine Warteschleife.
+            Wir lesen deine Nachricht und antworten persönlich. Kein Support-Ticket, keine Warteschleife.
           </p>
         </div>
       </section>

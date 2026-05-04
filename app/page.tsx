@@ -7,9 +7,9 @@ import { ProductCard } from "@/components/brand/ProductCard";
 import { ServiceCard } from "@/components/brand/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "FLX-Software | Websites und Web-Apps von Fabio und Fabian",
+  title: "FLX-Software | Websites und Web-Apps",
   description:
-    "Fabio Stöckle und Fabian Pfeiffer entwickeln Websites, Web-Apps und digitale Tools. Schnell, persönlich und ohne Agentur-Overhead.",
+    "Wir entwickeln Websites, Web-Apps und digitale Tools. Schnell, persönlich und ohne Agentur-Overhead.",
 };
 
 export default function HomePage() {
@@ -32,7 +32,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-gray-400 leading-relaxed">
-              Fabio und Fabian entwickeln Websites, Web-Apps und digitale Tools. Kein Agentur-Overhead, keine ewigen Planungsrunden. Vom ersten Gespräch bis zum Go-Live so schnell wie möglich.
+              Wir entwickeln Websites, Web-Apps und digitale Tools. Kein Agentur-Overhead, keine ewigen Planungsrunden. Vom ersten Gespräch bis zum Go-Live so schnell wie möglich.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -144,7 +144,7 @@ export default function HomePage() {
             Hast du ein Projekt?
           </h2>
           <p className="mt-4 text-lg text-gray-400 leading-relaxed">
-            Kein langes Briefing nötig. Schreib kurz was du dir vorstellst. Fabio oder Fabian melden sich persönlich bei dir.
+            Kein langes Briefing nötig. Schreib kurz was du dir vorstellst. Wir melden uns persönlich bei dir.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/kontakt">
