@@ -7,9 +7,9 @@ import { ProductCard } from "@/components/brand/ProductCard";
 import { ServiceCard } from "@/components/brand/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "FLX-Software.de | Digitale Produkte & Weblösungen",
+  title: "FLX-Software | Websites und Web-Apps von Fabio und Fabian",
   description:
-    "FLX-Software entwickelt digitale Produkte, PWAs und Websites für Unternehmen. Produkte ansehen oder Projekt anfragen – klar, schnell, wartbar.",
+    "Fabio Stöckle und Fabian Pfeiffer entwickeln Websites, Web-Apps und digitale Tools. Schnell, persönlich und ohne Agentur-Overhead.",
 };
 
 export default function HomePage() {
@@ -28,18 +28,17 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight text-white">
               <span className="gradient-text font-medium block">FLX-Software</span>
-              <span className="block">Digitale Produkte. Weblösungen. Klartext.</span>
+              <span className="block">Wir bauen es einfach.</span>
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-gray-400 leading-relaxed">
-              FLX-Software entwickelt digitale Produkte, PWAs und Websites mit echtem Praxisnutzen.
-              Von fertigen Lösungen bis zu individueller Entwicklung: pragmatisch, modern und wartbar.
+              Fabio und Fabian entwickeln Websites, Web-Apps und digitale Tools. Kein Agentur-Overhead, keine ewigen Planungsrunden. Vom ersten Gespräch bis zum Go-Live so schnell wie möglich.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link href="/#produkte">
                 <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
-                  Produkte ansehen
+                  Unsere Projekte ansehen
                   <ArrowRight className="ml-2 inline-block h-5 w-5" />
                 </button>
               </Link>
@@ -55,19 +54,19 @@ export default function HomePage() {
                 <div className="w-6 h-6 bg-flx-cyan/20 rounded-full flex items-center justify-center">
                   <span className="inline-block w-2.5 h-2.5 bg-flx-cyan rounded-full" />
                 </div>
-                <span>Produkte & Individualentwicklung aus einer Hand</span>
+                <span>Zwei Ansprechpartner statt anonymes Ticket-System</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 bg-flx-cyan/20 rounded-full flex items-center justify-center">
                   <span className="inline-block w-2.5 h-2.5 bg-flx-cyan rounded-full" />
                 </div>
-                <span>Technisch sauber, schnell live, wartbar</span>
+                <span>Schnell live ohne wochenlange Konzeptionsrunden</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 bg-flx-cyan/20 rounded-full flex items-center justify-center">
                   <span className="inline-block w-2.5 h-2.5 bg-flx-cyan rounded-full" />
                 </div>
-                <span>Klare Kommunikation statt Buzzwords</span>
+                <span>Persönlicher Support vor Ort wenn nötig</span>
               </div>
             </div>
           </div>
@@ -79,21 +78,21 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
-              <h2 className="text-2xl font-medium text-white">Was FLX baut</h2>
+              <h2 className="text-2xl font-medium text-white">Was wir gebaut haben</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
-                Digitale Produkte für Teams und Kunden: Apps, PWAs und Websites, die im Alltag funktionieren.
+                FLX-Suite, Rivals11 und Taktikfeld. Drei eigene Produkte die live sind und täglich genutzt werden. Kein Demo, keine Mockups.
               </p>
             </div>
             <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
-              <h2 className="text-2xl font-medium text-white">Wie wir arbeiten</h2>
+              <h2 className="text-2xl font-medium text-white">Wie wir Projekte angehen</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
-                Pragmatismus zuerst: schnelle MVPs, saubere Architektur, klare Roadmaps und echte Iteration.
+                Kein wochenlanges Konzeptionieren. Wir klären kurz was du brauchst, setzen es um und gehen live. So unkompliziert wie möglich.
               </p>
             </div>
             <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
-              <h2 className="text-2xl font-medium text-white">Warum es wirkt</h2>
+              <h2 className="text-2xl font-medium text-white">Was du davon hast</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
-                Verständliche UI, stabile Umsetzung und echte Deliverables – damit Software genutzt wird.
+                Wir haben keine Mitarbeiter und kein Büro. Das bedeutet für dich: niedrigere Kosten, kurze Wege und direkte Ansprechpartner.
               </p>
             </div>
           </div>
@@ -105,16 +104,11 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-end justify-between gap-6 mb-10">
             <div>
-              <h2 className="text-4xl sm:text-5xl font-light text-white">Produkte</h2>
+              <h2 className="text-4xl sm:text-5xl font-light text-white">Unsere Projekte</h2>
               <p className="mt-3 text-gray-400 max-w-2xl leading-relaxed">
-                Eigenständige Lösungen unter der Dachmarke FLX-Software. Schnell auffindbar – und sofort nutzbar.
+                Drei eigene Produkte die wir selbst entwickelt haben und betreiben. Alle kostenlos nutzbar.
               </p>
             </div>
-            <Link href="/#produkte" className="hidden sm:inline-block">
-              <button className="text-gray-400 hover:text-white transition-colors text-lg font-medium">
-                Alle Produkte →
-              </button>
-            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
@@ -129,9 +123,9 @@ export default function HomePage() {
       <section id="leistungen" className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-light text-white">Leistungen</h2>
+            <h2 className="text-4xl sm:text-5xl font-light text-white">Was wir für dich bauen</h2>
             <p className="mt-3 text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-              FLX-Software entwickelt nicht nur Produkte – wir bauen auch individuelle digitale Lösungen für reale Projekte.
+              Neben unseren eigenen Produkten nehmen wir auch externe Projekte an. Websites, Web-Apps, Tools. Sag uns was du brauchst.
             </p>
           </div>
 
@@ -147,21 +141,21 @@ export default function HomePage() {
       <section className="py-20 sm:py-28 bg-gradient-to-b from-black to-slate-950">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-4xl sm:text-5xl font-light text-white">
-            Projektanfrage statt Bauchgefühl.
+            Hast du ein Projekt?
           </h2>
           <p className="mt-4 text-lg text-gray-400 leading-relaxed">
-            Kurz beschreiben, was du brauchst. Wir antworten pragmatisch: Vorgehen, Aufwand und nächste Schritte.
+            Kein langes Briefing nötig. Schreib kurz was du dir vorstellst. Fabio oder Fabian melden sich persönlich bei dir.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/kontakt">
               <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
-                Projekt anfragen
+                Jetzt melden
                 <ArrowRight className="ml-2 inline-block h-5 w-5" />
               </button>
             </Link>
             <Link href="/#produkte">
               <button className="text-gray-400 hover:text-white transition-colors px-2 py-2 text-lg font-medium">
-                Erst Produkte ansehen
+                Erst unsere Projekte ansehen
               </button>
             </Link>
           </div>

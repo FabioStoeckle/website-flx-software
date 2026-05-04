@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Kontakt | FLX-Software",
   description:
-    "Projekt anfragen oder Kontakt aufnehmen: FLX-Software meldet sich pragmatisch und schnell zurück. Einfach Formular ausfüllen.",
+    "Schreib Fabio oder Fabian direkt an. Kein Ticket-System, keine Warteschleife. Wir antworten persönlich und in der Regel noch am selben Tag.",
 };
 
 export default function KontaktPage() {
@@ -18,10 +18,9 @@ export default function KontaktPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
 
         <div className="relative mx-auto max-w-7xl px-6">
-          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Kontakt</h1>
+          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Schreib uns</h1>
           <p className="mt-4 max-w-3xl text-lg text-gray-400 leading-relaxed">
-            Projekt geplant? Fragen? Schreib uns kurz. Wir melden uns mit einem pragmatischen Vorschlag für die nächsten
-            Schritte.
+            Fabio oder Fabian lesen deine Nachricht und antworten persönlich. Kein Support-Ticket, keine Warteschleife.
           </p>
         </div>
       </section>
@@ -56,12 +55,12 @@ export default function KontaktPage() {
 
                 <div className="mt-8 rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
                   <p className="text-gray-400 leading-relaxed">
-                    Wenn du magst: nenn kurz Ziel, Zeitrahmen und was du mit Fertig meinst.
+                    Du musst uns nicht alles auf einmal erklären. Ein paar Sätze reichen völlig.
                   </p>
                   <div className="mt-6">
                     <Link href="/#produkte">
                       <button className="text-gray-400 hover:text-white transition-colors font-medium">
-                        Oder erst Produkte ansehen →
+                        Erst unsere Projekte ansehen →
                       </button>
                     </Link>
                   </div>
@@ -71,9 +70,9 @@ export default function KontaktPage() {
 
             <div className="lg:col-span-3">
               <div className="glass rounded-2xl border border-white/10 p-8">
-                <h2 className="mb-2 text-2xl font-medium text-white">Nachricht senden</h2>
+                <h2 className="mb-2 text-2xl font-medium text-white">Nachricht schreiben</h2>
                 <p className="mb-8 text-gray-400 leading-relaxed">
-                  Fülle das Formular aus. Wir antworten schnell und mit klaren nächsten Schritten.
+                  Einfach kurz beschreiben was du brauchst. Wir melden uns in der Regel noch am selben Tag.
                 </p>
 
                 <div id="kontakt-anfrage">
@@ -89,9 +88,9 @@ export default function KontaktPage() {
       <section className="pb-16 sm:pb-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12">
-            <h2 className="text-4xl sm:text-5xl font-light text-white">FAQ zu Projekten</h2>
+            <h2 className="text-4xl sm:text-5xl font-light text-white">Häufige Fragen</h2>
             <p className="mt-3 text-lg text-gray-400 leading-relaxed max-w-3xl">
-              Kurze Antworten auf typische Fragen, damit du schnell einschätzen kannst, ob es passt.
+              Was wir oft gefragt werden bevor jemand schreibt.
             </p>
           </div>
 
@@ -99,33 +98,19 @@ export default function KontaktPage() {
             <div className="glass rounded-2xl border border-white/10 p-6">
               <details>
                 <summary className="cursor-pointer text-white font-medium">
-                  Wie läuft eine Zusammenarbeit konkret ab?
+                  Wie läuft das ab wenn ich euch beauftrage?
                 </summary>
                 <p className="mt-3 text-gray-400 leading-relaxed">
-                  Wir starten mit Kickoff & Scope, setzen danach Design & Setup auf, bauen in klaren Sprints und
-                  bringen am Ende stabilen Betrieb. Du weißt jederzeit, was als Nächstes passiert.
+                  Meistens so: kurzes Gespräch, wir klären was du brauchst und was es kosten soll, dann fangen wir an. Kein wochenlanges Hin und Her bevor auch nur eine Zeile Code geschrieben wird.
                 </p>
               </details>
             </div>
 
             <div className="glass rounded-2xl border border-white/10 p-6">
               <details>
-                <summary className="cursor-pointer text-white font-medium">Wie wird der Preis geplant?</summary>
+                <summary className="cursor-pointer text-white font-medium">Was kostet ein Projekt?</summary>
                 <p className="mt-3 text-gray-400 leading-relaxed">
-                  Wir schlagen ein passendes Leistungsmodell vor (Festpreis, Sprints oder Support) – abhängig von
-                  Umfang, Ziel und Planbarkeit.
-                </p>
-              </details>
-            </div>
-
-            <div className="glass rounded-2xl border border-white/10 p-6">
-              <details>
-                <summary className="cursor-pointer text-white font-medium">
-                  Arbeitet ihr auch mit bestehenden Lösungen?
-                </summary>
-                <p className="mt-3 text-gray-400 leading-relaxed">
-                  Ja. Wir übernehmen Weiterentwicklung, stabilisieren Code und bauen gezielt neue Funktionen ein –
-                  ohne das System unnötig zu verkomplizieren.
+                  Das kommt auf den Umfang an. Kleinere Sachen rechnen wir pauschal ab. Bei größeren Projekten einigen wir uns vorher auf ein Budget und halten uns daran. Wir sagen dir ehrlich was realistisch ist.
                 </p>
               </details>
             </div>
@@ -133,11 +118,21 @@ export default function KontaktPage() {
             <div className="glass rounded-2xl border border-white/10 p-6">
               <details>
                 <summary className="cursor-pointer text-white font-medium">
-                  Wie schnell bekommt man eine Rückmeldung?
+                  Ich habe schon eine Website. Könnt ihr die weiterentwickeln?
                 </summary>
                 <p className="mt-3 text-gray-400 leading-relaxed">
-                  Üblicherweise melden wir uns zeitnah. In der Antwort bekommst du einen konkreten Vorschlag für
-                  nächste Schritte.
+                  Ja, gerne. Wenn du etwas hast das ausgebaut oder verbessert werden soll schauen wir es uns an und sagen dir ehrlich was möglich ist und was es bringt.
+                </p>
+              </details>
+            </div>
+
+            <div className="glass rounded-2xl border border-white/10 p-6">
+              <details>
+                <summary className="cursor-pointer text-white font-medium">
+                  Wie schnell bekomme ich eine Antwort?
+                </summary>
+                <p className="mt-3 text-gray-400 leading-relaxed">
+                  In der Regel noch am selben Tag. Wenn es mal etwas länger dauert kriegst du zumindest kurz Bescheid damit du nicht in der Luft hängst.
                 </p>
               </details>
             </div>

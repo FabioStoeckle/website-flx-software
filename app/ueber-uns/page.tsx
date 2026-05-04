@@ -7,9 +7,9 @@ import { qualifications, type Qualification } from "@/data/qualifications";
 import { QualificationTextCard } from "@/components/trust/QualificationTextCard";
 
 export const metadata: Metadata = {
-  title: "Über FLX-Software | FLX-Software",
+  title: "Über uns | FLX-Software",
   description:
-    "FLX-Software steht für pragmatische Entwicklung: digitale Produkte, PWAs und Websites, die im Alltag funktionieren.",
+    "Fabio Stöckle und Fabian Pfeiffer entwickeln Websites, Web-Apps und digitale Tools. Kein Agentur-Overhead, direkte Ansprechpartner, schnelle Umsetzung.",
 };
 
 export default function UeberUnsPage() {
@@ -39,10 +39,9 @@ export default function UeberUnsPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
 
         <div className="relative mx-auto max-w-7xl px-6">
-          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Über FLX-Software</h1>
+          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Wer wir sind</h1>
           <p className="mt-4 max-w-3xl text-lg text-gray-400 leading-relaxed">
-            FLX-Software ist eine Dachmarke für digitale Produkte und Weblösungen. Wir bauen Software, die klar strukturiert ist
-            und im Alltag genutzt wird.
+            Fabio Stöckle und Fabian Pfeiffer. Zwei Entwickler aus Deutschland die eigene Produkte bauen und Webprojekte ohne das ganze Agentur-Drumherum umsetzen.
           </p>
         </div>
       </section>
@@ -51,19 +50,18 @@ export default function UeberUnsPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid lg:grid-cols-2 gap-6 items-start">
             <div className="glass rounded-2xl border border-white/10 p-8">
-              <h2 className="text-3xl font-light text-white">Unsere Haltung</h2>
+              <h2 className="text-3xl font-light text-white">Wie es dazu kam</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
-                Keine Buzzword-Show. Wir entscheiden pragmatisch: was bringt dem Projekt echten Nutzen, was ist technisch
-                sinnvoll, was macht die Zusammenarbeit leichter.
+                Wir haben FLX-Software gestartet weil wir eigene Ideen umsetzen wollten und nebenher gemerkt haben dass wir Projekte auch für andere gerne übernehmen. Ohne den ganzen Aufwand den eine klassische Agentur mitbringt.
               </p>
 
               <div className="mt-7 space-y-5">
                 <div className="flex gap-4">
                   <Target className="h-7 w-7 text-flx-cyan" />
                   <div>
-                    <h3 className="text-xl font-medium text-white">Pragmatismus</h3>
+                    <h3 className="text-xl font-medium text-white">Kein Overhead</h3>
                     <p className="mt-1 text-gray-400 leading-relaxed">
-                      Die beste Lösung ist die, die funktioniert – nicht die, die am schicksten klingt.
+                      Kein Büro, keine festen Mitarbeiter, keine Verwaltungsebenen. Das spart Zeit und senkt deinen Preis.
                     </p>
                   </div>
                 </div>
@@ -71,9 +69,9 @@ export default function UeberUnsPage() {
                 <div className="flex gap-4">
                   <Zap className="h-7 w-7 text-flx-cyan" />
                   <div>
-                    <h3 className="text-xl font-medium text-white">Stabil & wartbar</h3>
+                    <h3 className="text-xl font-medium text-white">Wir hassen Zeitverschwendung</h3>
                     <p className="mt-1 text-gray-400 leading-relaxed">
-                      Saubere Architektur, klare Zuständigkeiten und Updates, die planbar bleiben.
+                      Kein wochenlanges Konzeptionieren bevor etwas gebaut wird. Ein kurzes Gespräch reicht und wir fangen an.
                     </p>
                   </div>
                 </div>
@@ -81,9 +79,9 @@ export default function UeberUnsPage() {
                 <div className="flex gap-4">
                   <MessageSquare className="h-7 w-7 text-flx-cyan" />
                   <div>
-                    <h3 className="text-xl font-medium text-white">Klarer Austausch</h3>
+                    <h3 className="text-xl font-medium text-white">Du redest direkt mit uns</h3>
                     <p className="mt-1 text-gray-400 leading-relaxed">
-                      Kurze Wege, verständliche Status-Updates und Entscheidungen mit nachvollziehbarem Warum.
+                      Keine Account Manager, keine Weiterleitungen. Du schreibst Fabio oder Fabian und bekommst eine Antwort.
                     </p>
                   </div>
                 </div>
@@ -91,34 +89,38 @@ export default function UeberUnsPage() {
             </div>
 
             <div className="glass rounded-2xl border border-white/10 p-8">
-              <h2 className="text-3xl font-light text-white">Was du bekommst</h2>
+              <h2 className="text-3xl font-light text-white">Was du davon hast</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
-                Eine Zusammenarbeit, die nicht aus dem Takt gerät – und ein Ergebnis, das Teams wirklich nutzen.
+                Kurz gesagt: du weißt immer mit wem du es zu tun hast und was als nächstes passiert.
               </p>
 
               <ul className="mt-6 space-y-3 text-gray-300">
                 <li className="flex items-start gap-3">
                   <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
-                  <span>Strukturiertes Produkt-/Projekt-Setup und klare Deliverables</span>
+                  <span>Direkter Kontakt zu den Entwicklern die an deinem Projekt arbeiten</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
-                  <span>Design, Entwicklung und Qualitätssicherung aus einem Ablauf</span>
+                  <span>Schnell live ohne monatelange Vorlaufzeit</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
-                  <span>Weiterentwicklung nach Launch – wenn du mehr willst</span>
+                  <span>Persönlicher Support vor Ort wenn du ihn brauchst</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
+                  <span>Weiterentwicklung nach dem Launch so lange du willst</span>
                 </li>
               </ul>
 
               <div className="mt-8 rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
                 <p className="text-gray-400 leading-relaxed">
-                  Du suchst eine Dachmarke, die Produkte und Projekte sauber bündelt? Dann passt FLX-Software.
+                  Klingt gut? Schreib uns kurz was du dir vorstellst.
                 </p>
                 <div className="mt-6">
                   <Link href="/kontakt">
                     <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
-                      Projekt anfragen
+                      Jetzt melden
                       <ArrowRight className="ml-2 inline-block h-5 w-5" />
                     </button>
                   </Link>
@@ -132,10 +134,9 @@ export default function UeberUnsPage() {
       <Section className="bg-black/30">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-8">
-            <h2 className="text-4xl font-light text-white">Qualifikation, Know-how & Praxiserfahrung</h2>
+            <h2 className="text-4xl font-light text-white">Ausbildung und Erfahrung</h2>
             <p className="mt-3 text-gray-400 text-lg leading-relaxed max-w-2xl">
-              Bei FLX-Software verbinden wir nachgewiesenes Know-how mit soliden Grundlagen und echter Engineering-Praxis.
-              Das Ergebnis: Entscheidungen, Umsetzung und Ergebnisse, die im Projektalltag funktionieren.
+              Wir kommen nicht aus dem Nichts. Hier ist was wir mitbringen.
             </p>
           </div>
 
