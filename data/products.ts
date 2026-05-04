@@ -22,56 +22,6 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    slug: "gehaltsrechner",
-    name: "Brutto Netto Rechner",
-    category: "Digitale Tools",
-    description:
-      "Präziser Gehaltsrechner für Deutschland 2025. Steuerklassen I bis VI, alle Bundesländer, PKV und GKV, Kirchensteuer, Kinder.",
-    benefits: [
-      "Steuerklassen I bis VI mit korrekter Lohnsteuerformel",
-      "Alle 16 Bundesländer inkl. Kirchensteuer und Sachsen-Sonderregelung",
-      "PKV und GKV mit Zusatzbeitrag, Monats- und Jahresansicht",
-    ],
-    href: "/gehalt",
-    features: [
-      "Lohnsteuerberechnung nach §32a EStG 2025",
-      "Sozialversicherungsbeiträge mit Beitragsbemessungsgrenzen",
-      "Solidaritätszuschlag mit Milderungszone",
-    ],
-    vorteile: ["Kein Account nötig", "Alle Parameter auf einen Blick", "Sofort verwendbar"],
-    zielgruppen: ["Arbeitnehmer", "Berufseinsteiger", "HR und Recruiting"],
-    views: [
-      { key: "dashboard", title: "Klare Aufschlüsselung", description: "Jeder Abzug einzeln ausgewiesen. Monat oder Jahr." },
-      { key: "workflow",  title: "Alle Parameter",        description: "Steuerklasse, Bundesland, KV, Kinder in Sekunden eingestellt." },
-      { key: "export",    title: "2025 aktuell",          description: "Beitragssätze und Steuertarife auf dem Stand 2025." },
-    ],
-  },
-  {
-    slug: "qr-designer",
-    name: "QR-Code Designer",
-    category: "Digitale Tools",
-    description:
-      "QR-Codes visuell gestalten: eigenes Logo einbetten, Farben und Stil frei wählen, direkt als PNG oder SVG exportieren.",
-    benefits: [
-      "Logo in die Mitte einbetten",
-      "Farben, Verlauf und Punkt-Stil frei wählen",
-      "Export als PNG oder SVG in 1000 x 1000 px",
-    ],
-    href: "/qr",
-    features: [
-      "6 Punkt-Stile und individuelle Eckformen",
-      "Farbverlauf oder Vollton frei konfigurierbar",
-      "Logo-Upload mit einstellbarer Größe",
-    ],
-    vorteile: ["Kein Account nötig", "Läuft komplett im Browser", "Sofort verwendbar ohne Installation"],
-    zielgruppen: ["Selbstständige & Freelancer", "Unternehmen mit Printmaterial", "Alle die einen individuellen QR-Code brauchen"],
-    views: [
-      { key: "design", title: "Stil nach Wunsch", description: "Farben, Verlauf und Punkt-Stil in Sekunden anpassen." },
-      { key: "export", title: "Sofort exportieren", description: "PNG oder SVG in 1000px, kostenlos und ohne Anmeldung." },
-      { key: "workflow", title: "Logo einbetten", description: "Eigenes Logo in die Mitte laden und Größe einstellen." },
-    ],
-  },
-  {
     slug: "flx-suite",
     name: "FLX-Suite.de",
     category: "Digitale Tools",
@@ -98,6 +48,81 @@ export const products: Product[] = [
       },
       { key: "export", title: "Export bereit zum Versand", description: "PDFs, die sauber ankommen – ohne Format-Stress." },
       { key: "dashboard", title: "Alles im Überblick", description: "Klarer Fortschritt und Status über alle Belege." },
+    ],
+  },
+  {
+    slug: "gehaltsrechner",
+    name: "Brutto Netto Rechner",
+    category: "Digitale Tools",
+    description:
+      "Präziser Gehaltsrechner für Deutschland 2025. Steuerklassen I bis VI, alle Bundesländer, PKV und GKV, Kirchensteuer, Kinder.",
+    benefits: [
+      "Steuerklassen I bis VI mit korrekter Lohnsteuerformel",
+      "Alle 16 Bundesländer inkl. Kirchensteuer und Sachsen-Sonderregelung",
+      "PKV und GKV mit Zusatzbeitrag, Monats- und Jahresansicht",
+    ],
+    href: "/gehalt",
+    features: [
+      "Lohnsteuerberechnung nach §32a EStG 2025",
+      "Sozialversicherungsbeiträge mit Beitragsbemessungsgrenzen",
+      "Solidaritätszuschlag mit Milderungszone",
+    ],
+    vorteile: ["Kein Account nötig", "Alle Parameter auf einen Blick", "Sofort verwendbar"],
+    zielgruppen: ["Arbeitnehmer", "Berufseinsteiger", "HR und Recruiting"],
+    views: [
+      { key: "dashboard", title: "Klare Aufschlüsselung", description: "Jeder Abzug einzeln ausgewiesen. Monat oder Jahr." },
+      { key: "workflow",  title: "Alle Parameter",        description: "Steuerklasse, Bundesland, KV, Kinder in Sekunden eingestellt." },
+      { key: "export",    title: "2025 aktuell",          description: "Beitragssätze und Steuertarife auf dem Stand 2025." },
+    ],
+  },
+  {
+    slug: "kfz-rechner",
+    name: "Kfz-Steuer Rechner",
+    category: "Digitale Tools",
+    description:
+      "Kfz-Steuer sofort berechnen. Benzin, Diesel, Hybrid, LPG und Elektro. Hubraum- und CO₂-Anteil nach §9 KraftStG.",
+    benefits: [
+      "Benzin, Diesel, Hybrid, LPG und Elektro",
+      "CO₂-Staffelberechnung nach §9 KraftStG",
+      "CO₂-Freigrenzen je nach Erstzulassungsjahr",
+    ],
+    href: "/kfz",
+    features: [
+      "Hubraum- und CO₂-Anteil einzeln ausgewiesen",
+      "Elektrofahrzeuge automatisch als steuerbefreit erkannt",
+      "Alte Zulassungen vor 2009 mit vereinfachter Berechnung",
+    ],
+    vorteile: ["Kein Account nötig", "Sofort nutzbar", "Ohne Installation"],
+    zielgruppen: ["Autofahrer", "Autokäufer", "Fuhrparkmanager"],
+    views: [
+      { key: "dashboard", title: "Klare Aufschlüsselung", description: "Hubraum- und CO₂-Anteil einzeln ausgewiesen." },
+      { key: "workflow",  title: "Alle Fahrzeugtypen",    description: "Benzin, Diesel, Hybrid, LPG und Elektro in Sekunden eingestellt." },
+      { key: "export",    title: "2025 aktuell",          description: "Berechnung nach §9 KraftStG mit aktuellen Sätzen und Freigrenzen." },
+    ],
+  },
+  {
+    slug: "qr-designer",
+    name: "QR-Code Designer",
+    category: "Digitale Tools",
+    description:
+      "QR-Codes visuell gestalten: eigenes Logo einbetten, Farben und Stil frei wählen, direkt als PNG oder SVG exportieren.",
+    benefits: [
+      "Logo in die Mitte einbetten",
+      "Farben, Verlauf und Punkt-Stil frei wählen",
+      "Export als PNG oder SVG in 1000 x 1000 px",
+    ],
+    href: "/qr",
+    features: [
+      "6 Punkt-Stile und individuelle Eckformen",
+      "Farbverlauf oder Vollton frei konfigurierbar",
+      "Logo-Upload mit einstellbarer Größe",
+    ],
+    vorteile: ["Kein Account nötig", "Läuft komplett im Browser", "Sofort verwendbar ohne Installation"],
+    zielgruppen: ["Selbstständige & Freelancer", "Unternehmen mit Printmaterial", "Alle die einen individuellen QR-Code brauchen"],
+    views: [
+      { key: "design", title: "Stil nach Wunsch", description: "Farben, Verlauf und Punkt-Stil in Sekunden anpassen." },
+      { key: "export", title: "Sofort exportieren", description: "PNG oder SVG in 1000px, kostenlos und ohne Anmeldung." },
+      { key: "workflow", title: "Logo einbetten", description: "Eigenes Logo in die Mitte laden und Größe einstellen." },
     ],
   },
   {

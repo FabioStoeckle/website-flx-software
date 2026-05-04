@@ -80,7 +80,7 @@ export default function HomePage() {
             <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
               <h2 className="text-2xl font-medium text-white">Was wir gebaut haben</h2>
               <p className="mt-3 text-gray-400 leading-relaxed">
-                FLX-Suite, Rivals11, Taktikfeld, ein Brutto-Netto-Rechner und ein QR-Designer. Fünf eigene Projekte die live sind und genutzt werden. Kein Demo, keine Mockups.
+                FLX-Suite, Rivals11, Taktikfeld, ein Brutto-Netto-Rechner, ein Kfz-Steuer-Rechner und ein QR-Designer. Sechs eigene Projekte die live sind und genutzt werden. Kein Demo, keine Mockups.
               </p>
             </div>
             <div className="glass rounded-2xl border border-white/10 p-8 h-full flex flex-col">
@@ -106,7 +106,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-4xl sm:text-5xl font-light text-white">Unsere Projekte</h2>
               <p className="mt-3 text-gray-400 max-w-2xl leading-relaxed">
-                Fünf eigene Projekte die wir selbst entwickelt haben und betreiben. Alle kostenlos nutzbar.
+                Sechs eigene Projekte die wir selbst entwickelt haben und betreiben. Alle kostenlos nutzbar.
               </p>
             </div>
           </div>
