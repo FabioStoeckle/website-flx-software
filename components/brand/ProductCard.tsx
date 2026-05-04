@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { Product } from "@/data/products";
-import { FileSpreadsheet, Gamepad2, LayoutGrid, Waypoints } from "lucide-react";
+import { FileSpreadsheet, Gamepad2, LayoutGrid, QrCode, Waypoints } from "lucide-react";
 
 function ProductIcon({ product }: { product: Product }) {
   // Ohne echte Screenshots nutzen wir kleine, präzise UI-Icons als “Thumbnail” im Card-Kontext.
@@ -10,6 +11,8 @@ function ProductIcon({ product }: { product: Product }) {
 
   const Icon = (() => {
     switch (key) {
+      case "qr-designer":
+        return QrCode;
       case "flx-suite":
         return FileSpreadsheet;
       case "rivals11":
@@ -52,15 +55,25 @@ export function ProductCard({ product }: { product: Product }) {
       </ul>
 
       <div className="mt-auto pt-6 flex items-center justify-between gap-4">
-        <a
-          href={product.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="raycast-button inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white smooth-transition focus-visible:outline-none"
-        >
-          Öffnen
-          <ArrowRight size={16} />
-        </a>
+        {product.href.startsWith("/") ? (
+          <Link
+            href={product.href}
+            className="raycast-button inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white smooth-transition focus-visible:outline-none"
+          >
+            Öffnen
+            <ArrowRight size={16} />
+          </Link>
+        ) : (
+          <a
+            href={product.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="raycast-button inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white smooth-transition focus-visible:outline-none"
+          >
+            Öffnen
+            <ArrowRight size={16} />
+          </a>
+        )}
       </div>
     </div>
   );

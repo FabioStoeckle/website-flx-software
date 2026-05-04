@@ -1,6 +1,6 @@
 export type ProductCategory = "Apps" | "Websites" | "PWAs" | "Digitale Tools";
 
-export type ProductViewKey = "workflow" | "dashboard" | "export" | "community" | "security" | "automation";
+export type ProductViewKey = "workflow" | "dashboard" | "export" | "community" | "security" | "automation" | "design";
 
 export type Product = {
   slug: string;
@@ -21,6 +21,31 @@ export type Product = {
 };
 
 export const products: Product[] = [
+  {
+    slug: "qr-designer",
+    name: "QR-Code Designer",
+    category: "Digitale Tools",
+    description:
+      "QR-Codes visuell gestalten: eigenes Logo einbetten, Farben und Stil frei wählen, direkt als PNG oder SVG exportieren.",
+    benefits: [
+      "Logo in die Mitte einbetten",
+      "Farben, Verlauf und Punkt-Stil frei wählen",
+      "Export als PNG oder SVG in 1000 x 1000 px",
+    ],
+    href: "/qr",
+    features: [
+      "6 Punkt-Stile und individuelle Eckformen",
+      "Farbverlauf oder Vollton frei konfigurierbar",
+      "Logo-Upload mit einstellbarer Größe",
+    ],
+    vorteile: ["Kein Account nötig", "Läuft komplett im Browser", "Sofort verwendbar ohne Installation"],
+    zielgruppen: ["Selbstständige & Freelancer", "Unternehmen mit Printmaterial", "Alle die einen individuellen QR-Code brauchen"],
+    views: [
+      { key: "design", title: "Stil nach Wunsch", description: "Farben, Verlauf und Punkt-Stil in Sekunden anpassen." },
+      { key: "export", title: "Sofort exportieren", description: "PNG oder SVG in 1000px, kostenlos und ohne Anmeldung." },
+      { key: "workflow", title: "Logo einbetten", description: "Eigenes Logo in die Mitte laden und Größe einstellen." },
+    ],
+  },
   {
     slug: "flx-suite",
     name: "FLX-Suite.de",
