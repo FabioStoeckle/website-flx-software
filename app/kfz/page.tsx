@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
-  title: "Kfz-Steuer Rechner 2025 | FLX-Software",
+  title: "Kfz-Steuer Rechner 2026 | FLX-Software",
   description:
     "Kfz-Steuer schnell berechnen. Benzin, Diesel, Hybrid, LPG und Elektro. Hubraum- und CO₂-Anteil nach §9 KraftStG. Kostenlos, ohne Anmeldung.",
 };
@@ -32,7 +32,7 @@ export default function KfzPage() {
             Kfz-Steuer Rechner
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-400 leading-relaxed">
-            Kfz-Steuer für Benzin, Diesel, Hybrid, LPG und Elektro berechnen. Hubraum- und CO₂-Anteil nach §9 KraftStG 2025.
+            Kfz-Steuer für Benzin, Diesel, Hybrid, LPG und Elektro berechnen. Hubraum- und CO₂-Anteil nach §9 KraftStG 2026.
           </p>
         </div>
       </section>

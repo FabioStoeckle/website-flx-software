@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 
-// ── Beitragssätze & Grenzen 2025 ─────────────────────────────────────────────
+// ── Beitragssätze & Grenzen 2026 ─────────────────────────────────────────────
 
 const GFB          = 12096;   // Grundfreibetrag
 const ANP          = 1230;    // Arbeitnehmer-Pauschbetrag
@@ -11,7 +11,7 @@ const EAB          = 4260;    // Entlastungsbetrag Alleinerziehende (Klasse II)
 const RV_AN        = 0.0930;  // Rentenversicherung Arbeitnehmer
 const ALV_AN       = 0.0130;  // Arbeitslosenversicherung Arbeitnehmer
 const KV_AN        = 0.0730;  // Krankenversicherung Arbeitnehmer (Hälfte von 14,6 %)
-const PV_BASE      = 0.0180;  // Pflegeversicherung Basisanteil (2025: 3,6 % gesamt)
+const PV_BASE      = 0.0180;  // Pflegeversicherung Basisanteil (2026: 3,6 % gesamt)
 const PV_KINDERLOS = 0.0060;  // Pflegeversicherung Kinderlosenzuschlag
 const PV_SACHSEN   = 0.0050;  // Pflegeversicherung Sachsen-Sonderregelung
 const BBG_RV       = 7600;    // Beitragsbemessungsgrenze RV/ALV monatlich
@@ -19,7 +19,7 @@ const BBG_KV       = 5512.50; // Beitragsbemessungsgrenze KV/PV monatlich
 const SOLI_FREI    = 18130;   // Soli-Freigrenze jährlich (Kl. I/II/IV/V/VI)
 const SOLI_FREI_3  = 36260;   // Soli-Freigrenze Steuerklasse III
 
-// ── Steuerformel §32a EStG 2025 ──────────────────────────────────────────────
+// ── Steuerformel §32a EStG 2026 ──────────────────────────────────────────────
 
 function grundsteuer(zvE: number): number {
   if (zvE <= 12096) return 0;
@@ -363,7 +363,7 @@ export function GehaltRechner() {
                   <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm">%</span>
                 </div>
                 <p className="text-xs text-gray-500 mt-1.5">
-                  Durchschnitt 2025 ca. 1,7 %. Du zahlst die Hälfte davon.
+                  Durchschnitt 2026 ca. 1,7 %. Du zahlst die Hälfte davon.
                 </p>
               </div>
             ) : (
@@ -513,7 +513,7 @@ export function GehaltRechner() {
           </div>
 
           <p className="text-xs text-gray-600 text-center px-2 leading-relaxed">
-            Berechnung auf Basis der Sätze 2025. Ohne Gewähr. Für verbindliche Auskünfte bitte Steuerberater kontaktieren.
+            Berechnung auf Basis der Sätze 2026. Ohne Gewähr. Für verbindliche Auskünfte bitte Steuerberater kontaktieren.
           </p>
         </div>
       </div>

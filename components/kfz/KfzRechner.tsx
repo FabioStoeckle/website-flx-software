@@ -192,7 +192,7 @@ export function KfzRechner() {
             <input
               type="number"
               min={1990}
-              max={2025}
+              max={2026}
               value={jahrInput}
               onChange={(e) => setJahrInput(e.target.value)}
               className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 pr-16 text-white text-xl font-light focus:outline-none focus:border-flx-cyan"

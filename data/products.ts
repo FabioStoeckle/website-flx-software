@@ -55,7 +55,7 @@ export const products: Product[] = [
     name: "Brutto Netto Rechner",
     category: "Digitale Tools",
     description:
-      "Präziser Gehaltsrechner für Deutschland 2025. Steuerklassen I bis VI, alle Bundesländer, PKV und GKV, Kirchensteuer, Kinder.",
+      "Präziser Gehaltsrechner für Deutschland 2026. Steuerklassen I bis VI, alle Bundesländer, PKV und GKV, Kirchensteuer, Kinder.",
     benefits: [
       "Steuerklassen I bis VI mit korrekter Lohnsteuerformel",
       "Alle 16 Bundesländer inkl. Kirchensteuer und Sachsen-Sonderregelung",
@@ -63,7 +63,7 @@ export const products: Product[] = [
     ],
     href: "/gehalt",
     features: [
-      "Lohnsteuerberechnung nach §32a EStG 2025",
+      "Lohnsteuerberechnung nach §32a EStG 2026",
       "Sozialversicherungsbeiträge mit Beitragsbemessungsgrenzen",
       "Solidaritätszuschlag mit Milderungszone",
     ],
@@ -72,7 +72,7 @@ export const products: Product[] = [
     views: [
       { key: "dashboard", title: "Klare Aufschlüsselung", description: "Jeder Abzug einzeln ausgewiesen. Monat oder Jahr." },
       { key: "workflow",  title: "Alle Parameter",        description: "Steuerklasse, Bundesland, KV, Kinder in Sekunden eingestellt." },
-      { key: "export",    title: "2025 aktuell",          description: "Beitragssätze und Steuertarife auf dem Stand 2025." },
+      { key: "export",    title: "2026 aktuell",          description: "Beitragssätze und Steuertarife auf dem Stand 2026." },
     ],
   },
   {
@@ -97,7 +97,7 @@ export const products: Product[] = [
     views: [
       { key: "dashboard", title: "Klare Aufschlüsselung", description: "Hubraum- und CO₂-Anteil einzeln ausgewiesen." },
       { key: "workflow",  title: "Alle Fahrzeugtypen",    description: "Benzin, Diesel, Hybrid, LPG und Elektro in Sekunden eingestellt." },
-      { key: "export",    title: "2025 aktuell",          description: "Berechnung nach §9 KraftStG mit aktuellen Sätzen und Freigrenzen." },
+      { key: "export",    title: "2026 aktuell",          description: "Berechnung nach §9 KraftStG mit aktuellen Sätzen und Freigrenzen." },
     ],
   },
   {

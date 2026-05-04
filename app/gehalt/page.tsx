@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
-  title: "Brutto Netto Rechner 2025 | FLX-Software",
+  title: "Brutto Netto Rechner 2026 | FLX-Software",
   description:
-    "Präziser Brutto-Netto-Rechner für Deutschland 2025. Steuerklassen I bis VI, alle Bundesländer, Kirchensteuer, PKV/GKV, Kinder. Monat- und Jahresübersicht.",
+    "Präziser Brutto-Netto-Rechner für Deutschland 2026. Steuerklassen I bis VI, alle Bundesländer, Kirchensteuer, PKV/GKV, Kinder. Monat- und Jahresübersicht.",
 };
 
 const GehaltRechner = dynamic(
@@ -32,7 +32,7 @@ export default function GehaltPage() {
             Brutto Netto Rechner
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-400 leading-relaxed">
-            Alle relevanten Parameter für Deutschland 2025. Steuerklassen I bis VI, alle Bundesländer, Kirchensteuer, PKV und GKV, Kinder. Monat und Jahr auf einen Blick.
+            Alle relevanten Parameter für Deutschland 2026. Steuerklassen I bis VI, alle Bundesländer, Kirchensteuer, PKV und GKV, Kinder. Monat und Jahr auf einen Blick.
           </p>
         </div>
       </section>
