@@ -22,6 +22,31 @@ export type Product = {
 
 export const products: Product[] = [
   {
+    slug: "gehaltsrechner",
+    name: "Brutto Netto Rechner",
+    category: "Digitale Tools",
+    description:
+      "Präziser Gehaltsrechner für Deutschland 2025. Steuerklassen I bis VI, alle Bundesländer, PKV und GKV, Kirchensteuer, Kinder.",
+    benefits: [
+      "Steuerklassen I bis VI mit korrekter Lohnsteuerformel",
+      "Alle 16 Bundesländer inkl. Kirchensteuer und Sachsen-Sonderregelung",
+      "PKV und GKV mit Zusatzbeitrag, Monats- und Jahresansicht",
+    ],
+    href: "/gehalt",
+    features: [
+      "Lohnsteuerberechnung nach §32a EStG 2025",
+      "Sozialversicherungsbeiträge mit Beitragsbemessungsgrenzen",
+      "Solidaritätszuschlag mit Milderungszone",
+    ],
+    vorteile: ["Kein Account nötig", "Alle Parameter auf einen Blick", "Sofort verwendbar"],
+    zielgruppen: ["Arbeitnehmer", "Berufseinsteiger", "HR und Recruiting"],
+    views: [
+      { key: "dashboard", title: "Klare Aufschlüsselung", description: "Jeder Abzug einzeln ausgewiesen. Monat oder Jahr." },
+      { key: "workflow",  title: "Alle Parameter",        description: "Steuerklasse, Bundesland, KV, Kinder in Sekunden eingestellt." },
+      { key: "export",    title: "2025 aktuell",          description: "Beitragssätze und Steuertarife auf dem Stand 2025." },
+    ],
+  },
+  {
     slug: "qr-designer",
     name: "QR-Code Designer",
     category: "Digitale Tools",

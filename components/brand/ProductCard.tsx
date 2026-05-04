@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { Product } from "@/data/products";
-import { FileSpreadsheet, Gamepad2, LayoutGrid, QrCode, Waypoints } from "lucide-react";
+import { Calculator, FileSpreadsheet, Gamepad2, LayoutGrid, QrCode, Waypoints } from "lucide-react";
 
 function ProductIcon({ product }: { product: Product }) {
   // Ohne echte Screenshots nutzen wir kleine, präzise UI-Icons als “Thumbnail” im Card-Kontext.
@@ -11,6 +11,8 @@ function ProductIcon({ product }: { product: Product }) {
 
   const Icon = (() => {
     switch (key) {
+      case "gehaltsrechner":
+        return Calculator;
       case "qr-designer":
         return QrCode;
       case "flx-suite":
