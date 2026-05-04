@@ -40,8 +40,7 @@ export function QRDesigner() {
   const [gradientColor2, setGradientColor2] = useState("#0ea5e9");
 
   const qrRef = useRef<HTMLDivElement>(null);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const qrInstance = useRef<any>(null);
+  const qrInstance = useRef<any>(null); // qr-code-styling hat keine vollständigen Types
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const getQROptions = useCallback(
