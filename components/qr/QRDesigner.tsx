@@ -107,7 +107,7 @@ export function QRDesigner() {
       {/* Steuerung */}
       <div className="order-2 lg:order-1 lg:col-span-3 space-y-4">
         {/* Inhalt */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-3">Inhalt</h2>
           <textarea
             value={url}
@@ -119,7 +119,7 @@ export function QRDesigner() {
         </div>
 
         {/* Punkt-Stil */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-3">Punkt-Stil</h2>
           <div className="grid grid-cols-3 gap-2">
             {DOT_STYLES.map((s) => (
@@ -139,7 +139,7 @@ export function QRDesigner() {
         </div>
 
         {/* Farben */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-4">Farben</h2>
           <div className="space-y-4">
             <div className="flex items-center justify-between">
@@ -200,7 +200,7 @@ export function QRDesigner() {
         </div>
 
         {/* Ecken */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-4">Ecken</h2>
           <div className="space-y-3">
             <div>
@@ -243,7 +243,7 @@ export function QRDesigner() {
         </div>
 
         {/* Logo */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-3">Logo (optional)</h2>
           <input ref={fileInputRef} type="file" accept="image/*" onChange={handleLogoUpload} className="hidden" />
 
@@ -291,7 +291,7 @@ export function QRDesigner() {
       {/* Vorschau */}
       <div className="order-1 lg:order-2 lg:col-span-2">
         <div className="lg:sticky lg:top-24">
-          <div className="glass rounded-2xl border border-white/10 p-6 flex flex-col items-center">
+          <div className="flx-tool-card flex flex-col items-center">
             <h2 className="text-lg font-medium text-white mb-6 self-start">Vorschau</h2>
 
             <div

@@ -225,7 +225,7 @@ export function GehaltRechner() {
       <div className="order-2 lg:order-1 lg:col-span-3 space-y-4">
 
         {/* Gehalt */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-medium text-white">Bruttogehalt</h2>
             <div className="flex rounded-xl overflow-hidden border border-white/10 text-sm">
@@ -259,7 +259,7 @@ export function GehaltRechner() {
         </div>
 
         {/* Steuer */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-4">Steuer</h2>
 
           <div className="space-y-4">
@@ -324,7 +324,7 @@ export function GehaltRechner() {
         </div>
 
         {/* Krankenversicherung */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-4">Krankenversicherung</h2>
 
           <div className="space-y-4">
@@ -391,7 +391,7 @@ export function GehaltRechner() {
         </div>
 
         {/* Familie & Alter */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-4">Familie & Alter</h2>
 
           <div className="space-y-5">
@@ -446,7 +446,7 @@ export function GehaltRechner() {
         <div className="lg:sticky lg:top-24 space-y-4">
 
           {/* Netto-Karte */}
-          <div className="glass rounded-2xl border border-white/10 p-6">
+          <div className="flx-tool-card">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-medium text-white">Nettolohn</h2>
               <div className="flex rounded-xl overflow-hidden border border-white/10 text-xs">
@@ -483,7 +483,7 @@ export function GehaltRechner() {
           </div>
 
           {/* Aufschlüsselung */}
-          <div className="glass rounded-2xl border border-white/10 p-6">
+          <div className="flx-tool-card">
             <h2 className="text-lg font-medium text-white mb-4">Aufschlüsselung</h2>
 
             <div className="space-y-2.5">

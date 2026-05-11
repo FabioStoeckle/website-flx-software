@@ -112,7 +112,7 @@ export function KfzRechner() {
       <div className="order-2 lg:order-1 lg:col-span-3 space-y-4">
 
         {/* Kraftstoffart */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-3">Kraftstoffart</h2>
           <div className="grid grid-cols-5 gap-2">
             {KRAFTSTOFFE.map((k) => (
@@ -139,7 +139,7 @@ export function KfzRechner() {
 
         {/* Fahrzeugdaten */}
         {kraftstoff !== "elektro" && (
-          <div className="glass rounded-2xl border border-white/10 p-6">
+          <div className="flx-tool-card">
             <h2 className="text-lg font-medium text-white mb-4">Fahrzeugdaten</h2>
             <div className="space-y-4">
               <div>
@@ -186,7 +186,7 @@ export function KfzRechner() {
         )}
 
         {/* Erstzulassung */}
-        <div className="glass rounded-2xl border border-white/10 p-6">
+        <div className="flx-tool-card">
           <h2 className="text-lg font-medium text-white mb-3">Erstzulassung</h2>
           <div className="relative">
             <input
@@ -220,7 +220,7 @@ export function KfzRechner() {
         <div className="lg:sticky lg:top-24 space-y-4">
 
           {/* Hauptkarte */}
-          <div className="glass rounded-2xl border border-white/10 p-6">
+          <div className="flx-tool-card">
             <h2 className="text-lg font-medium text-white mb-4">Kfz-Steuer</h2>
 
             {ergebnis.befreit ? (
@@ -263,7 +263,7 @@ export function KfzRechner() {
 
           {/* Aufschlüsselung */}
           {!ergebnis.befreit && (
-            <div className="glass rounded-2xl border border-white/10 p-6">
+            <div className="flx-tool-card">
               <h2 className="text-lg font-medium text-white mb-4">Aufschlüsselung</h2>
               <div className="space-y-2.5">
                 <div className="flex justify-between text-sm">

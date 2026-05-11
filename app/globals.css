@@ -128,4 +128,57 @@
   .flx-angle-card > * {
     position: relative;
   }
+
+  .flx-tool-card {
+    @apply flx-angle-card bg-white p-6 text-slate-950 shadow-lg shadow-slate-900/10;
+  }
+
+  .flx-tool-card .text-white {
+    color: #020617 !important;
+  }
+
+  .flx-tool-card .text-gray-300,
+  .flx-tool-card .text-gray-400 {
+    color: #334155 !important;
+  }
+
+  .flx-tool-card .text-gray-500,
+  .flx-tool-card .text-gray-600 {
+    color: #64748b !important;
+  }
+
+  .flx-tool-card .bg-white\/5,
+  .flx-tool-card .bg-white\/10 {
+    background-color: #f1f5f9 !important;
+  }
+
+  .flx-tool-card .border-white\/10,
+  .flx-tool-card .border-white\/20 {
+    border-color: #cbd5e1 !important;
+  }
+
+  .flx-tool-card input:not([type="color"]):not([type="range"]),
+  .flx-tool-card textarea,
+  .flx-tool-card select {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #020617 !important;
+  }
+
+  .flx-tool-card option {
+    background-color: #ffffff;
+    color: #020617;
+  }
+
+  .flx-tool-card .raycast-button {
+    background-color: #006de7 !important;
+    border-color: #006de7 !important;
+    color: #ffffff !important;
+  }
+
+  .flx-tool-card .raycast-button svg,
+  .flx-tool-card button.bg-flx-cyan,
+  .flx-tool-card .bg-flx-cyan.text-white {
+    color: #ffffff !important;
+  }
 }
