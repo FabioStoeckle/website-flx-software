@@ -8,13 +8,13 @@ function ServiceIcon({ service }: { service: Service }) {
         return Laptop;
       case "webapps":
         return Network;
-      case "pwaps":
+      case "browser-programs":
         return Sparkles;
       case "tools":
         return Wrench;
       case "maintenance":
         return Code2;
-      case "growth":
+      case "customers":
         return Target;
       default:
         return Laptop;
@@ -49,4 +49,3 @@ export function ServiceCard({ service }: { service: Service }) {
     </div>
   );
 }
-

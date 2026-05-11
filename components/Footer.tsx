@@ -13,8 +13,8 @@ export function Footer() {
           <div className="md:col-span-2">
             <Logo variant="dark" size="sm" className="mb-6" />
             <p className="mb-6 text-gray-400 leading-relaxed max-w-md">
-              FLX-Software entwickelt digitale Produkte, Web-Apps und Websites für Unternehmen und Teams.
-              Sauber gebaut. Schnell live. Wartbar weiterentwickelt.
+              FLX-Software baut Websites, kleine Verwaltungsprogramme und digitale Helfer für Betriebe,
+              die weniger Papierkram und mehr Überblick wollen.
             </p>
           </div>
 
@@ -70,4 +70,3 @@ export function Footer() {
     </footer>
   );
 }
-

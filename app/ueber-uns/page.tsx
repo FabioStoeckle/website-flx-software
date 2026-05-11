@@ -1,16 +1,48 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, MessageSquare, Target, Zap } from "lucide-react";
-import { Section } from "@/components/Section";
+import {
+  ArrowRight,
+  CheckCircle2,
+  ClipboardCheck,
+  MessageSquare,
+  Target,
+  Wrench,
+} from "lucide-react";
 import { CertificationCard } from "@/components/trust/CertificationCard";
 import { qualifications, type Qualification } from "@/data/qualifications";
 import { QualificationTextCard } from "@/components/trust/QualificationTextCard";
 
 export const metadata: Metadata = {
-  title: "Über uns | FLX-Software",
+  title: "Über FLX-Software | FLX-Software",
   description:
-    "Wir entwickeln Websites, Web-Apps und digitale Tools. Kein Agentur-Overhead, direkte Ansprechpartner, schnelle Umsetzung.",
+    "FLX-Software baut einfache digitale Lösungen für Betriebe, die weniger Papierkram und mehr Überblick wollen.",
 };
+
+const values = [
+  {
+    title: "Praktisch denken",
+    text: "Eine Lösung muss im Alltag helfen. Sonst ist sie nicht fertig.",
+    icon: Target,
+  },
+  {
+    title: "Sauber bauen",
+    text: "Deine Website oder dein Programm soll stabil laufen und später gut anpassbar bleiben.",
+    icon: Wrench,
+  },
+  {
+    title: "Klar sprechen",
+    text: "Du bekommst verständliche Antworten, kurze Wege und ehrliche Einschätzungen.",
+    icon: MessageSquare,
+  },
+];
+
+const deliverables = [
+  "Persönlicher Ansprechpartner",
+  "Klare Absprachen vor dem Start",
+  "Verständliche Erklärung ohne Fachchinesisch",
+  "Saubere Umsetzung mit Blick auf deinen Alltag",
+  "Unterstützung auch nach dem Start",
+];
 
 export default function UeberUnsPage() {
   const googleCertificate = qualifications.find(
@@ -33,115 +65,141 @@ export default function UeberUnsPage() {
 
   return (
     <>
-      <section className="relative pt-32 pb-16">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-slate-950" />
-        <div className="absolute inset-0 bg-[url('/brand/flx-handy-wallpaper.png')] bg-cover bg-center opacity-8" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+      <section className="relative overflow-hidden bg-[#05070d] pt-24">
+        <div className="absolute inset-0 bg-[url('/brand/flx-handy-wallpaper.png')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(0,109,231,0.26),transparent_34%),linear-gradient(135deg,rgba(0,109,231,0.18)_0%,transparent_30%,rgba(255,255,255,0.04)_30.3%,transparent_31%)]" />
+        <div className="absolute right-[-14%] top-24 h-64 w-[58%] -skew-x-12 border-y border-flx-cyan/35 bg-flx-cyan/10" />
 
-        <div className="relative mx-auto max-w-7xl px-6">
-          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-white">Wer wir sind</h1>
-          <p className="mt-4 max-w-3xl text-lg text-gray-400 leading-relaxed">
-            Zwei Entwickler aus Deutschland die eigene Produkte bauen und Webprojekte ohne das ganze Agentur-Drumherum umsetzen.
-          </p>
+        <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 lg:grid-cols-[1fr_0.9fr] lg:pb-20">
+          <div>
+            <p className="mb-5 max-w-xl text-base leading-relaxed text-gray-300">
+              FLX-Software steht für einfache digitale Lösungen, die im Betrieb wirklich genutzt werden.
+            </p>
+            <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
+              Digital bauen, aber verständlich bleiben.
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
+              Wir helfen Handwerkern, Dienstleistern und kleinen Unternehmen dabei, Papierkram, Suchen und doppelte
+              Arbeit zu reduzieren.
+            </p>
+
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/kontakt"
+                className="raycast-button inline-flex items-center justify-center px-7 py-4 text-base font-medium text-white smooth-transition"
+              >
+                Projekt anfragen
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
+              <Link
+                href="/#projekte"
+                className="inline-flex items-center justify-center rounded-lg border border-white/20 px-7 py-4 text-base font-medium text-white transition-colors hover:border-flx-cyan/70 hover:text-flx-cyan"
+              >
+                Beispiele ansehen
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -right-6 top-7 hidden h-[86%] w-[74%] -skew-x-12 border border-flx-cyan/30 bg-flx-cyan/10 lg:block" />
+            <div className="relative flx-angle-card bg-white p-6 text-slate-950 shadow-2xl shadow-flx-cyan/10">
+              <div className="flex items-center gap-4 border-b border-slate-200 pb-5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-flx-cyan/10 text-flx-cyan">
+                  <ClipboardCheck className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-flx-cyan">Worauf es ankommt</p>
+                  <h2 className="text-2xl font-semibold">Einfach nutzbar</h2>
+                </div>
+              </div>
+
+              <div className="mt-5 space-y-3">
+                {["Weniger Zettel", "Weniger Suchen", "Weniger doppelte Arbeit", "Mehr Überblick"].map((item) => (
+                  <div key={item} className="flex items-center gap-3 rounded-lg bg-slate-100 p-4 font-medium">
+                    <CheckCircle2 className="h-5 w-5 text-flx-cyan" aria-hidden="true" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <Section>
+      <section className="relative overflow-hidden bg-white py-16 text-slate-950 sm:py-24">
+        <div className="absolute left-[-10%] top-10 h-40 w-[46%] -skew-x-12 bg-flx-cyan/10" />
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-2 gap-6 items-start">
-            <div className="glass rounded-2xl border border-white/10 p-8">
-              <h2 className="text-3xl font-light text-white">Wie es dazu kam</h2>
-              <p className="mt-3 text-gray-400 leading-relaxed">
-                Wir haben FLX-Software gestartet weil wir eigene Ideen umsetzen wollten und nebenher gemerkt haben dass wir Projekte auch für andere gerne übernehmen. Ohne den ganzen Aufwand den eine klassische Agentur mitbringt.
+          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="flx-angle-card bg-white p-7 shadow-lg shadow-slate-900/10">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-flx-cyan">Haltung</p>
+              <h2 className="mt-4 text-3xl font-semibold sm:text-5xl">Bodenständig statt kompliziert.</h2>
+              <p className="mt-5 text-lg leading-relaxed text-slate-700">
+                Wir reden nicht um den heißen Brei. Wir wollen verstehen, wie dein Betrieb arbeitet, wo es hakt und was
+                dir wirklich Zeit spart.
               </p>
-
-              <div className="mt-7 space-y-5">
-                <div className="flex gap-4">
-                  <Target className="h-7 w-7 text-flx-cyan" />
-                  <div>
-                    <h3 className="text-xl font-medium text-white">Kein Overhead</h3>
-                    <p className="mt-1 text-gray-400 leading-relaxed">
-                      Kein Büro, keine festen Mitarbeiter, keine Verwaltungsebenen. Das spart Zeit und senkt deinen Preis.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <Zap className="h-7 w-7 text-flx-cyan" />
-                  <div>
-                    <h3 className="text-xl font-medium text-white">Wir hassen Zeitverschwendung</h3>
-                    <p className="mt-1 text-gray-400 leading-relaxed">
-                      Kein wochenlanges Konzeptionieren bevor etwas gebaut wird. Ein kurzes Gespräch reicht und wir fangen an.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <MessageSquare className="h-7 w-7 text-flx-cyan" />
-                  <div>
-                    <h3 className="text-xl font-medium text-white">Du redest direkt mit uns</h3>
-                    <p className="mt-1 text-gray-400 leading-relaxed">
-                      Keine Account Manager, keine Weiterleitungen. Du schreibst uns und bekommst eine Antwort.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div className="glass rounded-2xl border border-white/10 p-8">
-              <h2 className="text-3xl font-light text-white">Was du davon hast</h2>
-              <p className="mt-3 text-gray-400 leading-relaxed">
-                Kurz gesagt: du weißt immer mit wem du es zu tun hast und was als nächstes passiert.
-              </p>
+            <div className="grid gap-5">
+              {values.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div key={item.title} className="flx-angle-card bg-white p-6 shadow-lg shadow-slate-900/10">
+                    <div className="flex gap-4">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-flx-cyan/10 text-flx-cyan">
+                        <Icon className="h-6 w-6" aria-hidden="true" />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-semibold">{item.title}</h3>
+                        <p className="mt-2 leading-relaxed text-slate-700">{item.text}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <ul className="mt-6 space-y-3 text-gray-300">
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
-                  <span>Direkter Kontakt zu den Entwicklern die an deinem Projekt arbeiten</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
-                  <span>Schnell live ohne monatelange Vorlaufzeit</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
-                  <span>Persönlicher Support vor Ort wenn du ihn brauchst</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-flx-cyan" />
-                  <span>Weiterentwicklung nach dem Launch so lange du willst</span>
-                </li>
-              </ul>
-
-              <div className="mt-8 rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
-                <p className="text-gray-400 leading-relaxed">
-                  Klingt gut? Schreib uns kurz was du dir vorstellst.
+      <section className="bg-[#080b12] py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="relative overflow-hidden rounded-lg border border-white/10 bg-[#0d1320] p-7 sm:p-10">
+            <div className="absolute right-[-8%] top-0 h-full w-48 -skew-x-12 bg-flx-cyan/20" />
+            <div className="relative grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-flx-cyan">Zusammenarbeit</p>
+                <h2 className="mt-4 text-3xl font-semibold text-white sm:text-5xl">Was du bekommst</h2>
+                <p className="mt-5 text-lg leading-relaxed text-gray-300">
+                  Eine Lösung, die zu deinem Betrieb passt, und eine Zusammenarbeit, bei der du immer weißt, woran du
+                  bist.
                 </p>
-                <div className="mt-6">
-                  <Link href="/kontakt">
-                    <button className="raycast-button px-8 py-4 text-lg font-medium text-white smooth-transition">
-                      Jetzt melden
-                      <ArrowRight className="ml-2 inline-block h-5 w-5" />
-                    </button>
-                  </Link>
-                </div>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {deliverables.map((item) => (
+                  <div key={item} className="flex items-center gap-3 rounded-lg bg-white p-4 text-slate-950">
+                    <CheckCircle2 className="h-5 w-5 shrink-0 text-flx-cyan" aria-hidden="true" />
+                    <span className="font-medium">{item}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
-      <Section className="bg-black/30">
+      <section className="bg-white py-16 text-slate-950 sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-8">
-            <h2 className="text-4xl font-light text-white">Ausbildung und Erfahrung</h2>
-            <p className="mt-3 text-gray-400 text-lg leading-relaxed max-w-2xl">
-              Wir kommen nicht aus dem Nichts. Hier ist was wir mitbringen.
+          <div className="mb-10 max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-flx-cyan">Nachweis</p>
+            <h2 className="mt-4 text-3xl font-semibold sm:text-5xl">Qualifikation und Praxiserfahrung</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-700">
+              Neben Erfahrung aus echten Projekten gibt es auch fachliche Grundlagen, die für saubere Arbeit wichtig
+              sind.
             </p>
           </div>
 
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 items-stretch">
-            {/* 1) Google-Zertifikat */}
+          <div className="grid items-stretch gap-5 md:grid-cols-2">
             <div className="min-w-0 h-full">
               {googleCertificate ? (
                 <CertificationCard
@@ -152,55 +210,38 @@ export default function UeberUnsPage() {
                   description={googleCertificate.description}
                   thumbnailSrc={googleCertificate.thumbnailSrc}
                   documentHref={googleCertificate.documentHref}
+                  variant="light"
                 />
               ) : null}
             </div>
 
-            {/* 2) Fachinformatiker für Anwendungsentwicklung (IHK) */}
-            <div className="min-w-0 h-full">
-              {ihkQualification ? (
-                <QualificationTextCard
-                  key={ihkQualification.id}
-                  status={ihkQualification.status}
-                  title={ihkQualification.title}
-                  hint={ihkQualification.hint}
-                  description={ihkQualification.description}
-                  relevance={ihkQualification.relevance}
-                />
-              ) : null}
-            </div>
+            {[ihkQualification, bachelorProQualification, experienceQualification].map((qualification) => (
+              <div key={qualification?.id} className="min-w-0 h-full">
+                {qualification ? (
+                  <QualificationTextCard
+                    status={qualification.status}
+                    title={qualification.title}
+                    hint={qualification.hint}
+                    description={qualification.description}
+                    relevance={qualification.relevance}
+                    variant="light"
+                  />
+                ) : null}
+              </div>
+            ))}
+          </div>
 
-            {/* 3) Bachelor Professional in IT – Informationssicherheit (in Arbeit) */}
-            <div className="min-w-0 h-full">
-              {bachelorProQualification ? (
-                <QualificationTextCard
-                  key={bachelorProQualification.id}
-                  status={bachelorProQualification.status}
-                  title={bachelorProQualification.title}
-                  hint={bachelorProQualification.hint}
-                  description={bachelorProQualification.description}
-                  relevance={bachelorProQualification.relevance}
-                />
-              ) : null}
-            </div>
-
-            {/* 4) Berufserfahrung / Praxiserfahrung */}
-            <div className="min-w-0 h-full">
-              {experienceQualification ? (
-                <QualificationTextCard
-                  key={experienceQualification.id}
-                  status={experienceQualification.status}
-                  title={experienceQualification.title}
-                  hint={experienceQualification.hint}
-                  description={experienceQualification.description}
-                  relevance={experienceQualification.relevance}
-                />
-              ) : null}
-            </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/kontakt"
+              className="inline-flex items-center justify-center rounded-lg bg-flx-cyan px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-[#005ec7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-flx-cyan/60 focus-visible:ring-offset-2"
+            >
+              Unverbindlich anfragen
+              <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+            </Link>
           </div>
         </div>
-      </Section>
+      </section>
     </>
   );
 }
-

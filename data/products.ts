@@ -1,4 +1,4 @@
-export type ProductCategory = "Apps" | "Websites" | "PWAs" | "Digitale Tools";
+export type ProductCategory = "Apps" | "Websites" | "Programme" | "Digitale Tools";
 
 export type ProductViewKey = "workflow" | "dashboard" | "export" | "community" | "security" | "automation" | "design";
 
@@ -25,187 +25,146 @@ export const products: Product[] = [
     slug: "flx-suite",
     name: "FLX-Suite.de",
     category: "Digitale Tools",
-    description:
-      "Angebot, Rechnung und Mahnungen online erstellen und exportieren – zentral, strukturiert und sofort versandfertig.",
+    description: "Angebote, Rechnungen und Mahnungen einfach online erstellen.",
     benefits: [
-      "Templates für Angebote, Rechnungen und Mahnungen",
-      "PDF-Export für Kunden und Archiv",
-      "Klarer Status über alle Belege",
+      "Vorlagen für Angebote, Rechnungen und Mahnungen",
+      "PDF Export für Kunden und Ablage",
+      "Klarer Überblick über alle Belege",
     ],
     href: "https://flx-suite.de",
     features: [
-      "Angebote, Rechnungen und Mahnungen in einem durchgängigen Ablauf",
-      "Klar strukturierte Vorlagen mit konsistentem Ergebnis",
-      "PDF-Export und nachvollziehbare Schritte vom Entwurf bis zum Versand",
+      "Angebote, Rechnungen und Mahnungen in einem einfachen Ablauf",
+      "Klar strukturierte Vorlagen mit einheitlichem Ergebnis",
+      "PDF Export vom Entwurf bis zum Versand",
     ],
-    vorteile: ["Schneller im Alltag", "Weniger Fehler durch einheitliche Vorlagen", "Transparenter Prozess für Teams und Selbstständige"],
-    zielgruppen: ["Selbstständige & Freiberufler", "Kleinunternehmen und Projektteams", "Service- & Beratungsunternehmen"],
+    vorteile: ["Schneller im Alltag", "Weniger Fehler durch einheitliche Vorlagen", "Mehr Überblick im Büro"],
+    zielgruppen: ["Selbstständige", "Kleinunternehmen", "Dienstleister"],
     views: [
       {
         key: "workflow",
         title: "Dokumente in Minuten",
-        description: "Vorlagen wählen, Daten eintragen – von Angebot über Rechnung bis Mahnung.",
+        description: "Vorlage wählen, Daten eintragen und PDF erstellen.",
       },
-      { key: "export", title: "Export bereit zum Versand", description: "PDFs, die sauber ankommen – ohne Format-Stress." },
-      { key: "dashboard", title: "Alles im Überblick", description: "Klarer Fortschritt und Status über alle Belege." },
-    ],
-  },
-  {
-    slug: "gehaltsrechner",
-    name: "Brutto Netto Rechner",
-    category: "Digitale Tools",
-    description:
-      "Präziser Gehaltsrechner für Deutschland 2026. Steuerklassen I bis VI, alle Bundesländer, PKV und GKV, Kirchensteuer, Kinder.",
-    benefits: [
-      "Steuerklassen I bis VI mit korrekter Lohnsteuerformel",
-      "Alle 16 Bundesländer inkl. Kirchensteuer und Sachsen-Sonderregelung",
-      "PKV und GKV mit Zusatzbeitrag, Monats- und Jahresansicht",
-    ],
-    href: "/gehalt",
-    features: [
-      "Lohnsteuerberechnung nach §32a EStG 2026",
-      "Sozialversicherungsbeiträge mit Beitragsbemessungsgrenzen",
-      "Solidaritätszuschlag mit Milderungszone",
-    ],
-    vorteile: ["Kein Account nötig", "Alle Parameter auf einen Blick", "Sofort verwendbar"],
-    zielgruppen: ["Arbeitnehmer", "Berufseinsteiger", "HR und Recruiting"],
-    views: [
-      { key: "dashboard", title: "Klare Aufschlüsselung", description: "Jeder Abzug einzeln ausgewiesen. Monat oder Jahr." },
-      { key: "workflow",  title: "Alle Parameter",        description: "Steuerklasse, Bundesland, KV, Kinder in Sekunden eingestellt." },
-      { key: "export",    title: "2026 aktuell",          description: "Beitragssätze und Steuertarife auf dem Stand 2026." },
-    ],
-  },
-  {
-    slug: "kfz-rechner",
-    name: "Kfz-Steuer Rechner",
-    category: "Digitale Tools",
-    description:
-      "Kfz-Steuer sofort berechnen. Benzin, Diesel, Hybrid, LPG und Elektro. Hubraum- und CO₂-Anteil nach §9 KraftStG.",
-    benefits: [
-      "Benzin, Diesel, Hybrid, LPG und Elektro",
-      "CO₂-Staffelberechnung nach §9 KraftStG",
-      "CO₂-Freigrenzen je nach Erstzulassungsjahr",
-    ],
-    href: "/kfz",
-    features: [
-      "Hubraum- und CO₂-Anteil einzeln ausgewiesen",
-      "Elektrofahrzeuge automatisch als steuerbefreit erkannt",
-      "Alte Zulassungen vor 2009 mit vereinfachter Berechnung",
-    ],
-    vorteile: ["Kein Account nötig", "Sofort nutzbar", "Ohne Installation"],
-    zielgruppen: ["Autofahrer", "Autokäufer", "Fuhrparkmanager"],
-    views: [
-      { key: "dashboard", title: "Klare Aufschlüsselung", description: "Hubraum- und CO₂-Anteil einzeln ausgewiesen." },
-      { key: "workflow",  title: "Alle Fahrzeugtypen",    description: "Benzin, Diesel, Hybrid, LPG und Elektro in Sekunden eingestellt." },
-      { key: "export",    title: "2026 aktuell",          description: "Berechnung nach §9 KraftStG mit aktuellen Sätzen und Freigrenzen." },
-    ],
-  },
-  {
-    slug: "qr-designer",
-    name: "QR-Code Designer",
-    category: "Digitale Tools",
-    description:
-      "QR-Codes visuell gestalten: eigenes Logo einbetten, Farben und Stil frei wählen, direkt als PNG oder SVG exportieren.",
-    benefits: [
-      "Logo in die Mitte einbetten",
-      "Farben, Verlauf und Punkt-Stil frei wählen",
-      "Export als PNG oder SVG in 1000 x 1000 px",
-    ],
-    href: "/qr",
-    features: [
-      "6 Punkt-Stile und individuelle Eckformen",
-      "Farbverlauf oder Vollton frei konfigurierbar",
-      "Logo-Upload mit einstellbarer Größe",
-    ],
-    vorteile: ["Kein Account nötig", "Läuft komplett im Browser", "Sofort verwendbar ohne Installation"],
-    zielgruppen: ["Selbstständige & Freelancer", "Unternehmen mit Printmaterial", "Alle die einen individuellen QR-Code brauchen"],
-    views: [
-      { key: "design", title: "Stil nach Wunsch", description: "Farben, Verlauf und Punkt-Stil in Sekunden anpassen." },
-      { key: "export", title: "Sofort exportieren", description: "PNG oder SVG in 1000px, kostenlos und ohne Anmeldung." },
-      { key: "workflow", title: "Logo einbetten", description: "Eigenes Logo in die Mitte laden und Größe einstellen." },
-    ],
-  },
-  {
-    slug: "rivals11",
-    name: "Rivals11.de",
-    category: "Apps",
-    description:
-      "Wettbewerbs-Game für deine Community – Spiele gegeneinander, sammle Punkte und werde zur Legende.",
-    benefits: [],
-    href: "https://rivals11.de",
-    features: [
-      "Wiederkehrende Abläufe automatisiert – ohne manuelle Tabellenpflege",
-      "Datenmodelle für Community, Spielbetrieb und Workflows",
-      "Schnelle UI für den Alltag auf Desktop und Mobil",
-    ],
-    vorteile: [
-      "Weniger Aufwand bei Routine",
-      "Stabiler Prozess für alle Beteiligten",
-      "Daten, die man nutzen kann",
-    ],
-    zielgruppen: [
-      "Community-Teams",
-      "Vereine & Veranstalter",
-      "Teams, die Spielbetrieb digital organisieren wollen",
-    ],
-    views: [
-      {
-        key: "community",
-        title: "Community & Rollen",
-        description: "Struktur, Rechte und klare Bedienwege im laufenden Betrieb.",
-      },
-      {
-        key: "automation",
-        title: "Workflows ohne Reibung",
-        description: "Automatisierung für wiederkehrende Schritte – verlässlich und nachvollziehbar.",
-      },
-      {
-        key: "dashboard",
-        title: "Übersicht & Auswertungen",
-        description: "Weniger Gefühl, mehr Klarheit: Daten sind sichtbar und nutzbar.",
-      },
+      { key: "export", title: "Bereit zum Versand", description: "PDFs, die sauber ankommen und direkt genutzt werden können." },
+      { key: "dashboard", title: "Alles im Überblick", description: "Klarer Status über Angebote, Rechnungen und Mahnungen." },
     ],
   },
   {
     slug: "taktikfeld",
     name: "Taktikfeld.de",
     category: "Apps",
-    description:
-      "Taktiktafel für Trainer – Spieler positionieren, Laufwege einzeichnen und Formationen speichern. Offline & kostenlos.",
+    description: "Digitale Taktiktafel für Trainer.",
     benefits: [
-      "Drag & Drop Spieler mit Name und Nummer",
-      "Pfeile & Laufwege einzeichnen",
-      "Formationen speichern & als PDF exportieren",
+      "Spieler mit Name und Nummer platzieren",
+      "Pfeile und Laufwege einzeichnen",
+      "Formationen speichern und als PDF exportieren",
     ],
     href: "https://taktikfeld.de",
     features: [
-      "Spieler per Drag & Drop auf die Tafel – inklusive Name und Rückennummer",
-      "Pfeile und Laufwege frei einzeichnen für taktische Erklärungen",
-      "Formationen sichern und als PDF exportieren – nutzbar ohne Internet",
+      "Spieler per Drag and Drop auf die Tafel setzen",
+      "Pfeile und Laufwege frei einzeichnen",
+      "Formationen sichern und als PDF exportieren",
     ],
-    vorteile: [
-      "Schnell erklärt statt nur besprochen",
-      "Immer griffbereit, auch ohne Verbindung",
-      "Keine Kostenbarriere für Vereine und Nachwuchs",
-    ],
-    zielgruppen: ["Trainer & Co-Trainer", "Jugend- und Amateurvereine", "Jede Mannschaft mit Taktik im Wettkampf"],
+    vorteile: ["Schnell erklärt", "Immer griffbereit", "Gut für Training und Spieltag"],
+    zielgruppen: ["Trainer", "Co-Trainer", "Vereine"],
     views: [
       {
         key: "workflow",
         title: "Aufstellung in Sekunden",
-        description: "Spieler platzieren, Wege markieren – der Fokus bleibt beim Spiel, nicht bei der Software.",
+        description: "Spieler platzieren, Wege markieren und direkt erklären.",
       },
       {
         key: "export",
         title: "PDF fürs Training",
-        description: "Formation und Zeichnungen exportieren – mitnehmen, abheften, weitergeben.",
+        description: "Formation und Zeichnungen exportieren und weitergeben.",
       },
       {
         key: "dashboard",
-        title: "Bibliothek & Überblick",
-        description: "Gespeicherte Formationen griffbereit – weniger Suchen, mehr Zeit auf dem Platz.",
+        title: "Formationen im Blick",
+        description: "Gespeicherte Formationen schnell wiederfinden.",
+      },
+    ],
+  },
+  {
+    slug: "qr-designer",
+    name: "QR-Code Designer",
+    category: "Digitale Tools",
+    description: "QR-Codes einfach gestalten und exportieren.",
+    benefits: ["Logo einfügen", "Farben und Stil anpassen", "Als PNG oder SVG exportieren"],
+    href: "/qr",
+    features: [
+      "QR-Code gestalten",
+      "Eigenes Logo einbetten",
+      "Datei für Druck, Flyer, Schilder oder Website exportieren",
+    ],
+    vorteile: ["Schnell erstellt", "Einfach zu teilen", "Gut für Flyer, Schilder und Websites"],
+    zielgruppen: ["Betriebe", "Vereine", "Selbstständige"],
+    views: [
+      { key: "design", title: "Stil nach Wunsch", description: "Farben, Logo und Aussehen schnell anpassen." },
+      { key: "export", title: "Sofort exportieren", description: "PNG oder SVG herunterladen und direkt nutzen." },
+    ],
+  },
+  {
+    slug: "gehaltsrechner",
+    name: "Brutto Netto Rechner",
+    category: "Digitale Tools",
+    description: "Brutto und Netto Beträge schnell ausrechnen.",
+    benefits: ["Gehalt berechnen", "Abzüge nachvollziehen", "Monat und Jahr ansehen"],
+    href: "/gehalt",
+    features: ["Brutto und Netto berechnen", "Steuern und Abzüge anzeigen", "Werte für 2026 nutzen"],
+    vorteile: ["Einfach verständlich", "Schnell nutzbar", "Ohne Anmeldung"],
+    zielgruppen: ["Arbeitnehmer", "Selbstständige", "Büro und Verwaltung"],
+    views: [
+      {
+        key: "dashboard",
+        title: "Beträge im Blick",
+        description: "Brutto, Netto und Abzüge schnell sehen.",
+      },
+    ],
+  },
+  {
+    slug: "kfz-rechner",
+    name: "Kfz-Steuer Rechner",
+    category: "Digitale Tools",
+    description: "Kfz Steuer einfach berechnen.",
+    benefits: ["Fahrzeugdaten eingeben", "Steuer anzeigen", "Schnell vergleichen"],
+    href: "/kfz",
+    features: ["Fahrzeugdaten eintragen", "Steuer berechnen", "Ergebnis verständlich anzeigen"],
+    vorteile: ["Schnell geprüft", "Einfach erklärt", "Gut für Fahrzeugplanung"],
+    zielgruppen: ["Betriebe mit Fahrzeugen", "Selbstständige", "Privatnutzer"],
+    views: [
+      {
+        key: "dashboard",
+        title: "Schnelle Berechnung",
+        description: "Daten eingeben und Ergebnis sehen.",
+      },
+    ],
+  },
+  {
+    slug: "rivals11",
+    name: "Rivals11.de",
+    category: "Apps",
+    description: "Eigenes App und Game Projekt rund um Teams, Punkte und Wettbewerb.",
+    benefits: ["Teams erstellen", "Punkte sammeln", "Gegeneinander antreten"],
+    href: "https://rivals11.de",
+    features: [
+      "Spieler und Teams verwalten",
+      "Punkte und Ergebnisse anzeigen",
+      "Ansicht für Desktop und Handy",
+    ],
+    vorteile: ["Schnell verständlich", "Für Gruppen nutzbar", "Eigenes Projekt von FLX"],
+    zielgruppen: ["Community Teams", "Vereine", "Spielgruppen"],
+    views: [
+      {
+        key: "community",
+        title: "Teams und Punkte",
+        description: "Spielbetrieb übersichtlich darstellen.",
+      },
+      {
+        key: "dashboard",
+        title: "Alles im Blick",
+        description: "Ergebnisse und Fortschritt schnell sehen.",
       },
     ],
   },
 ];
-
