@@ -108,5 +108,24 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-}
 
+  .flx-angle-card {
+    @apply relative overflow-hidden rounded-lg border border-slate-200;
+  }
+
+  .flx-angle-card::before {
+    content: "";
+    position: absolute;
+    right: -34px;
+    top: 0;
+    height: 100%;
+    width: 58px;
+    transform: skewX(-14deg);
+    background: rgba(0, 109, 231, 0.12);
+    pointer-events: none;
+  }
+
+  .flx-angle-card > * {
+    position: relative;
+  }
+}

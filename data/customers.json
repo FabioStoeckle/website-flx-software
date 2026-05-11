@@ -2,32 +2,31 @@
   {
     "slug": "holzbau-xy",
     "name": "Holzbau XY",
-    "industry": "Bau/Handwerk",
-    "summary": "PWA für Geräteverwaltung mit QR-Codes und TÜV-Reminder.",
-    "problem": "Zettelwirtschaft, fehlende Transparenz bei Geräten, vergessene TÜV-Termine.",
-    "solution": "Progressive Web App mit QR-Code-System, automatische Erinnerungen, mobile Check-in/out.",
-    "outcome": "30% weniger Geräteverluste, keine vergessenen TÜV-Termine, schnellere Baustellen-Übergaben.",
-    "features": ["PWA", "QR-Codes", "Push-Notifications", "Offline-Sync", "TÜV-Reminder"]
+    "industry": "Bau und Handwerk",
+    "summary": "Geräteverwaltung mit QR-Codes und TÜV Erinnerungen.",
+    "problem": "Zettelwirtschaft, fehlende Übersicht bei Geräten und vergessene TÜV Termine.",
+    "solution": "Ein einfaches Programm für Geräte, Standorte, Prüfungen und Erinnerungen.",
+    "outcome": "Weniger Geräteverluste, keine vergessenen TÜV Termine und schnellere Übergaben auf der Baustelle.",
+    "features": ["QR-Codes", "Prüftermine", "Gerätelisten", "Erinnerungen"]
   },
   {
     "slug": "maler-meier",
     "name": "Maler Meier",
     "industry": "Handwerk",
-    "summary": "Angebotsgenerator & Kundenportal mit KI-Unterstützung.",
-    "problem": "Langsame Angebotserstellung, Medienbrüche, unprofessionelle Kommunikation.",
-    "solution": "Web-Portal mit KI-generierten Angeboten, automatische PDFs, Kundenbereich.",
-    "outcome": "Angebote in 5 Min statt 30 Min, 40% mehr Aufträge durch professionelle Präsentation.",
-    "features": ["KI-Integration", "PDF-Export", "Kundenportal", "Template-System", "Auth"]
+    "summary": "Angebote und Kundendaten an einem Ort.",
+    "problem": "Langsame Angebotserstellung, verstreute Kundendaten und viel Kopieren.",
+    "solution": "Ein einfacher Bereich für Kundendaten, Angebote und fertige PDF Dokumente.",
+    "outcome": "Angebote schneller erstellen und Kunden sauberer informieren.",
+    "features": ["PDF Dokumente", "Kundendaten", "Angebote", "Vorlagen"]
   },
   {
-    "slug": "fitness-pro",
-    "name": "Fitness Pro",
-    "industry": "Sport & Gesundheit",
-    "summary": "Mitgliederverwaltung & Trainingsplan-Generator mit AI.",
-    "problem": "Dezentrale Mitgliederdaten, manuelle Trainingsplanung, fehlende Kommunikation.",
-    "solution": "Zentrale Web-App mit KI-generierten Trainingsplänen, automatische Erinnerungen, Mitgliederbereich.",
-    "outcome": "50% Zeitersparnis bei Verwaltung, höhere Mitgliederzufriedenheit, personalisierte Trainingspläne.",
-    "features": ["AI-Trainingspläne", "Mitgliederportal", "Automation", "Push-Notifications", "Analytics"]
+    "slug": "fahrzeugliste",
+    "name": "Fahrzeugliste",
+    "industry": "Dienstleister",
+    "summary": "Fahrzeuge, Fristen und Dokumente übersichtlich verwalten.",
+    "problem": "Fahrzeugdaten lagen in Excel, Mails und Papierordnern.",
+    "solution": "Eine zentrale Liste mit Fristen, Dokumenten und klaren Zuständigkeiten.",
+    "outcome": "Mehr Überblick im Büro und weniger Nachfragen im Alltag.",
+    "features": ["Fahrzeugliste", "Fristen", "Dokumente", "Zuständigkeiten"]
   }
 ]
-

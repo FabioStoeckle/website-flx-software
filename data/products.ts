@@ -1,4 +1,4 @@
-export type ProductCategory = "Apps" | "Websites" | "PWAs" | "Digitale Tools";
+export type ProductCategory = "Apps" | "Websites" | "Programme" | "Digitale Tools";
 
 export type ProductViewKey = "workflow" | "dashboard" | "export" | "community" | "security" | "automation";
 
@@ -26,7 +26,7 @@ export const products: Product[] = [
     name: "FLX-Suite.de",
     category: "Digitale Tools",
     description:
-      "Angebot, Rechnung und Mahnungen online erstellen und exportieren – zentral, strukturiert und sofort versandfertig.",
+      "Angebote, Rechnungen und Mahnungen einfach online erstellen.",
     benefits: [
       "Templates für Angebote, Rechnungen und Mahnungen",
       "PDF-Export für Kunden und Archiv",
@@ -51,52 +51,11 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "rivals11",
-    name: "Rivals11.de",
-    category: "Apps",
-    description:
-      "Wettbewerbs-Game für deine Community – Spiele gegeneinander, sammle Punkte und werde zur Legende.",
-    benefits: [],
-    href: "https://rivals11.de",
-    features: [
-      "Wiederkehrende Abläufe automatisiert – ohne manuelle Tabellenpflege",
-      "Datenmodelle für Community, Spielbetrieb und Workflows",
-      "Schnelle UI für den Alltag auf Desktop und Mobil",
-    ],
-    vorteile: [
-      "Weniger Aufwand bei Routine",
-      "Stabiler Prozess für alle Beteiligten",
-      "Daten, die man nutzen kann",
-    ],
-    zielgruppen: [
-      "Community-Teams",
-      "Vereine & Veranstalter",
-      "Teams, die Spielbetrieb digital organisieren wollen",
-    ],
-    views: [
-      {
-        key: "community",
-        title: "Community & Rollen",
-        description: "Struktur, Rechte und klare Bedienwege im laufenden Betrieb.",
-      },
-      {
-        key: "automation",
-        title: "Workflows ohne Reibung",
-        description: "Automatisierung für wiederkehrende Schritte – verlässlich und nachvollziehbar.",
-      },
-      {
-        key: "dashboard",
-        title: "Übersicht & Auswertungen",
-        description: "Weniger Gefühl, mehr Klarheit: Daten sind sichtbar und nutzbar.",
-      },
-    ],
-  },
-  {
     slug: "taktikfeld",
     name: "Taktikfeld.de",
     category: "Apps",
     description:
-      "Taktiktafel für Trainer – Spieler positionieren, Laufwege einzeichnen und Formationen speichern. Offline & kostenlos.",
+      "Digitale Taktiktafel für Trainer.",
     benefits: [
       "Drag & Drop Spieler mit Name und Nummer",
       "Pfeile & Laufwege einzeichnen",
@@ -132,5 +91,85 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    slug: "qr-code-designer",
+    name: "QR-Code Designer",
+    category: "Digitale Tools",
+    description: "QR-Codes einfach gestalten und exportieren.",
+    benefits: ["QR-Codes erstellen", "Design anpassen", "Datei exportieren"],
+    href: "/produkte/qr-code-designer",
+    features: ["QR-Codes erstellen", "Farben anpassen", "Datei für Druck oder Website exportieren"],
+    vorteile: ["Schnell erstellt", "Einfach zu teilen", "Gut für Flyer, Schilder und Websites"],
+    zielgruppen: ["Betriebe", "Vereine", "Selbstständige"],
+    views: [
+      {
+        key: "export",
+        title: "Schnell als Datei",
+        description: "QR-Code erstellen und als Datei nutzen.",
+      },
+    ],
+  },
+  {
+    slug: "brutto-netto-rechner",
+    name: "Brutto-Netto Rechner",
+    category: "Digitale Tools",
+    description: "Brutto und Netto Beträge schnell ausrechnen.",
+    benefits: ["Beträge berechnen", "Mehrwertsteuer prüfen", "Schnell im Alltag"],
+    href: "/produkte/brutto-netto-rechner",
+    features: ["Brutto berechnen", "Netto berechnen", "Mehrwertsteuer anzeigen"],
+    vorteile: ["Einfach verständlich", "Schnell nutzbar", "Ohne Anmeldung"],
+    zielgruppen: ["Selbstständige", "Kleine Betriebe", "Büro und Verwaltung"],
+    views: [
+      {
+        key: "dashboard",
+        title: "Beträge im Blick",
+        description: "Brutto, Netto und Steuer schnell sehen.",
+      },
+    ],
+  },
+  {
+    slug: "kfz-steuer-rechner",
+    name: "Kfz-Steuer Rechner",
+    category: "Digitale Tools",
+    description: "Kfz Steuer einfach berechnen.",
+    benefits: ["Fahrzeugdaten eingeben", "Steuer anzeigen", "Schnell vergleichen"],
+    href: "/produkte/kfz-steuer-rechner",
+    features: ["Fahrzeugdaten eintragen", "Steuer berechnen", "Ergebnis verständlich anzeigen"],
+    vorteile: ["Schnell geprüft", "Einfach erklärt", "Gut für Fahrzeugplanung"],
+    zielgruppen: ["Betriebe mit Fahrzeugen", "Selbstständige", "Privatnutzer"],
+    views: [
+      {
+        key: "dashboard",
+        title: "Schnelle Berechnung",
+        description: "Daten eingeben und Ergebnis sehen.",
+      },
+    ],
+  },
+  {
+    slug: "rivals11",
+    name: "Rivals11.de",
+    category: "Apps",
+    description: "Eigenes App und Game Projekt rund um Teams, Punkte und Wettbewerb.",
+    benefits: ["Teams erstellen", "Punkte sammeln", "Gegeneinander antreten"],
+    href: "https://rivals11.de",
+    features: [
+      "Spieler und Teams verwalten",
+      "Punkte und Ergebnisse anzeigen",
+      "Ansicht für Desktop und Handy",
+    ],
+    vorteile: ["Schnell verständlich", "Für Gruppen nutzbar", "Eigenes Projekt von FLX"],
+    zielgruppen: ["Community Teams", "Vereine", "Spielgruppen"],
+    views: [
+      {
+        key: "community",
+        title: "Teams und Punkte",
+        description: "Spielbetrieb übersichtlich darstellen.",
+      },
+      {
+        key: "dashboard",
+        title: "Alles im Blick",
+        description: "Ergebnisse und Fortschritt schnell sehen.",
+      },
+    ],
+  },
 ];
-

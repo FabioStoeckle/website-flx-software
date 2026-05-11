@@ -1,10 +1,10 @@
 export type ServiceKey =
   | "websites"
   | "webapps"
-  | "pwaps"
+  | "browser-programs"
   | "tools"
   | "maintenance"
-  | "growth";
+  | "customers";
 
 export type Service = {
   key: ServiceKey;
@@ -16,44 +16,44 @@ export type Service = {
 export const services: Service[] = [
   {
     key: "websites",
-    title: "Websites & Landingpages",
-    description: "Markenstarke Seiten mit sauberer Struktur, schneller Performance und klaren Conversion-Pfaden.",
-    bullets: ["SEO-Basis & Semantik", "Design-System & UI-Komponenten", "Content-Ready für schnelle Iterationen"],
+    title: "Websites, die Kunden verstehen",
+    description:
+      "Moderne Websites, die klar zeigen, wer du bist, was du anbietest und wie man dich erreicht.",
+    bullets: ["Klare Struktur", "Gute Lesbarkeit", "Kontakt schnell auffindbar"],
   },
   {
     key: "webapps",
-    title: "Web-Apps & Portale",
-    description: "Anwendungen, die Teams im Alltag nutzen: Datenverwaltung, Prozesse und Workflows in einem System.",
-    bullets: ["Auth & Rollen (optional)", "Datenmodelle & Dashboards", "Integration über APIs & Webhooks"],
+    title: "Eigene Verwaltungsprogramme",
+    description:
+      "Einfache Programme für Fahrzeuge, Werkzeuge, Aufträge, Prüfungen, Dokumente oder interne Listen.",
+    bullets: ["Weniger Papier", "Weniger Suchen", "Mehr Überblick"],
   },
   {
-    key: "pwaps",
-    title: "Progressive Web Apps (PWAs)",
-    description: "Installierbar, performant, offline-fähig – für mobile Nutzung ohne App-Store-Abhängigkeit.",
-    bullets: ["Homescreen-Installation", "Offline-Sync & robuste UI", "Push/Benachrichtigungen (optional)"],
+    key: "browser-programs",
+    title: "Programme für PC, Handy und Tablet",
+    description:
+      "Deine Lösung läuft direkt im Browser und ist im Büro genauso nutzbar wie unterwegs.",
+    bullets: ["Keine komplizierte Installation", "Auch mobil nutzbar", "Schnell startklar"],
   },
   {
     key: "tools",
-    title: "Individuelle Tools & Automationen",
-    description: "Digitale Werkzeuge, die Medienbrüche beseitigen – plus Automatisierung für wiederkehrende Aufgaben.",
-    bullets: ["Workflows & Integrationen", "Report-/Export-Mechaniken", "Schnelle MVPs mit iterativem Ausbau"],
+    title: "Kleine Helfer für Routineaufgaben",
+    description:
+      "Wir vereinfachen Dinge, die du immer wieder von Hand machst, zum Beispiel PDF Dokumente, Listen oder Erinnerungen.",
+    bullets: ["PDF Dokumente erstellen", "Listen pflegen", "Erinnerungen anzeigen"],
   },
   {
     key: "maintenance",
-    title: "Weiterentwicklung & Support",
-    description: "Nach dem Launch: Updates, Bugfixes und gezielte Feature-Sprints – nachvollziehbar und planbar.",
-    bullets: ["Monitoring & Stabilität", "Performance-Optimierung", "Security- und Dependency-Updates"],
+    title: "Pflege und Unterstützung",
+    description:
+      "Nach dem Start kümmern wir uns auf Wunsch um Anpassungen, Korrekturen und sinnvolle Erweiterungen.",
+    bullets: ["Ansprechpartner behalten", "Probleme sauber beheben", "Lösung passend erweitern"],
   },
   {
-    key: "growth",
-    title: "Conversion-Optimierung & Growth",
+    key: "customers",
+    title: "Ehrliche Beratung",
     description:
-      "Nicht nur bauen – sondern dafür sorgen, dass aus Besuchern auch Kunden werden.",
-    bullets: [
-      "Funnel-Optimierung & User-Flows",
-      "Tracking, Analytics & A/B-Tests",
-      "Conversion-Fokus (Leads, Sales, Signups)",
-    ],
+      "Du bekommst eine klare Einschätzung, was sinnvoll ist und was du dir sparen kannst.",
+    bullets: ["Verständlich erklärt", "Ohne Fachchinesisch", "Passend zum Betrieb"],
   },
 ];
-

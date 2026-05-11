@@ -26,19 +26,18 @@ const rajdhani = Rajdhani({
 export const metadata: Metadata = {
   metadataBase: new URL("https://flx-software.de"),
   title: {
-    default: "FLX-Software.de | Digitale Produkte & Weblösungen",
+    default: "FLX-Software.de | Digitale Lösungen für Betriebe",
     template: "%s | FLX-Software",
   },
   description:
-    "FLX-Software entwickelt digitale Produkte, PWAs und Websites mit echtem Praxisnutzen. Produkte ansehen oder Projekt anfragen – klar, schnell, wartbar.",
+    "Wir bauen einfache digitale Lösungen für Betriebe, die weniger Papierkram und mehr Überblick wollen.",
   keywords: [
     "FLX-Software",
-    "Digitale Produkte",
+    "Digitale Lösungen",
     "Webentwicklung",
-    "PWAs",
     "Websites",
-    "Web-Apps",
-    "Individuelle Tools",
+    "Verwaltungsprogramme",
+    "Digitale Helfer",
     "Projektanfragen",
   ],
   authors: [{ name: "Fabio Stöckle" }],
@@ -48,14 +47,14 @@ export const metadata: Metadata = {
     locale: "de_DE",
     url: "https://flx-software.de",
     siteName: "FLX-Software",
-    title: "FLX-Software.de | Digitale Produkte & Weblösungen",
+    title: "FLX-Software.de | Digitale Lösungen für Betriebe",
     description:
-      "FLX-Software entwickelt digitale Produkte, PWAs und Websites. Produkte ansehen oder Projekt anfragen – klar, schnell, wartbar.",
+      "Wir bauen einfache digitale Lösungen für Betriebe, die weniger Papierkram und mehr Überblick wollen.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FLX-Software.de | Digitale Produkte & Weblösungen",
-    description: "FLX-Software entwickelt digitale Produkte, PWAs und Websites. Projekt anfragen.",
+    title: "FLX-Software.de | Digitale Lösungen für Betriebe",
+    description: "Einfache Websites, Verwaltungsprogramme und digitale Helfer für kleine Betriebe.",
   },
   robots: {
     index: true,
@@ -110,4 +109,3 @@ export default function RootLayout({
     </html>
   );
 }
-
